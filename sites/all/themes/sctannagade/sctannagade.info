@@ -20,6 +20,8 @@ regions[header] = Header
 regions[footer] = Footer
 regions[search] =  Search
 regions[menu] = Menu
+regions[banners] = Banners
+
 
 
 features[] = favicon

@@ -55,8 +55,7 @@
 		</div>
 		<div id="container-banners">
 			<div id="banners"> 
-				<div class="banner1"></div>
-				<div class="banner2"></div>	
+				<?php print $banners; ?>
 			</div>
 		</div>
 	</div>
