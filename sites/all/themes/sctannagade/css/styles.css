@@ -1,554 +1,42 @@
-/* $Id: page.css,v 1.1.2.28 2009/06/12 15:44:26 jmburnz Exp $ */
 
-/**
- * @file page.css
- * This stylesheet provides the page main styles for this theme.
- */
-
-/**
- * Remove unused styles for performace.
- */
- 
 .item-list ul li {
 	list-style: none;
 	margin:0;
 	} 
  
-
-/**********************************************************
- *              Section, Page and Body Classes
- **********************************************************/
-/**
- * Normally you will use these in combination with other
- * selectors. I include them here for completedness.
- */
-
 html {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	}
 	
 body {
-	background: #fff url(../images/bg_skojtehallen_low.jpg) center top repeat;
+	background: #fff;
+	margin:0
 	}	
 	
-	body.isbanen {
-		background: #fff url(../images/bg_isbanen.jpg) center top repeat;
+	body.annagade {
+		background: #fff;
 		}
 
 	body.admin {
 		background-position: center 30px;
 		}
 
-	
 /**********************************************************
- *                  The wrapper divs
- *    Be careful how you modify these, see layout.css
+ *				TOPBAR
  **********************************************************/
 
-#container {
-  width: 960px; 
-	margin: 0 auto;
-	background: transparent url(../images/back-content-default.png) center top repeat-y;	
-	}
-
-#container-inner {
-	padding: 0 157px 0 202px; 
-	background: transparent url(../images/back-top-skojtebanen-1.jpg) center top no-repeat;
-	min-height: 550px;
-	overflow: hidden;
-	}
-
-#container-inner.theme-style-2 {
-	background: transparent url(../images/back-top-skojtebanen-2.jpg) center top no-repeat;
-	}
-	
-#container-inner.theme-style-3 {
-	background: transparent url(../images/back-top-skojtebanen-3.jpg) center top no-repeat;
-	}
-	
-#container-inner.theme-style-4 {
-	background: transparent url(../images/back-top-skojtebanen-4.jpg) center top no-repeat;
-	}
-
-#header-blocks {	
-	position: relative;
-	
-	clear: both;}
-
-
-/**********************************************************
- *                       Regions
- **********************************************************/
-
-
-/**********************************************************
- *                      Sidebars
- **********************************************************/
-
-#sidebar-left {
-	width: 156px;
-	}
-	
-	#sidebar-left .block-views {
-		border-bottom: 2px dotted #ccc;
-		padding-bottom: 2px;
-		margin-bottom: 20px;
-		}
-		
-
-	#sidebar-left .view ul li,
-	#sidebar-left .view .more-link {
-		margin-left: -18px;
-		list-style: none;
-		padding-left: 18px;
-		background: transparent url(../images/icon-list-bullet.png) 0px 2px no-repeat;
-		margin-bottom: 20px;
-		line-height: 15px;
-		text-align: left;
-		}
-	
-
-/*********************************************************
-*                     Logoer
-**********************************************************/
-
-.puls-logo {
-	float: left;
-	margin: 2px 20px 6px -18px;
-	margin-right: 20px; 
-	margin-left: -18px;
-	}
-	
-.aak-logo {
-	float: left;
-	margin: 2px -20px 6px 0;
-	}
-
-
-/**********************************************************
- *                   Skip navigation
- **********************************************************/
-
-/**********************************************************
- *                 Header Elements
- **********************************************************/
-
-#site-name {
-	float: left;
-	height: 65px;
-	width: 416px;
-	overflow: hidden;
-	position: relative;
-	}
-	
-	#site-name span {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 65px;
-		width: 416px;
-		background: transparent url(../images/back-title-skojtebanen.jpg) left top no-repeat;
-		}
-
-
-
-/**********************************************************
- *    Search box, Advanced search form, Search results
- *          For the search block see blocks.css
- **********************************************************/
-
-.messages.status, .messages {
-	border: 1px dotted #ccc;
-	padding: 16px 8px;
-	font-weight: bold;
-	font-size: 1.6em;
-	margin: 12px 0;
-	background: #d9e8f1;
-	}
-
-
-/**********************************************************
- *               Primary & Secondary Links
- **********************************************************/
-
-.menu-name-primary-links>.menu,
-.menu-name-menu-isbanen-links>.menu {
-	clear: both;
-	padding: 28px 0 19px;
-	height: 40px;
-	}
-	
-	.menu-name-primary-links>.menu>li,
-	.menu-name-menu-isbanen-links>.menu>li {
-		float: left;
-		position: relative;
-		overflow: visible;
-		margin-right: 8px;
-		}
-		
-		.menu-name-primary-links>.menu>li.last,
-		.menu-name-menu-isbanen-links>.menu>li.last {
-			margin-right: 0;
-			}
-		
-		.menu-name-primary-links>.menu>li>a,
-		.menu-name-menu-isbanen-links>.menu>li>a {
-			height: 40px;
-			display: block;
-			line-height: 40px;
-			text-indent: -9999em; 
-			padding: 0 4px;
-			}
-
-	.menu-name-primary-links li.expanded .menu,
-	.menu-name-menu-isbanen-links li.expanded .menu {
-		display: none;
-		position: absolute;
-		float: left;
-		left: 1px;
-		top: 40px;
-		background: #90a9c5;
-		height: auto;
-                z-index: 10;
-		}
-		
-		.menu-name-primary-links li.expanded .menu li,
-		.menu-name-menu-isbanen-links li.expanded .menu li {		
-			border: 1px solid #d4dbef;
-			border-top: none;
-			}
-			
-		.menu-name-primary-links li.expanded .menu a,
-		.menu-name-menu-isbanen-links li.expanded .menu a {
-			display: block;
-			padding: 3px 16px;
-			}
-			
-		.menu-name-primary-links li.expanded .menu a:hover,
-		.menu-name-menu-isbanen-links li.expanded .menu a:hover {
-			background: #49698f;
-			}
-		
-		
-	.menu-name-primary-links li.expanded:hover .menu,
-	.menu-name-menu-isbanen-links li.expanded:hover .menu {
-		display: block;
-		
-		}
-		
-	.jquery .menu-name-primary-links li.expanded .menu,
-	.jquery .menu-name-menu-isbanen-links li.expanded .menu {
-		display: none;
-		}
-		
-	.menu-name-primary-links .menu a,
-	.menu-name-menu-isbanen-links .menu a {
-		white-space: nowrap;			
-		}
-		
-		.menu-name-primary-links .menu a:focus,
-		.menu-name-menu-isbanen-links .menu a:focus,
-		.menu-name-primary-links .menu a:active,
-		.menu-name-menu-isbanen-links .menu a:active  {
-			outline: none;
-			border: 1px dotted red;
-			margin: -1px;			
-			}
-
-	
-	.menu-name-primary-links li.expanded li,
-	.menu-name-menu-isbanen-links li.expanded li {
-		float: none;
-		}
-		
-
-.menu-name-primary-links>.menu>li>a,
-.menu-name-menu-isbanen-links>.menu>li>a {
-	background: #fff url(../images/back-menu-sprite.png) 0 0 no-repeat;
-	}
-	
-
-/* ******************** Skojtebanen-menu ******************/
-
-
-.menu-name-primary-links .menu .menu-mlid-459>a {
-	width: 113px;
-	}
-	
-	.menu-name-primary-links .menu .menu-mlid-459>a.active-trail,
-	.menu-name-primary-links .menu .menu-mlid-459>a:hover
-	 {
-		background-position: 0 -40px;
-		}
-	
-.menu-name-primary-links .menu .menu-mlid-460>a {
-	width: 105px;
-	background-position: -129px 0;
-	}
-
-	.menu-name-primary-links .menu .menu-mlid-460>a.active-trail,
-	.menu-name-primary-links .menu .menu-mlid-460>a:hover {
-		background-position: -129px -40px;
-		}
-	
-.menu-name-primary-links .menu .menu-mlid-462>a {
-	width: 114px;
-	background-position: -251px 0;
-	}
-
-	.menu-name-primary-links .menu .menu-mlid-462>a.active-trail,
-	.menu-name-primary-links .menu .menu-mlid-462>a:hover {
-		background-position: -251px -40px;
-		}
-
-.menu-name-primary-links .menu .menu-mlid-463>a {
-	width: 65px;
-	background-position: -382px 0;
-	}
-	
-	.menu-name-primary-links .menu .menu-mlid-463>a.active-trail,
-	.menu-name-primary-links .menu .menu-mlid-463>a:hover {
-		background-position: -382px -40px;
-		}
-	
-.menu-name-primary-links .menu .menu-mlid-468>a {
-	width: 67px;
-	background-position: -466px 0;
-	}
-
-	.menu-name-primary-links .menu .menu-mlid-468>a.active-trail,
-	.menu-name-primary-links .menu .menu-mlid-468>a:hover {
-		background-position: -466px -40px;
-		}
-	
-.menu-name-primary-links .menu .menu-mlid-469>a {	
-	width: 33px;
-	background-position: -552px 0;
-	}
-	
-	.menu-name-primary-links .menu .menu-mlid-469>a.active-trail,
-	.menu-name-primary-links .menu .menu-mlid-469>a:hover {
-		background-position: -552px -40px;
-		}
-
-/* ******************** Isbanen-menu ******************/
-.menu-name-menu-isbanen-links .menu .menu-mlid-474>a {
-	width: 67px;
-	background-position: 0 -80px;
-	}
-	
-	.menu-name-menu-isbanen-links .menu .menu-mlid-474>a.active-trail,
-	.menu-name-menu-isbanen-links .menu .menu-mlid-474>a:hover
-	 {
-		background-position: 0 -120px;
-		}
-
-.menu-name-menu-isbanen-links .menu .menu-mlid-476>a {
-	width: 104px;
-	background-position: -85px -80px;
-	}
-	
-	.menu-name-menu-isbanen-links .menu .menu-mlid-476>a.active-trail,
-	.menu-name-menu-isbanen-links .menu .menu-mlid-476>a:hover
-	 {
-		background-position: -85px -120px;
-		}
-		
-.menu-name-menu-isbanen-links .menu .menu-mlid-478>a {
-	width: 89px;
-	background-position: -207px -80px;
-	}
-	
-	.menu-name-menu-isbanen-links .menu .menu-mlid-478>a.active-trail,
-	.menu-name-menu-isbanen-links .menu .menu-mlid-478>a:hover
-	 {
-		background-position: -207px -120px;
-		}
-		
-.menu-name-menu-isbanen-links .menu .menu-mlid-479>a {
-	width: 66px;
-	background-position: -316px -80px;
-	}
-	
-	.menu-name-menu-isbanen-links .menu .menu-mlid-479>a.active-trail,
-	.menu-name-menu-isbanen-links .menu .menu-mlid-479>a:hover
-	 {
-		background-position: -316px -120px;
-		}	
-
-.menu-name-menu-isbanen-links .menu .menu-mlid-480>a {
-	width: 33px;
-	background-position: -402px -80px;
-	}
-	
-	.menu-name-menu-isbanen-links .menu .menu-mlid-480>a.active-trail,
-	.menu-name-menu-isbanen-links .menu .menu-mlid-480>a:hover
-	 {
-		background-position: -402px -120px;
-		}
-
-/* ******************** Secondary links *******************/
-.menu-name-secondary-links .menu {
-	float: right;
-	margin-top: 45px;
-	}
-
-	.menu-name-secondary-links .menu li {
-		float: left;
-		}
-		
-		.menu-name-secondary-links .menu li a {
-			border-left: 1px solid #1a4165;
-			margin-left: 4px;
-			padding-left: 4px;
-			}
-		
-	.menu-name-secondary-links .menu li.first a {
-		border: none;
-		}
-
-
-/**********************************************************
- *                      Subsite menu
- **********************************************************/
-
-#subsite-menu {
-	position: absolute;
-	right: -71px;
-	top: 128px;
-	width: 20px;
-	}
-
-	#subsite-menu a {
-		display: block;
-		width: 19px;
-		height: 96px;
-		background: transparent url(../images/back-menu-subsite-default.png) right top no-repeat;
-		text-indent: -9999em;
-		}
-
-	#subsite-menu a:hover {	
-		width: 27px;
-		}
-		
-	.jquery #subsite-menu a:hover {
-		width: 19px;
-		}
-		
-	#subsite-menu a:focus {
-		outline: none;
-		border: 1px dotted red;
-		margin: -1px;
-		}
-		
-.isbanen #subsite-menu {
-	top: 184px;
-	}
-
-.isbanen #subsite-menu a {
-	background: transparent url(../images/back-menu-subsite-isbanen.png) right top no-repeat;
-	height: 114px;
-	}
-
-/**********************************************************
- *                       Banner
- **********************************************************/
-
-#banner {
-	height: 188px;
-	width: 601px;
-	/*background: #fff url(../images/flashbanner-placeholder.png) 0 19px no-repeat;*/
-	margin-bottom: 19px; 
-	padding-top: 19px;
-	clear: both;
-	}
-
-/**********************************************************
- *                       Event
- **********************************************************/
-
-#block-simple_event-0 ul {
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-
-#block-simple_event-0 li {
-  display: inline;
-  padding: 2px 8px 2px 8px;
-  border-left: 2px solid #ccc;
-  margin-bottom: 8px;
-}
-
-#block-simple_event-0 li:first-child {
-  display: inline;
-  padding: 2px 8px 2px 0px;
-  border: 0px;
-}
-
-/**********************************************************
- *                    H1 Page Title
- **********************************************************/
-
-
-
-
-
-
-/**********************************************************
- *                     Content 
- **********************************************************/
-
-#content {
-	clear: both;
-	}
-	
-	#maincontent {
-		padding-left: 26px;
-		border-left: 2px dotted #ccc;
-		width: 389px;
-		float: right;
-		margin-bottom: 30px;
-		}
-
-
-/**********************************************************
- *                     Views 
- **********************************************************/
-
-.view-display-id-page_1 li.views-row {
-	border-bottom: 1px dotted #ccc; 
-	padding: 8px 0 12px;
-	margin-bottom: 4px;
-}
-
-
-
-/**********************************************************
- *               Footer, Footer Message
- **********************************************************/
-
-#footer {
-	padding: 31px 179px 20px 180px;
-	width: 761px;
-	margin: 0 auto;
-	background: transparent url(../images/back-footer-default.png) center top no-repeat;
-	}
-
-/*--------------------------------------------------*/
-/* AARHUS KOMMUNE TOPBAR
-/*--------------------------------------------------*/
 #aak-topbar {
-	height: 69px;
+	height: 75px;
 	width: 100%;
-	background: #fff url(../images/aakb-aakbar-back.png) left top repeat-x;
+	background: #fff url(images/aakb-aakbar-back.png) left top repeat-x;
 	}
 	
 	#aak-topbar-inner {
 		width: 960px;
 		margin: 0 auto;
 		text-align: right;
-		background: transparent url(../images/aakb-aakbar-logo.png) left top no-repeat;
+		background: transparent url(images/aakb-aakbar-logo.jpg) 0 12px no-repeat;
 		}
 		
 		#aak-topbar-inner a {
@@ -556,42 +44,250 @@ body {
 			padding: 0 16px 0 0;
 			}
 
+/**********************************************************
+ *				HEADER
+ **********************************************************/
 
+
+
+#container {
+  width: 802px; 
+	margin: 0 auto;
+	background: #fff;	
+	}
+
+#container-inner {
+	margin: 0 0 5px 0; 
+	background: transparent url(images/back-top.png) center bottom no-repeat;
+	min-height: 300px;
+	overflow: hidden;
+	}
+
+#container-top {
+float: right;
+}
+
+#site-name {
+	float:left;
+	height:70px;
+	overflow:hidden;
+	position:absolute;
+	width:250px;
+	}
+
+#site-name span {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:transparent url(images/back-title.png) no-repeat scroll left top;
+	height:70px;
+	left:0;
+	position:absolute;
+	top:0;
+	width:250px;
+	padding: 0px;
+}
+
+#banner {
+	height: 200px;
+	width: 780px;
+	background: #fff url(images/banner.png) no-repeat;
+	margin: 70px 10px 0px 10px; 
+	padding: 0px;
+	}
+
+/**********************************************************
+ *				MENU
+ **********************************************************/
+
+
+/** #menu {
+	height: 41px;
+	width: 802px;
+	background: #fff url(images/menu.png) no-repeat;
+	margin: 0px;
+	padding: 0px;
+}
+
+**/
+
+.menu {
+	height: 41px;
+	padding: 0px;
+	clear: both;
+}
+
+/**********************************************************
+ *               Primary links
+ **********************************************************/
+			
+#regions .links {
+clear: both;
+height: 41px;
+}
+
+#regions .links>li {
+float: left;
+overflow: visible;
+position: relative;
+}
+
+#regions .links>li>a {
+	background: #fff url(images/menu.png) 0 0 no-repeat;
+	display: block;
+	height: 41px;
+	line-height: 40px;
+	padding: 0px;
+	text-indent: -9999em;
+	}
+
+#regions .links .menu-346>a {
+	width: 181px;
+	}
+	
+	#regions .links .menu-346>a.active-trail,
+	#regions .links .menu-346>a:hover
+	 {
+		background-position: 0 -41px;
+		}
+	
+#regions .links .menu-314>a {
+	width: 160px;
+	background-position: -181px 0;
+	}
+
+	#regions .links .menu-314>a.active-trail,
+	#regions .links .menu-314>a:hover {
+		background-position: -181px -41px;
+		}
+
+
+#regions .links .menu-315>a {
+	width: 134px;
+	background-position: -341px 0;
+	}
+	
+	#regions .links .menu-315>a.active-trail,
+	#regions .links .menu-315>a:hover {
+		background-position: -341px -41px;
+		}
+	
+#regions .links .menu-316>a {
+	width: 205px;
+	background-position: -475px 0;
+	}
+
+	#regions .links .menu-316>a.active-trail,
+	#regions .links .menu-316>a:hover {
+		background-position: -475px -41px;
+		}
+
+#regions .links .menu-317>a {
+	width: 121px;
+	background-position: -680px 0;
+	}
+
+	#regions .links .menu-317>a.active-trail,
+	#regions .links .menu-317>a:hover {
+		background-position: -680px -41px;
+		}
 
 
 /**********************************************************
- *                     Isbanen grafikker 
+ *               Secondary Links
  **********************************************************/
-.isbanen #container {
-	background: transparent url(../images/back-content-isbanen.png) center top repeat-y;	
+			
+#container-top .links {
+clear: both;
+height: 41px;
 }
 
-.isbanen #site-name span {
-	height: 65px;
-	width: 416px;
-	background: transparent url(../images/back-title-isbanen.jpg) left top no-repeat;
+#container-top .links>li {
+float: left;
+overflow: visible;
+position: relative;
+padding-right: 5px;
+}
+
+#container-top .links>li>a {
+	height: 41px;
+	line-height: 40px;
+	padding: 0px;
+	text-indent: -9999em;
 	}
 
-.isbanen #container-inner {
-	background: transparent url(../images/back-top-isbanen-1.jpg) center top no-repeat;
+
+/**********************************************************
+ *				INDHOLD
+ **********************************************************/
+
+#container-content {
+	padding: 0px; 
+	background: transparent url(images/back-content.png) center top no-repeat;
+	min-height: 300px;
+	overflow: hidden;
 	}
-	
-	.isbanen #container-inner.theme-style-2,
-	.isbanen #container-inner.theme-style-5 {
-		background: transparent url(../images/back-top-isbanen-2.jpg) center top no-repeat;
-		}
 
-	.isbanen #container-inner.theme-style-3,
-	.isbanen #container-inner.theme-style-6 {
-		background: transparent url(../images/back-top-isbanen-3.jpg) center top no-repeat;
-		}
+#content {
+	float: left;
+	width: 570px;
+	margin: 30px 10px 20px 10px;
+}
 
-	.isbanen #container-inner.theme-style-4,
-	.isbanen #container-inner.theme-style-7 {
-		background: transparent url(../images/back-top-isbanen-4.jpg) center top no-repeat;
-		}		
-
-
-.isbanen #footer {
-	background: transparent url(../images/back-footer-isbanen.png) center top no-repeat;
+#sidebar {
+	float: right;
+	width: 180px;
+	border-left: 1px solid;
+	border-color: #dbdbdb;
+	padding: 0px 15px 30px;
+	margin-top: 30px;
+	margin-bottom: 10px;
 	}
+
+/**********************************************************
+ *				BANNERS
+ **********************************************************/
+
+
+#container-banners {
+	padding: 10px 10px 0px 10px; 
+	min-height: 130px;
+	overflow: hidden;
+	}
+
+#banners
+{
+clear: both;
+margin: 0;
+padding: 0;
+}
+
+#banners .banner1
+  {
+	background: transparent url(images/banner1.jpg) center top no-repeat;
+	width: 385px;
+	height: 103px;
+	float: left;
+  }
+
+#banners .banner2
+  {
+	background: transparent url(images/banner2.jpg) center top no-repeat;
+	width: 385px;
+	height: 102px;
+	margin-left: 10px;
+	float: left;
+  }
+
+/**********************************************************
+ *				BUNDEN
+ **********************************************************/
+
+#footer {
+	height: 132px;
+	width: 100%;
+	padding-top: 10px;
+	text-align: center;
+	background: #fff url(images/back-footer.png) left top repeat-x;
+	}
+
