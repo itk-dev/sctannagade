@@ -1,0 +1,293 @@
+
+.item-list ul li {
+	list-style: none;
+	margin:0;
+	} 
+ 
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	}
+	
+body {
+	background: #fff;
+	margin:0
+	}	
+	
+	body.annagade {
+		background: #fff;
+		}
+
+	body.admin {
+		background-position: center 30px;
+		}
+
+/**********************************************************
+ *				TOPBAR
+ **********************************************************/
+
+#aak-topbar {
+	height: 75px;
+	width: 100%;
+	background: #fff url(images/aakb-aakbar-back.png) left top repeat-x;
+	}
+	
+	#aak-topbar-inner {
+		width: 960px;
+		margin: 0 auto;
+		text-align: right;
+		background: transparent url(images/aakb-aakbar-logo.jpg) 0 12px no-repeat;
+		}
+		
+		#aak-topbar-inner a {
+			line-height: 69px;
+			padding: 0 16px 0 0;
+			}
+
+/**********************************************************
+ *				HEADER
+ **********************************************************/
+
+
+
+#container {
+  width: 802px; 
+	margin: 0 auto;
+	background: #fff;	
+	}
+
+#container-inner {
+	margin: 0 0 5px 0; 
+	background: transparent url(images/back-top.png) center bottom no-repeat;
+	min-height: 300px;
+	overflow: hidden;
+	}
+
+#container-top {
+float: right;
+}
+
+#site-name {
+	float:left;
+	height:70px;
+	overflow:hidden;
+	position:absolute;
+	width:250px;
+	}
+
+#site-name span {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:transparent url(images/back-title.png) no-repeat scroll left top;
+	height:70px;
+	left:0;
+	position:absolute;
+	top:0;
+	width:250px;
+	padding: 0px;
+}
+
+#banner {
+	height: 200px;
+	width: 780px;
+	background: #fff url(images/banner.png) no-repeat;
+	margin: 70px 10px 0px 10px; 
+	padding: 0px;
+	}
+
+/**********************************************************
+ *				MENU
+ **********************************************************/
+
+
+/** #menu {
+	height: 41px;
+	width: 802px;
+	background: #fff url(images/menu.png) no-repeat;
+	margin: 0px;
+	padding: 0px;
+}
+
+**/
+
+.menu {
+	height: 41px;
+	padding: 0px;
+	clear: both;
+}
+
+/**********************************************************
+ *               Primary links
+ **********************************************************/
+			
+#regions .links {
+clear: both;
+height: 41px;
+}
+
+#regions .links>li {
+float: left;
+overflow: visible;
+position: relative;
+}
+
+#regions .links>li>a {
+	background: #fff url(images/menu.png) 0 0 no-repeat;
+	display: block;
+	height: 41px;
+	line-height: 40px;
+	padding: 0px;
+	text-indent: -9999em;
+	}
+
+#regions .links .menu-346>a {
+	width: 181px;
+	}
+	
+	#regions .links .menu-346>a.active-trail,
+	#regions .links .menu-346>a:hover
+	 {
+		background-position: 0 -41px;
+		}
+	
+#regions .links .menu-314>a {
+	width: 160px;
+	background-position: -181px 0;
+	}
+
+	#regions .links .menu-314>a.active-trail,
+	#regions .links .menu-314>a:hover {
+		background-position: -181px -41px;
+		}
+
+
+#regions .links .menu-315>a {
+	width: 134px;
+	background-position: -341px 0;
+	}
+	
+	#regions .links .menu-315>a.active-trail,
+	#regions .links .menu-315>a:hover {
+		background-position: -341px -41px;
+		}
+	
+#regions .links .menu-316>a {
+	width: 205px;
+	background-position: -475px 0;
+	}
+
+	#regions .links .menu-316>a.active-trail,
+	#regions .links .menu-316>a:hover {
+		background-position: -475px -41px;
+		}
+
+#regions .links .menu-317>a {
+	width: 121px;
+	background-position: -680px 0;
+	}
+
+	#regions .links .menu-317>a.active-trail,
+	#regions .links .menu-317>a:hover {
+		background-position: -680px -41px;
+		}
+
+
+/**********************************************************
+ *               Secondary Links
+ **********************************************************/
+			
+#container-top .links {
+clear: both;
+height: 41px;
+}
+
+#container-top .links>li {
+float: left;
+overflow: visible;
+position: relative;
+padding-right: 5px;
+}
+
+#container-top .links>li>a {
+	height: 41px;
+	line-height: 40px;
+	padding: 0px;
+	text-indent: -9999em;
+	}
+
+
+/**********************************************************
+ *				INDHOLD
+ **********************************************************/
+
+#container-content {
+	padding: 0px; 
+	background: transparent url(images/back-content.png) center top no-repeat;
+	min-height: 300px;
+	overflow: hidden;
+	}
+
+#content {
+	float: left;
+	width: 570px;
+	margin: 30px 10px 20px 10px;
+}
+
+#sidebar {
+	float: right;
+	width: 180px;
+	border-left: 1px solid;
+	border-color: #dbdbdb;
+	padding: 0px 15px 30px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	}
+
+/**********************************************************
+ *				BANNERS
+ **********************************************************/
+
+
+#container-banners {
+	padding: 10px 10px 0px 10px; 
+	min-height: 130px;
+	overflow: hidden;
+	}
+
+#banners
+{
+clear: both;
+margin: 0;
+padding: 0;
+}
+
+#banners .banner1
+  {
+	background: transparent url(images/banner1.jpg) center top no-repeat;
+	width: 385px;
+	height: 103px;
+	float: left;
+  }
+
+#banners .banner2
+  {
+	background: transparent url(images/banner2.jpg) center top no-repeat;
+	width: 385px;
+	height: 102px;
+	margin-left: 10px;
+	float: left;
+  }
+
+/**********************************************************
+ *				BUNDEN
+ **********************************************************/
+
+#footer {
+	height: 132px;
+	width: 100%;
+	padding-top: 10px;
+	text-align: center;
+	background: #fff url(images/back-footer.png) left top repeat-x;
+	}
+
