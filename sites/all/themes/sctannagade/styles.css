@@ -122,14 +122,20 @@ float: right;
  **********************************************************/
 			
 #regions .links {
-clear: both;
-height: 41px;
+	clear: both;
+	height: 41px;
 }
 
 #regions .links>li {
 float: left;
 overflow: visible;
 position: relative;
+}
+
+#regions ul.links li {
+	display:inline;
+	list-style-type:none;
+	padding: 0;
 }
 
 #regions .links>li>a {
@@ -187,10 +193,9 @@ position: relative;
 	background-position: -680px 0;
 	}
 
-	#regions .links .menu-317>a.active-trail,
-	#regions .links .menu-317>a:hover {
-		background-position: -680px -41px;
-		}
+#regions .links .menu-317>a.active-trail, #regions .links .menu-317>a:hover {
+	background-position: -680px -41px;
+	}
 
 
 /**********************************************************
@@ -199,7 +204,8 @@ position: relative;
 			
 #container-top .links {
 clear: both;
-height: 41px;
+height: 20px;
+padding-top: 15px;
 }
 
 #container-top .links>li {
@@ -207,11 +213,15 @@ float: left;
 overflow: visible;
 position: relative;
 padding-right: 5px;
+border-right: 1px solid;
+border-color: #dbdbdb;
+margin-right: 5px;
+font-family: arial;
+color: #333;
+font-size: 10px;
 }
 
 #container-top .links>li>a {
-	height: 41px;
-	line-height: 40px;
 	padding: 0px;
 	text-indent: -9999em;
 	}
@@ -253,31 +263,26 @@ padding-right: 5px;
 	padding: 10px 10px 0px 10px; 
 	min-height: 130px;
 	overflow: hidden;
-	}
-
-#banners
-{
-clear: both;
-margin: 0;
-padding: 0;
 }
 
-#banners .banner1
-  {
-	background: transparent url(images/banner1.jpg) center top no-repeat;
-	width: 385px;
-	height: 103px;
-	float: left;
-  }
+#banners {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
 
-#banners .banner2
-  {
-	background: transparent url(images/banner2.jpg) center top no-repeat;
-	width: 385px;
-	height: 102px;
-	margin-left: 10px;
-	float: left;
-  }
+#banners #banner_0{
+       width: 385px;
+       height: 103px;
+       float: left;
+}
+
+#banners #banner_1 {
+       width: 385px;
+       height: 102px;
+       margin-left: 10px;
+       float: left;
+}
 
 /**********************************************************
  *				BUNDEN
