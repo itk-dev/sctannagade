@@ -1,111 +1,111 @@
 #block-views-minimenu-block_1
 {
-padding: 0px 0px 10px 0px;
-color: #ccc;
-border-bottom: 1px solid;
-margin-bottom: 15px;
+  padding: 0px 0px 10px 0px;
+  color: #ccc;
+  border-bottom: 1px solid;
+  margin-bottom: 15px;
 }
 
 #block-views-minimenu-block_1>h2
 {
-font-family: arial;
-font-weight: bold;
-color: #333;
-font-size: 13px;
-padding: 0px 0px 10px 0px;
+  font-family: arial;
+  font-weight: bold;
+  color: #333;
+  font-size: 13px;
+  padding: 0px 0px 10px 0px;
 }
 
 #block-views-minimenu-block_1 .content .view .view-content .views-row
 {
-padding: 0px 0px 5px 10px;
+  padding: 0px 0px 5px 10px;
 
 }
 
 #block-views-News_list-block_1
 {
-padding: 0px 0px 10px 0px;
+  padding: 0px 0px 10px 0px;
 }
 
 #block-views-News_list-block_1>h2
 {
-font-family: arial;
-font-weight: bold;
-color: #333;
-font-size: 13px;
-padding: 0px 0px 15px 0px;
+  font-family: arial;
+  font-weight: bold;
+  color: #333;
+  font-size: 13px;
+  padding: 0px 0px 15px 0px;
 }
 
 #block-views-News_list-block_1 .content .view .view-content .views-row
 {
-padding: 0px 0px 35px 0px;
+  padding: 0px 0px 35px 0px;
 }
 
 #block-views-News_list-block_1 .content .view .view-content .views-row .views-field-created
 {
-font-family: arial;
-font-style: italic;
-color: #333;
-font-size: 10px;
-padding: 0px 0px 2px 0px;
+  font-family: arial;
+  font-style: italic;
+  color: #333;
+  font-size: 10px;
+  padding: 0px 0px 2px 0px;
 }
 
 #block-views-News_list-block_1 .content .view .view-content .views-row .views-field-title
 {
-font-family: arial;
-font-weight: bold;
-color: #333;
-font-size: 11px;
-padding: 0px 0px 2px 0px;
+  font-family: arial;
+  font-weight: bold;
+  color: #333;
+  font-size: 11px;
+  padding: 0px 0px 2px 0px;
 }
 
 #block-views-News_list-block_1 .content .view .view-content .views-row .views-field-field-teaser-value
 {
-font-family: arial;
-color: #333;
-font-size: 11px;
-padding: 0px 0px 2px 0px;
+  font-family: arial;
+  color: #333;
+  font-size: 11px;
+  padding: 0px 0px 2px 0px;
 }
 
 #block-views-News_list-block_1 .content .view .view-content .views-row .views-field-view-node
 {
-float: right;
-font-family: arial;
-color: #333;
-font-size: 11px;
-padding: 0px 0px 2px 0px;
+  float: right;
+  font-family: arial;
+  color: #333;
+  font-size: 11px;
+  padding: 0px 0px 2px 0px;
 }
 
 
 #block-views-Statement-block_1 .content .view .view-content
 {
-	padding: 0px 0px 10px 4px;
-	color: #ccc;
-	border-bottom: 1px solid;
-	margin-bottom: 15px;
+  padding: 0px 0px 10px 4px;
+  color: #ccc;
+  border-bottom: 1px solid;
+  margin-bottom: 15px;
 }
 #block-views-Statement-block_1 .content .view .view-content .views-row
 {
-	background: #fff url(images/back-statement-top.png) left top no-repeat;
-	padding-top: 10px;
+  background: #fff url(images/back-statement-top.png) left top no-repeat;
+  padding-top: 10px;
 }
 
 #block-views-Statement-block_1 .content .view .view-content .views-row .views-field-body
 {
-	background: #fff url(images/back-statement-middle.png) left top repeat-y;
-	text-align: center;
-	padding: 0px 20px 0px 10px;
-	font-family: "Arial Narrow", Arial, sans-serif;
-	font-size: 18px;
-	color: #fff;
+  background: #fff url(images/back-statement-middle.png) left top repeat-y;
+  text-align: center;
+  padding: 0px 20px 0px 10px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  color: #fff;
 }
 
 #block-views-Statement-block_1 .content .view .view-content .views-row .views-field-title
 {
-	height: 50px;
-	padding: 5px 20px 0px 10px;
-	background: #fff url(images/back-statement-bottom.png) left top no-repeat;
-	text-align: right;
-	font-family: "Arial, sans-serif;
-	font-size: 11px;
-	color: #fff;
+  height: 50px;
+  padding: 5px 20px 0px 10px;
+  background: #fff url(images/back-statement-bottom.png) left top no-repeat;
+  text-align: right;
+  font-family: arial, sans-serif;
+  font-size: 11px;
+  color: #fff;
 }
