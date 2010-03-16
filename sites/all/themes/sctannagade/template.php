@@ -42,4 +42,15 @@ function sctannagade_user_profile_form($form) {
 function sctannagade_preprocess_node(&$vars, $hook) {
   $node = $vars['node'];
   $vars['template_files'][] = 'node-'. $node->nid;
+
+  if ($node->type == 'faste_brugere') {
+    $vars['scripts'][] = drupal_get_path('theme', 'sctannagade').'js/faste_brugere.js';
+  }
+}
+
+function sctannagade_preprocess_page(&$vars) {
+  $node = $vars['node'];
+  if ($node->type == 'faste_brugere') {
+     $vars[‘scripts’] .= '<script type="text/javascript" src=".drupal_get_path('theme', 'sctannagade').'/js/faste_brugere.js'."></script>';
+  }
 }

@@ -109,3 +109,38 @@
   font-size: 11px;
   color: #fff;
 }
+
+#container-content #content #content-inner>h2 {
+  font-family: arial;
+  font-weight: bold;
+  color: #333;
+  font-size: 13px;
+  padding: 0px 0px 2px 0px;
+}
+
+#container-content #content #content-inner>p {
+  padding: 0px 0px 15px 0px;
+}
+
+#container-content .view .view-content .item-list .views-row {
+
+margin-left: 15px;
+padding-bottom: 3px;
+list-style-image: url("images/ball.png");
+
+}
+
+#container-content .view .view-content .item-list .views-row a:link {
+text-decoration: none;
+color: #333;
+}
+
+#container-content .view .view-content .item-list .views-row a:visited {
+text-decoration: none;
+color: #333;
+}
+
+#container-content .view .view-content .item-list .views-row a:hover {
+text-decoration: none;
+color: #8dc63f;
+}

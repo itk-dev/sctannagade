@@ -7,6 +7,7 @@
 html {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
+	color: #333
 	}
 	
 body {
@@ -232,15 +233,45 @@ color: #8dc63f;
  *				INDHOLD
  **********************************************************/
 
-#block-menu_block-1 {
+#block-menu_block-1 .content {
 
 border-bottom: 1px solid; 
 color: #CCC;
 padding-bottom: 10px;
 margin-bottom: 15px;
+}
+
+#block-menu_block-1>h2 {
+
+  font-family: arial;
+  font-weight: bold;
+  color: #333;
+  font-size: 13px;
+  padding: 0px 0px 15px 0px;
+}
+
+#block-menu_block-1 .menu .leaf {
+
+margin-left: 15px;
+padding-bottom: 3px;
+list-style-image: url("images/ball.png");
 
 }
 
+#block-menu_block-1 .menu a:link {
+text-decoration: none;
+color: #333;
+}
+
+#block-menu_block-1 .menu a:visited {
+text-decoration: none;
+color: #333;
+}
+
+#block-menu_block-1 .menu a:hover {
+text-decoration: none;
+color: #8dc63f;
+}
 
 #container-content {
 	padding: 0px; 
