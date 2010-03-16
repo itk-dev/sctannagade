@@ -234,7 +234,10 @@ color: #8dc63f;
 
 #block-menu_block-1 {
 
-padding-bottom: 50px;
+border-bottom: 1px solid; 
+color: #CCC;
+padding-bottom: 10px;
+margin-bottom: 15px;
 
 }
 
