@@ -31,6 +31,11 @@
 			<div id="content" class="content row nested">
 
 				<div id="content-inner" class="content-top-inner inner">
+          <?php if ($tabs): ?>
+            <div class="local-tasks"><div class="clear-block">
+              <?php print $tabs; ?>
+            </div></div>
+          <?php endif; ?>
                             	<?php print $content; ?>
                          	</div><!-- /content-inner -->
 				
