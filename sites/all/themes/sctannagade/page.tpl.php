@@ -36,6 +36,8 @@
               <?php print $tabs; ?>
             </div></div>
           <?php endif; ?>
+         <?php print $messages; ?>
+
                             	<?php print $content; ?>
                          	</div><!-- /content-inner -->
 				

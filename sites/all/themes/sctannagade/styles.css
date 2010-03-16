@@ -221,6 +221,10 @@ color: #333;
 font-size: 10px;
 }
 
+#container-top .links>li .last {
+border-right: 0px;
+}
+
 #container-top .links>li>a {
 	padding: 0px;
 	text-indent: -9999em;
@@ -296,3 +300,8 @@ font-size: 10px;
 	background: #fff url(images/back-footer.png) left top repeat-x;
 	}
 
+.messages {
+  margin: .75em 0 .75em;
+  padding: .5em 1em;
+  border-style:dotted;  
+}

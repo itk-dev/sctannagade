@@ -11,15 +11,11 @@ function sctannagade_theme(){
     ),
   );
 }
-?>
 
-<?php
 function sctannagade_preprocess_contact_mail_page(&$vars) {
   $vars['form_markup'] = drupal_render($vars['form']);
 }
-?> 
 
-<?php
 function sctannagade_user_profile_form($form) {
   $output = '';
 
@@ -34,4 +30,3 @@ function sctannagade_user_profile_form($form) {
   $output .= drupal_render($form);
   return $output;
 }
-?>
