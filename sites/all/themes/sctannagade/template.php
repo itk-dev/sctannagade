@@ -44,13 +44,14 @@ function sctannagade_preprocess_node(&$vars, $hook) {
   $vars['template_files'][] = 'node-'. $node->nid;
 
   if ($node->type == 'faste_brugere') {
-    $vars['scripts'][] = drupal_get_path('theme', 'sctannagade').'js/faste_brugere.js';
+     $tabs = array('test1', 'test2');
+     $vars['faste_brugere_tabs'] .= theme('item_list', $tabs);
   }
 }
 
 function sctannagade_preprocess_page(&$vars) {
   $node = $vars['node'];
   if ($node->type == 'faste_brugere') {
-     $vars[‘scripts’] .= '<script type="text/javascript" src=".drupal_get_path('theme', 'sctannagade').'/js/faste_brugere.js'."></script>';
+     $vars['scripts'] .= '<script type="text/javascript" src="/'.drupal_get_path('theme', 'sctannagade').'/js/faste_brugere.js'.'"></script>';
   }
 }

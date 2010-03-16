@@ -23,6 +23,21 @@ body {
 		background-position: center 30px;
 		}
 
+a:link {
+text-decoration: none;
+color: #333;
+}
+
+a:visited {
+text-decoration: none;
+color: #333;
+}
+
+a:hover {
+text-decoration: none;
+color: #8dc63f;
+}
+
 /**********************************************************
  *				TOPBAR
  **********************************************************/
