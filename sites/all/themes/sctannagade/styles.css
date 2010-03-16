@@ -96,26 +96,7 @@ float: right;
 	padding: 0px;
 	}
 
-/**********************************************************
- *				MENU
- **********************************************************/
 
-
-/** #menu {
-	height: 41px;
-	width: 802px;
-	background: #fff url(images/menu.png) no-repeat;
-	margin: 0px;
-	padding: 0px;
-}
-
-**/
-
-.menu {
-	height: 41px;
-	padding: 0px;
-	clear: both;
-}
 
 /**********************************************************
  *               Primary links
@@ -206,22 +187,23 @@ position: relative;
 clear: both;
 height: 20px;
 padding-top: 15px;
+padding-right: 7px;
 }
 
 #container-top .links>li {
 float: left;
 overflow: visible;
 position: relative;
-padding-right: 5px;
+margin-left: 3px;
+padding-right: 7px;
 border-right: 1px solid;
-border-color: #dbdbdb;
-margin-right: 5px;
+border-color: #8dc63f;
 font-family: arial;
 color: #333;
 font-size: 10px;
 }
 
-#container-top .links>li .last {
+#container-top .links .last {
 border-right: 0px;
 }
 
@@ -230,10 +212,32 @@ border-right: 0px;
 	text-indent: -9999em;
 	}
 
+#container-top .links a:link {
+text-decoration: none;
+color: #333;
+}
+
+#container-top .links a:visited {
+text-decoration: none;
+color: #333;
+}
+
+#container-top .links a:hover {
+text-decoration: none;
+color: #8dc63f;
+}
+
 
 /**********************************************************
  *				INDHOLD
  **********************************************************/
+
+#block-menu_block-1 {
+
+padding-bottom: 50px;
+
+}
+
 
 #container-content {
 	padding: 0px; 
