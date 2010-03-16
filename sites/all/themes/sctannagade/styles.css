@@ -358,3 +358,30 @@ color: #8dc63f;
   padding: .5em 1em;
   border-style:dotted;  
 }
+
+
+/*********************************************************
+ * Faste brugere 
+ *********************************************************/
+
+
+.js .node-type-faste-brugere .field-field-pictures {
+  display: none;
+}
+
+.js .node-type-faste-brugere .field-field-email {
+  display: none;
+}
+
+.js .node-type-faste-brugere #content-inner .item-list li {
+  cursor: pointer;
+}
+
+.js .node-type-faste-brugere .imagecache-faste_brugere_images {
+  display: none;
+}
+
+.node-type-faste-brugere .imagecache-faste_brugere_images_thumb {
+  display: none;
+}
+

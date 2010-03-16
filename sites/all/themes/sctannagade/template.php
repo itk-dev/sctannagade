@@ -44,18 +44,18 @@ function sctannagade_preprocess_node(&$vars, $hook) {
   $vars['template_files'][] = 'node-'. $node->nid;
   
   if ($node->type == 'faste_brugere') {
-    $tabs = array();
-    if ($node->field_description[0]['value'] == '') {
-      $tabs[] = t('Descripbtion');
+    $tabs = '<div class="item-list">';
+    if ($node->field_description[0]['value'] != '') {
+      $tabs .= '<li class="description">'. t('Description') .'</li>';
     }
     if (count($node->field_pictures[0]) > 1 ) {
-      $tabs[] = t('Pictures');
+      $tabs .= '<li class="pictures">'. t('Pictures') .'</li>';
     }
-    if ($node->field_pictures[0]['email'] != NULL) {
-      $tabs[] = t('E-mail');
+    if ($node->field_email[0]['email'] != NULL) {
+      $tabs .= '<li class="email"><a href="mailto:'. $node->field_email[0]['email'] .'">'. t('E-mail') .'</a></li>';
     }
-    $tabs = array('test1', 'test2');
-    $vars['faste_brugere_tabs'] .= theme('item_list', $tabs);
+    $tabs .= '</div>';
+    $vars['faste_brugere_tabs'] = $tabs;
   }
 }
 
