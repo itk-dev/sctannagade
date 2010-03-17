@@ -80,6 +80,7 @@ function sctannagade_preprocess_node(&$vars, $hook) {
   }
 }
 
+/*
 function sctannagade_preprocess_page(&$vars) {
   $node = $vars['node'];
   if ($node->type == 'faste_brugere') {
@@ -90,3 +91,4 @@ function sctannagade_preprocess_page(&$vars) {
   }
 
 }
+*/

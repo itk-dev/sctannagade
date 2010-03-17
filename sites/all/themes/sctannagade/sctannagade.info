@@ -37,6 +37,5 @@ stylesheets[all][] = design.css
 stylesheets[all][] = reset.css
 stylesheets[print][] = print.css
 
-
-
-
+scripts[] = js/lej_lokaler.js
+scripts[] = js/faste_brugere.js
