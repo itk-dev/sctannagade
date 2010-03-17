@@ -1,4 +1,3 @@
-
 .item-list ul li {
 	list-style: none;
 	margin:0;
@@ -377,20 +376,8 @@ color: #8dc63f;
 /*********************************************************
  * Faste brugere 
  *********************************************************/
-
-
-.js .node-type-faste-brugere .field-field-pictures {
-  display: none;
-}
-
-.js .node-type-faste-brugere .field-field-email {
-  display: none;
-}
-
-.js .node-type-faste-brugere #content-inner .item-list li {
-  cursor: pointer;
-}
-
+.js .node-type-faste-brugere .field-field-pictures, 
+.js .node-type-faste-brugere .field-field-email,
 .js .node-type-faste-brugere .imagecache-faste_brugere_images {
   display: none;
 }
@@ -399,3 +386,17 @@ color: #8dc63f;
   display: none;
 }
 
+/*********************************************************
+ * Faste brugere 
+ *********************************************************/
+.js .node-type-lej-lokaler .field-field-lokale-pictures,
+.js .node-type-lej-lokaler .field-field-lokale-overigt,
+.js .node-type-lej-lokaler .field-field-lokal-plantegning,
+.js .node-type-lej-lokaler .field-field-lokale-email,
+.js .node-type-lej-lokaler .imagecache-lej-lokaler {
+  display: none;
+}
+
+.node-type-lej-lokaler .imagecache-lej-lokaler-thumb {
+  display: none;
+}

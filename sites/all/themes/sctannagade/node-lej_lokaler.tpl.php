@@ -7,4 +7,8 @@
 
     <?php print $lej_lokaler_tabs; ?>
     <?php print $content; ?>
+
+    <div class="pictures content-pictures field-field-lokale-pictures">
+      <?php print views_embed_view('lej_lokaler_thumb', 'default', array($nid)); ?>
+    </div>
 <!-- /node -->
