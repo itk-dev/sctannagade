@@ -5,7 +5,8 @@
       </h2>
     <?php endif; ?>
  
-    <div id="faste-brugere-item-list">
-      <?php print $content; ?>
+    <?php print $content; ?>
+    <div id="lej-lokaler-item-list">
+      <?php print views_embed_view('lej_lokaler', 'default'); ?>    
     </div>
 <!-- /node -->

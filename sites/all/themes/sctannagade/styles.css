@@ -198,6 +198,14 @@ position: relative;
 /**********************************************************
  *               Secondary Links
  **********************************************************/
+
+#container-top #block-search-0
+{
+float: right;
+padding-top: 5px;
+padding-right: 10px;
+}
+
 			
 #container-top .links {
 clear: both;

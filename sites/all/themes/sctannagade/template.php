@@ -45,17 +45,38 @@ function sctannagade_preprocess_node(&$vars, $hook) {
   
   if ($node->type == 'faste_brugere') { // May be this should have been done in a theme function
     $tabs = '<div class="item-list"><ul>';
-    if ($node->field_description[0]['value'] != '') {
+    if (!empty($node->field_description[0]['value'])) {
       $tabs .= '<li class="description"><a href="#description">'. t('Description') .'</a></li>';
     }
-    if (count($node->field_pictures[0]) > 1 ) {
+    if (!empty($node->field_pictures[0]['view'])) {
       $tabs .= '<li class="pictures"><a href="#pictures">'. t('Pictures') .'</a></li>';
     }
-    if ($node->field_email[0]['email'] != NULL) {
+    if (!empty($node->field_email[0]['email'])) {
       $tabs .= '<li class="email"><a href="mailto:'. $node->field_email[0]['email'] .'">'. t('E-mail') .'</a></li>';
     }
     $tabs .= '</ul></div>';
     $vars['faste_brugere_tabs'] = $tabs;
+  }
+
+  if ($node->type == 'lej_lokaler') { // May be this should have been done in a theme function
+    $tabs = '<div class="item-list"><ul>';
+    if (!empty($node->field_lokale_description[0]['value'])) {
+      $tabs .= '<li class="description"><a href="#description">'. t('Description') .'</a></li>';
+    }
+    if (!empty($node->field_lokale_pictures[0]['view'])) {
+      $tabs .= '<li class="pictures"><a href="#pictures">'. t('Pictures') .'</a></li>';
+    }
+    if (!empty($node->field_lokal_plantegning[0]['view'])) {
+      $tabs .= '<li class="overview"><a href="#overview">'. t('Overview') .'</a></li>';
+    }
+    if (!empty($node->field_lokale_overigt[0])) {
+      $tabs .= '<li class="other"><a href="#other">'. t('Other') .'</a></li>';
+    }
+    if (!empty($node->field_lokale_email[0]['email'])) {
+      $tabs .= '<li class="email"><a href="mailto:'. $node->field_email[0]['email'] .'">'. t('E-mail') .'</a></li>';
+    }
+    $tabs .= '</ul></div>';
+    $vars['lej_lokaler_tabs'] = $tabs;
   }
 }
 

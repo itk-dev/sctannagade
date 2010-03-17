@@ -142,7 +142,7 @@ color: #8dc63f;
   padding: 0px 0px 15px 0px;
 }
 
-#container-content #content-inner #faste-brugere-item-list ul {
+#container-content #content-inner #faste-brugere-item-list ul, #container-content #content-inner  #lej-lokaler-item-list ul {
   margin-top: 15px;
   padding-left 4px;
 }
@@ -153,7 +153,30 @@ color: #8dc63f;
   list-style-image: url("images/ball.png");
 }
 
+#container-content #content-inner #lej-lokaler-item-list li {
+  margin-left: 15px;
+  list-style-image: url("images/ball.png");
+}
+
 #container-content #content-inner #faste-brugere-item-list a {
+  font-weight: bold;
   display: inline-block;
   margin-bottom: 2px;  
 }
+
+/*
+#container-content #content-inner #description {
+margin-left: -20px;
+padding: 20px;
+min-height: 185px;
+background: #FFF url(images/back-boks.jpg) left top no-repeat;
+}
+*/
+
+/*
+#container-content #content-inner .item-list li {
+list-style-image: url("images/back-boks-under.png");
+float:left;
+clear: both;
+}
+*/

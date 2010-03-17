@@ -4,8 +4,7 @@
         <?php print $unpublished; ?>
       </h2>
     <?php endif; ?>
- 
-    <div id="faste-brugere-item-list">
-      <?php print $content; ?>
-    </div>
+
+    <?php print $lej_lokaler_tabs; ?>
+    <?php print $content; ?>
 <!-- /node -->

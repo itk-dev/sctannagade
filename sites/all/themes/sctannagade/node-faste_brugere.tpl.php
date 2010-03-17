@@ -15,12 +15,4 @@
     <div id="faste-bruger-list">
       <?php //print views_embed_view('faste_brugere', 'overview'); ?> 
     </div>
-
-    <?php if ($terms): ?>
-      <div class="node-terms"><?php print $terms; ?></div>
-    <?php endif; ?>
-
-    <?php if ($links): ?>
-      <div class="node-links"><?php print $links; ?></div>
-    <?php endif; ?>
 <!-- /node -->
