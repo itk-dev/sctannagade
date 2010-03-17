@@ -8,8 +8,12 @@
     <?php print $faste_brugere_tabs; ?>
     <?php print $content; ?>
 
-    <div class="field-field-pictures">
+    <div class="content-pictures field-field-pictures">
       <?php print views_embed_view('faste_brugere_thumb', 'default', array($nid)); ?>
+    </div>
+
+    <div id="faste-bruger-list">
+      <?php //print views_embed_view('faste_brugere', 'overview'); ?> 
     </div>
 
     <?php if ($terms): ?>

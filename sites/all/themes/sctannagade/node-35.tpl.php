@@ -4,17 +4,10 @@
         <?php print $unpublished; ?>
       </h2>
     <?php endif; ?>
-
-    <?php if ($submitted): ?>
-      <div class="node-submitted"><?php print $submitted; ?></div>
-    <?php endif; ?>
-
+ 
+    <div id="faste-brugere-item-list">
     <?php print $content; ?>
-
-    <?php
-      // Insert view, with list of "faste brugere"
-      print views_embed_view('faste_brugere');      
-    ?>
+    </div>
 
     <?php if ($terms): ?>
       <div class="node-terms"><?php print $terms; ?></div>

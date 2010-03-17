@@ -44,7 +44,7 @@ function sctannagade_preprocess_node(&$vars, $hook) {
   $vars['template_files'][] = 'node-'. $node->nid;
   
   if ($node->type == 'faste_brugere') { // May be this should have been done in a theme function
-    $tabs = '<div class="item-list">';
+    $tabs = '<div class="item-list"><ul>';
     if ($node->field_description[0]['value'] != '') {
       $tabs .= '<li class="description"><a href="#description">'. t('Description') .'</a></li>';
     }
@@ -54,7 +54,7 @@ function sctannagade_preprocess_node(&$vars, $hook) {
     if ($node->field_email[0]['email'] != NULL) {
       $tabs .= '<li class="email"><a href="mailto:'. $node->field_email[0]['email'] .'">'. t('E-mail') .'</a></li>';
     }
-    $tabs .= '</div>';
+    $tabs .= '</ul></div>';
     $vars['faste_brugere_tabs'] = $tabs;
   }
 }
