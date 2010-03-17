@@ -43,13 +43,13 @@ function sctannagade_preprocess_node(&$vars, $hook) {
   $node = $vars['node'];
   $vars['template_files'][] = 'node-'. $node->nid;
   
-  if ($node->type == 'faste_brugere') {
+  if ($node->type == 'faste_brugere') { // May be this should have been done in a theme function
     $tabs = '<div class="item-list">';
     if ($node->field_description[0]['value'] != '') {
-      $tabs .= '<li class="description">'. t('Description') .'</li>';
+      $tabs .= '<li class="description"><a href="#description">'. t('Description') .'</a></li>';
     }
     if (count($node->field_pictures[0]) > 1 ) {
-      $tabs .= '<li class="pictures">'. t('Pictures') .'</li>';
+      $tabs .= '<li class="pictures"><a href="#pictures">'. t('Pictures') .'</a></li>';
     }
     if ($node->field_email[0]['email'] != NULL) {
       $tabs .= '<li class="email"><a href="mailto:'. $node->field_email[0]['email'] .'">'. t('E-mail') .'</a></li>';

@@ -9,9 +9,7 @@
     <?php print $content; ?>
 
     <div class="field-field-pictures">
-      <?php 
-	print views_embed_view('faste_brugere_thumb', 'default', array($nid)); 
-      ?>
+      <?php print views_embed_view('faste_brugere_thumb', 'default', array($nid)); ?>
     </div>
 
     <?php if ($terms): ?>

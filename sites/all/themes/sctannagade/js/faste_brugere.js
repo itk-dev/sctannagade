@@ -15,6 +15,7 @@ $(document).ready( function() {
           }
 	  $('.field-field-description').show();
 	  tab_menu.data('displayed', 'description');
+          return false;
 	});
     }
     if (item.hasClass('pictures')) {
@@ -24,7 +25,11 @@ $(document).ready( function() {
           }
           $('.field-field-pictures').show();
           tab_menu.data('displayed', 'pictures');
+	  return false;
         });
+    }
+    if (item.hasClass('email')) {
+       item.click( function() { return false; });
     }
   });
 
