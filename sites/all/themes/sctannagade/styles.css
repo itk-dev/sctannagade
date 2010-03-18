@@ -387,7 +387,7 @@ color: #8dc63f;
 }
 
 /*********************************************************
- * Faste brugere 
+ * Lej lokaler
  *********************************************************/
 .js .node-type-lej-lokaler .field-field-lokale-pictures,
 .js .node-type-lej-lokaler .field-field-lokale-overigt,
@@ -397,6 +397,7 @@ color: #8dc63f;
   display: none;
 }
 
-.node-type-lej-lokaler .imagecache-lej-lokaler-thumb {
+.node-type-lej-lokaler .content-pictures,
+.node-type-lej-lokaler .pane-node-title .pane-content {
   display: none;
 }
