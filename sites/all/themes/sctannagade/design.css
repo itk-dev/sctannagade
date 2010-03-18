@@ -164,19 +164,41 @@ color: #8dc63f;
   margin-bottom: 2px;  
 }
 
-/*
-#container-content #content-inner #description {
+#container-content #content #content-inner h2 {
+  font-family: arial;
+  font-weight: bold;
+  color: #333;
+  font-size: 13px;
+  padding: 0px 0px 2px 0px;
+}
+
+#container-content #content #content-inner .boks {
 margin-left: -20px;
 padding: 20px;
 min-height: 185px;
 background: #FFF url(images/back-boks.jpg) left top no-repeat;
 }
-*/
 
-/*
-#container-content #content-inner .item-list li {
-list-style-image: url("images/back-boks-under.png");
-float:left;
+
+#container-content #content-inner .item-list {
+
+margin-left: -16px;
 clear: both;
+height: 40px;
 }
-*/
+
+#container-content #content-inner .item-list li {
+
+padding: 0px;
+float: left;
+overflow: visible;
+position: relative;
+}
+
+#container-content #content-inner .item-list li > a {
+background: url("images/back-boks-under.png") no-repeat scroll 0 0 #FFF;
+display: block;
+height: 40px;
+padding: 0px;
+width: 130px;
+}

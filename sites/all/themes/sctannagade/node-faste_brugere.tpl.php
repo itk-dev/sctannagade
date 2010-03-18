@@ -4,8 +4,9 @@
         <?php print $unpublished; ?>
       </h2>
     <?php endif; ?>
-
+    <h2>
     <?php print $title; ?>
+    </h2>
     <?php print $faste_brugere_tabs; ?>
 
     <div class="boks">
