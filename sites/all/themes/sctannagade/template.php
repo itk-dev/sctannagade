@@ -79,16 +79,3 @@ function sctannagade_preprocess_node(&$vars, $hook) {
     $vars['lej_lokaler_tabs'] = $tabs;
   }
 }
-
-/*
-function sctannagade_preprocess_page(&$vars) {
-  $node = $vars['node'];
-  if ($node->type == 'faste_brugere') {
-    $vars['scripts'] .= '<script type="text/javascript" src="/'.drupal_get_path('theme', 'sctannagade').'/js/faste_brugere.js'.'"></script>';
-  } 
-  else if ($node->type == 'lej_lokaler') {
-    $vars['scripts'] .= '<script type="text/javascript" src="/'.drupal_get_path('theme', 'sctannagade').'/js/lej_lokaler.js'.'"></script>';
-  }
-
-}
-*/
