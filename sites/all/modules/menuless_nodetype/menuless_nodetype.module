@@ -1,0 +1,41 @@
+<?php
+// $Id: menuless_nodetype.module,v 1.1.4.1 2009/04/17 15:38:31 henrrrik Exp $
+
+/**
+ * @file
+ * Makes menu configurable per node type.
+ */
+
+/**
+ * Implementation of hook_form_alter().
+ */
+function menuless_nodetype_form_alter(&$form, $form_state, $form_id) {
+  if ($form_id == 'node_type_form' && $form['#node_type']->type) {
+    $form += menuless_nodetype_node_type_form($form['#node_type']->type);
+  }
+
+  if (ereg('_node_form$', $form_id)) {
+    if (is_array($active_setting = variable_get('menuless_node_type_options_'.$form['type']['#value'], 'active'))) {
+      if (!in_array('active', $active_setting)) {
+        unset($form['menu']);
+      }
+    }
+  }
+}
+
+function menuless_nodetype_node_type_form($node_type) {
+  $form['menuless_node_type'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Menu settings'),
+    '#collapsible' => TRUE,
+    '#collapsed' => TRUE,
+    '#description' => t('Configure whether or not this content type can be inserted into menus.'),
+    );
+  $form['menuless_node_type']['menuless_node_type_options'] = array(
+    '#type' => 'checkboxes',
+    '#options' => array('active' => t('Use this content type in menus')),
+    '#default_value' => variable_get('menuless_node_type_options_'. $node_type, array('active')),
+    );
+  return $form;
+}
+

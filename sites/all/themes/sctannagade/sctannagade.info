@@ -35,6 +35,7 @@ features[] = secondary_links
 stylesheets[all][] = styles.css
 stylesheets[all][] = design.css
 stylesheets[all][] = reset.css
+stylesheets[all][] = news.css
 stylesheets[print][] = print.css
 
 scripts[] = js/lej_lokaler.js
