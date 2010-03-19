@@ -37,7 +37,13 @@
             </div></div>
           <?php endif; ?>
          <?php print $messages; ?>
+
 	 <?php print $content_top; ?>
+         <?php if ($current_month): ?>
+           <div class="current-month">
+	     <?php print $current_month; ?>
+           </div>
+         <?php endif; ?>
                             	<?php print $content; ?>
                          	</div><!-- /content-inner -->
 				

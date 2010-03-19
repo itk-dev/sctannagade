@@ -31,6 +31,26 @@ function sctannagade_user_profile_form($form) {
   return $output;
 }
 
+
+/**
+ * Override or insert variables into the page templates.
+ *
+ * @param $vars
+ *   An array of variables to pass to the theme template.
+ */
+function sctannagade_preprocess_page(&$vars) {
+  // Get url
+  if (module_exists('path')) {
+    $path_alias = drupal_get_path_alias($_GET['q']);
+    $alias_parts = explode('/', $path_alias);
+    // If url contains 'nyheder' add $current_month to $vars
+    if (in_array('nyheder', $alias_parts)) {       
+      $raw = (count($alias_parts) > 1 ? $alias_parts[1] : date('Ym'));
+      $vars['current_month'] = date('F Y', mktime(0, 0, 0, substr($raw, -2)+1, 0, substr($raw, 0, 4)));
+    }
+  }
+}
+
 /**
  * Override or insert variables into the node templates.
  *
