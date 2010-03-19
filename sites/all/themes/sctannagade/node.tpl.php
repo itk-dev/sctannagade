@@ -5,12 +5,6 @@
       </h2>
     <?php endif; ?>
 
-    <?php if ($submitted): ?>
-      <div class="node-submitted"><?php print $submitted; ?></div>
-    <?php endif; ?>
-
-    <?php print $picture; ?>
-
     <?php print $content; ?>
 
     <?php if ($terms): ?>

@@ -147,7 +147,7 @@ position: relative;
 	width: 181px;
 	}
 	
-	#regions .links .menu-442>a.active-trail,
+	#regions .links .menu-442>a.active,
 	#regions .links .menu-442>a:hover
 	 {
 		background-position: 0 -41px;
@@ -158,7 +158,7 @@ position: relative;
 	background-position: -181px 0;
 	}
 
-	#regions .links .menu-314>a.active-trail,
+	#regions .links .menu-314>a.active,
 	#regions .links .menu-314>a:hover {
 		background-position: -181px -41px;
 		}
@@ -169,7 +169,7 @@ position: relative;
 	background-position: -341px 0;
 	}
 	
-	#regions .links .menu-315>a.active-trail,
+	#regions .links .menu-315>a.active,
 	#regions .links .menu-315>a:hover {
 		background-position: -341px -41px;
 		}
@@ -179,7 +179,7 @@ position: relative;
 	background-position: -475px 0;
 	}
 
-	#regions .links .menu-316>a.active-trail,
+	#regions .links .menu-316>a.active,
 	#regions .links .menu-316>a:hover {
 		background-position: -475px -41px;
 		}
@@ -189,8 +189,9 @@ position: relative;
 	background-position: -680px 0;
 	}
 
-#regions .links .menu-317>a.active-trail, #regions .links .menu-317>a:hover {
-	background-position: -680px -41px;
+	#regions .links .menu-317>a.active, 
+    	#regions .links .menu-317>a:hover {
+		background-position: -680px -41px;
 	}
 
 

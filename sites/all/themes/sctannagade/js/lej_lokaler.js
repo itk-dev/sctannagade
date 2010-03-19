@@ -30,7 +30,7 @@ $(document).ready( function() {
     }
     if (item.hasClass('overview')) {
 	item.click( function() {
-	  target = $('#overview');
+	  target = $('#floorplan');
 	  sctannagade_faste_bruger_tab(target);
 	  return false;
 	});

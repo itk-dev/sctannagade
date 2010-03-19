@@ -67,7 +67,7 @@ function sctannagade_preprocess_node(&$vars, $hook) {
       $tabs .= '<li class="pictures"><a href="#pictures">'. t('Pictures') .'</a></li>';
     }
     if (!empty($node->field_lokal_plantegning[0]['view'])) {
-      $tabs .= '<li class="overview"><a href="#overview">'. t('Overview') .'</a></li>';
+      $tabs .= '<li class="overview"><a href="#floorplan">'. t('Floor plan') .'</a></li>';
     }
     if (!empty($node->field_lokale_overigt[0])) {
       $tabs .= '<li class="other"><a href="#other">'. t('Other') .'</a></li>';
