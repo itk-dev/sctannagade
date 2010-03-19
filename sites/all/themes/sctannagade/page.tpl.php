@@ -37,7 +37,7 @@
             </div></div>
           <?php endif; ?>
          <?php print $messages; ?>
-
+	 <?php print $content_top; ?>
                             	<?php print $content; ?>
                          	</div><!-- /content-inner -->
 				
