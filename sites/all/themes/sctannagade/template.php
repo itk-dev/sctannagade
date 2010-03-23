@@ -66,13 +66,13 @@ function sctannagade_preprocess_node(&$vars, $hook) {
   if ($node->type == 'faste_brugere') { // May be this should have been done in a theme function
     $tabs = '<div class="item-list"><ul>';
     if (!empty($node->field_description[0]['value'])) {
-      $tabs .= '<li class="description"><a href="#description">'. t('Description') .'</a></li>';
+      $tabs .= '<li class="description active"><a href="#description">'. t('Description') .'</a><span></span></li>';
     }
     if (!empty($node->field_pictures[0]['view'])) {
-      $tabs .= '<li class="pictures"><a href="#pictures">'. t('Pictures') .'</a></li>';
+      $tabs .= '<li class="pictures"><a href="#pictures">'. t('Pictures') .'</a><span></span></li>';
     }
     if (!empty($node->field_email[0]['email'])) {
-      $tabs .= '<li class="email"><a href="mailto:'. $node->field_email[0]['email'] .'">'. t('E-mail') .'</a></li>';
+      $tabs .= '<li class="email"><a href="mailto:'. $node->field_email[0]['email'] .'"><span></span></a></li>';
     }
     $tabs .= '</ul></div>';
     $vars['faste_brugere_tabs'] = $tabs;
@@ -81,19 +81,19 @@ function sctannagade_preprocess_node(&$vars, $hook) {
   if ($node->type == 'lej_lokaler') { // May be this should have been done in a theme function
     $tabs = '<div class="item-list"><ul>';
     if (!empty($node->field_lokale_description[0]['value'])) {
-      $tabs .= '<li class="description"><a href="#description">'. t('Description') .'</a></li>';
+      $tabs .= '<li class="description active"><a href="#description">'. t('Description') .'</a><span></span></li>';
     }
     if (!empty($node->field_lokale_pictures[0]['view'])) {
-      $tabs .= '<li class="pictures"><a href="#pictures">'. t('Pictures') .'</a></li>';
+      $tabs .= '<li class="pictures"><a href="#pictures">'. t('Pictures') .'</a><span></span></li>';
     }
     if (!empty($node->field_lokal_plantegning[0]['view'])) {
-      $tabs .= '<li class="overview"><a href="#floorplan">'. t('Floor plan') .'</a></li>';
+      $tabs .= '<li class="overview"><a href="#floorplan">'. t('Floor plan') .'</a><span></span></li>';
     }
     if (!empty($node->field_lokale_overigt[0])) {
-      $tabs .= '<li class="other"><a href="#other">'. t('Other') .'</a></li>';
+      $tabs .= '<li class="other"><a href="#other">'. t('Other') .'</a><span></span></li>';
     }
     if (!empty($node->field_lokale_email[0]['email'])) {
-      $tabs .= '<li class="email"><a href="mailto:'. $node->field_lokale_email[0]['email'] .'">'. t('E-mail') .'</a></li>';
+      $tabs .= '<li class="email"><a href="mailto:'. $node->field_lokale_email[0]['email'] .'"><span></span></a></li>';
     }
     $tabs .= '</ul></div>';
     $vars['lej_lokaler_tabs'] = $tabs;

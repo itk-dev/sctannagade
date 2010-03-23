@@ -4,6 +4,7 @@
         <?php print $unpublished; ?>
       </h2>
     <?php endif; ?>
+<div id="tabs">
     <h2>
     <?php print $title; ?>
     </h2>
@@ -16,4 +17,5 @@
     <div class="content-pictures field-field-pictures">
       <?php print views_embed_view('faste_brugere_thumb', 'default', array($nid)); ?>
     </div>
+</div>
 <!-- /node -->

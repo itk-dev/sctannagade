@@ -90,7 +90,7 @@
   margin-bottom: 2px;  
 }
 
-#container-content #content #content-inner h2 {
+#container-content #content-inner #tabs h2 {
   font-family: arial;
   font-weight: bold;
   color: #333;
@@ -98,7 +98,7 @@
   padding: 0px 0px 2px 0px;
 }
 
-#container-content #content #content-inner .boks {
+#container-content #content-inner #tabs .boks {
 margin-left: -20px;
 padding: 20px;
 min-height: 185px;
@@ -106,27 +106,81 @@ background: transparent url(images/back-boks.png) left top no-repeat;
 }
 
 
-#container-content #content-inner .item-list {
+#container-content #content-inner #tabs .item-list {
 
 margin-left: -16px;
 clear: both;
 height: 40px;
 }
 
-#container-content #content-inner .item-list li {
 
-padding: 0px;
+#container-content #content-inner #tabs .item-list li {
+background: transparent url(images/back-boks-felt.png) no-repeat scroll top left;
+margin-top: 17px;
+margin-left: -15px;
 float: left;
-overflow: visible;
-position: relative;
+display: block;
+height: 19px;
+padding: 12px 0 0 0;
+width: 144px;
+text-align: center;
 }
 
-#container-content #content-inner .item-list li > a {
-background: transparent url(images/back-boks-felt.png) no-repeat scroll top right;
-display: block;
-height: 31px;
-padding: 0px;
-margin-top: 16px;
+#container-content #content-inner #tabs .item-list .description {
+margin-left: -5px;
+}
+
+#container-content #content-inner #tabs .item-list .email {
+background: transparent url(images/email.png) no-repeat scroll top left;
+margin-top: 20px;
+margin-left: -15px;
+float: left;
+height: 26px;
+padding: 12px 0 0 0;
+width: 50px;
+text-align: center;
+}
+
+#container-content #content-inner #tabs .item-list .email span {
+background: none;
+width: 50px;
+padding: 5px 20px 0px 20px;
+}
+
+#container-content #content-inner #tabs .item-list li > a {
 width: 144px;
 overflow: hidden;
+font-family: arial;
+font-size: 13px;
+text-transform: uppercase;
+}
+
+#container-content #content-inner #tabs .item-list .active {
+background-position: 0px -31px;
+position: relative;
+color: #000;
+}
+
+#container-content #content-inner #tabs .item-list li > a:link {
+text-decoration:none;
+color: #FFF;
+}
+
+#container-content #content-inner #tabs .item-list li > a:visited {
+text-decoration:none;
+color: #FFF;
+}
+
+#container-content #content-inner #tabs .item-list li > a:hover {
+text-decoration:underline;
+color: #FFF;
+}
+
+#container-content #content-inner #tabs .item-list li span {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:transparent url(images/kugler.png) no-repeat scroll left center;
+	padding: 2px 0 0 7px;
+	margin: 2px 0 0 5px;
 }
