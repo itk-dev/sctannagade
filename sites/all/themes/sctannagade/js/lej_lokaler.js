@@ -39,7 +39,7 @@ $(document).ready( function() {
 	  return false;
         });
     }
-    if (item.hasClass('overview')) {
+    if (item.hasClass('floorplan')) {
 	item.click( function() {
 	  target = $('#floorplan');
 	  sctannagade_lej_lokaler_tab(target, $(this));
