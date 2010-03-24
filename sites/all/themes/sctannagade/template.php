@@ -66,7 +66,7 @@ function sctannagade_preprocess_node(&$vars, $hook) {
   if ($node->type == 'faste_brugere') { // May be this should have been done in a theme function
     $tabs = '<div class="item-list"><ul>';
     if (!empty($node->field_description[0]['value'])) {
-      $tabs .= '<li class="description active"><a href="#description">'. t('Description') .'</a><span></span></li>';
+      $tabs .= '<li class="description active"><a class="active" href="#description">'. t('Description') .'</a><span></span></li>';
     }
     if (!empty($node->field_pictures[0]['view'])) {
       $tabs .= '<li class="pictures"><a href="#pictures">'. t('Pictures') .'</a><span></span></li>';
@@ -81,7 +81,7 @@ function sctannagade_preprocess_node(&$vars, $hook) {
   if ($node->type == 'lej_lokaler') { // May be this should have been done in a theme function
     $tabs = '<div class="item-list"><ul>';
     if (!empty($node->field_lokale_description[0]['value'])) {
-      $tabs .= '<li class="description active"><a href="#description">'. t('Description') .'</a><span></span></li>';
+      $tabs .= '<li class="description active"><a class="active" href="#description">'. t('Description') .'</a><span></span></li>';
     }
     if (!empty($node->field_lokale_pictures[0]['view'])) {
       $tabs .= '<li class="pictures"><a href="#pictures">'. t('Pictures') .'</a><span></span></li>';

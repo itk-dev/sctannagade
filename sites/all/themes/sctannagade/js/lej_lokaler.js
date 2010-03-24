@@ -2,11 +2,15 @@ $(document).ready( function() {
   var tab_menu = $('#content-inner .item-list'); 
   var tabs = $('li', tab_menu);
 
-  function sctannagade_faste_bruger_tab(target, item) {
+  function sctannagade_lej_lokaler_tab(target, current) {
     // Add/remove active class
-    tab_menu.data('active').removeClass('active');
-    tab_menu.data('active', item);
-    item.addClass('active');
+    var item = tab_menu.data('active');
+    item.removeClass('active');
+    $('a', item).removeClass('active');
+    // Add to current
+    tab_menu.data('active', current);
+    current.addClass('active');
+    $('a', current).addClass('active');
  
     // Change tab content
     tab_menu.data('displayed').hide();
@@ -24,28 +28,28 @@ $(document).ready( function() {
     if (item.hasClass('description')) {
 	item.click( function() {  	  
 	  target = $('#description');
-	  sctannagade_faste_bruger_tab(target, $(this));
+	  sctannagade_lej_lokaler_tab(target, $(this));
           return false;
 	});
     }
     if (item.hasClass('pictures')) {
         item.click( function() {
 	  target = $('.content-pictures');
-	  sctannagade_faste_bruger_tab(target, $(this));
+	  sctannagade_lej_lokaler_tab(target, $(this));
 	  return false;
         });
     }
     if (item.hasClass('overview')) {
 	item.click( function() {
 	  target = $('#floorplan');
-	  sctannagade_faste_bruger_tab(target, $(this));
+	  sctannagade_lej_lokaler_tab(target, $(this));
 	  return false;
 	});
     }
     if (item.hasClass('other')) {
 	item.click( function() {
 	  target = $('#other');
-	  sctannagade_faste_bruger_tab(target, $(this));
+	  sctannagade_lej_lokaler_tab(target, $(this));
 	  return false;
 	});
     }

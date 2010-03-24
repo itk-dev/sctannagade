@@ -3,11 +3,15 @@ $(document).ready( function() {
   var tab_menu = $('#content-inner .item-list'); 
   var tabs = $('li', tab_menu);
   
-  function sctannagade_faste_bruger_tab(target, item) {
+  function sctannagade_faste_bruger_tab(target, current) {
     // Add/remove active class
-    tab_menu.data('active').removeClass('active');
-    tab_menu.data('active', item);
-    item.addClass('active');
+    var item = tab_menu.data('active');
+    item.removeClass('active');
+    $('a', item).removeClass('active');
+    // Add to current
+    tab_menu.data('active', current);
+    current.addClass('active');
+    $('a', current).addClass('active');
  
     // Change tab content
     tab_menu.data('displayed').hide();

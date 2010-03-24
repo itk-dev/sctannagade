@@ -215,10 +215,8 @@ padding-right: 7px;
 }
 
 #container-top .links>li {
-float: left;
 overflow: visible;
 position: relative;
-margin-left: 3px;
 padding-right: 7px;
 border-right: 1px solid;
 border-color: #8dc63f;
