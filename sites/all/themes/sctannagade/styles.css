@@ -1,96 +1,114 @@
-.item-list ul li {
+/**********************************************************
+ *				BASIC
+ **********************************************************/
+
+.item-list ul li
+{
 	list-style: none;
 	margin:0;
-	} 
+} 
  
-html {
+html
+{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	color: #333
-	}
+}
 	
-body {
+body
+{
 	background: #fff;
 	margin:0
-	}	
+}	
 	
-	body.annagade {
-		background: #fff;
-		}
-
-	body.admin {
-		background-position: center 30px;
-		}
-
-a:link {
-text-decoration: none;
-color: #333;
+body.annagade
+{
+	background: #fff;
 }
 
-a:visited {
-text-decoration: none;
-color: #333;
+body.admin
+{
+	background-position: center 30px;
 }
 
-a:hover {
-text-decoration: none;
-color: #8dc63f;
+a:link
+{
+	text-decoration: none;
+	color: #333;
+}
+
+a:visited
+{
+	text-decoration: none;
+	color: #333;
+}
+
+a:hover
+{
+	text-decoration: none;
+	color: #8dc63f;
 }
 
 /**********************************************************
  *				TOPBAR
  **********************************************************/
 
-#aak-topbar {
+#aak-topbar 
+{
 	height: 75px;
 	width: 100%;
 	background: #fff url(images/aakb-aakbar-back.png) left top repeat-x;
-	}
+}
 	
-	#aak-topbar-inner {
-		width: 960px;
-		margin: 0 auto;
-		text-align: right;
-		background: transparent url(images/aakb-aakbar-logo.jpg) 0 12px no-repeat;
-		}
+#aak-topbar-inner 
+{
+	width: 960px;
+	margin: 0 auto;
+	text-align: right;
+	background: transparent url(images/aakb-aakbar-logo.jpg) 0 12px no-repeat;
+}
 		
-		#aak-topbar-inner a {
-			line-height: 69px;
-			padding: 0 16px 0 0;
-			}
+#aak-topbar-inner a
+{
+	line-height: 69px;
+	padding: 0 16px 0 0;
+}
 
 /**********************************************************
  *				HEADER
  **********************************************************/
 
-
-
-#container {
-  width: 802px; 
+#container
+{
+ 	width: 802px; 
 	margin: 0 auto;
 	background: #fff;	
-	}
+}
 
-#container-inner {
+#container-inner
+{
 	margin: 0 0 5px 0; 
 	background: transparent url(images/back-top.png) center bottom no-repeat;
 	min-height: 300px;
 	overflow: hidden;
-	}
-
-#container-top {
-float: right;
 }
 
-#site-name {
+#container-top
+{
+	float: right;
+}
+
+#site-name
+{
 	float:left;
 	height:70px;
 	overflow:hidden;
 	position:absolute;
 	width:250px;
-	}
+}
 
-#site-name span {
+#site-name span
+{
 	-moz-background-clip:border;
 	-moz-background-inline-policy:continuous;
 	-moz-background-origin:padding;
@@ -103,150 +121,171 @@ float: right;
 	padding: 0px;
 }
 
-#banner {
+#banner
+{
 	height: 200px;
 	width: 780px;
 	background: #fff url(images/banner.png) no-repeat;
 	margin: 70px 10px 0px 10px; 
 	padding: 0px;
-	}
+}
 
 
 
 /**********************************************************
- *               Primary links
+ *                   PRIMARY LINKS
  **********************************************************/
 			
-#regions .links {
+#regions .links
+{
 	clear: both;
 	height: 41px;
 }
 
-#regions .links>li {
-float: left;
-overflow: visible;
-position: relative;
+#regions .links>li 
+{
+	float: left;
+	overflow: visible;
+	position: relative;
 }
 
-#regions ul.links li {
+#regions ul.links li
+{
 	display:inline;
 	list-style-type:none;
 	padding: 0;
 }
 
-#regions .links>li>a {
+#regions .links>li>a
+{
 	background: #fff url(images/menu.png) 0 0 no-repeat;
 	display: block;
 	height: 41px;
 	line-height: 40px;
 	padding: 0px;
 	text-indent: -9999em;
-	}
+}
 
-#regions .links .menu-442>a {
+#regions .links .menu-442>a
+{
 	width: 181px;
-	}
+}
 	
-	#regions .links .menu-442>a.active,
-	#regions .links .menu-442>a:hover
-	 {
-		background-position: 0 -41px;
-		}
+#regions .links .menu-442>a.active, 
+#regions .links .menu-442>a:hover
+{
+	background-position: 0 -41px;
+}
 	
-#regions .links .menu-314>a {
+#regions .links .menu-314>a 
+{
 	width: 160px;
 	background-position: -181px 0;
-	}
+}
 
-	#regions .links .menu-314>a.active,
-	#regions .links .menu-314>a:hover {
-		background-position: -181px -41px;
-		}
+#regions .links .menu-314>a.active,
+#regions .links .menu-314>a:hover
+{
+	background-position: -181px -41px;
+}
 
 
-#regions .links .menu-315>a {
+#regions .links .menu-315>a 
+{
 	width: 134px;
 	background-position: -341px 0;
-	}
+}
 	
-	#regions .links .menu-315>a.active,
-	#regions .links .menu-315>a:hover {
-		background-position: -341px -41px;
-		}
+#regions .links .menu-315>a.active,
+#regions .links .menu-315>a:hover
+{
+	background-position: -341px -41px;
+}
 	
-#regions .links .menu-316>a {
+#regions .links .menu-316>a
+{
 	width: 205px;
 	background-position: -475px 0;
-	}
+}
 
-	#regions .links .menu-316>a.active,
-	#regions .links .menu-316>a:hover {
-		background-position: -475px -41px;
-		}
+#regions .links .menu-316>a.active,
+#regions .links .menu-316>a:hover
+{
+	background-position: -475px -41px;
+}
 
-#regions .links .menu-317>a {
+#regions .links .menu-317>a
+{
 	width: 121px;
 	background-position: -680px 0;
-	}
+}
 
-	#regions .links .menu-317>a.active, 
-    	#regions .links .menu-317>a:hover {
-		background-position: -680px -41px;
-	}
+#regions .links .menu-317>a.active, 
+#regions .links .menu-317>a:hover
+{
+	background-position: -680px -41px;
+}
 
 
 /**********************************************************
- *               Secondary Links
+ *               SECONDARY LINKS
  **********************************************************/
 
 #container-top #block-search-0
 {
-float: right;
-padding-top: 5px;
-padding-right: 10px;
+	float: right;
+	padding-top: 5px;
+	padding-right: 10px;
 }
 
 			
-#container-top .links {
-clear: both;
-height: 20px;
-padding-top: 15px;
-padding-right: 7px;
+#container-top .links
+{
+	clear: both;
+	height: 20px;
+	padding-top: 15px;
+	padding-right: 7px;
 }
 
-#container-top .links>li {
-overflow: visible;
-position: relative;
-padding-right: 7px;
-border-right: 1px solid;
-border-color: #8dc63f;
-font-family: arial;
-color: #333;
-font-size: 10px;
+#container-top .links>li
+{
+	overflow: visible;
+	position: relative;
+	padding-right: 7px;
+	border-right: 1px solid;
+	border-color: #8dc63f;
+	font-family: arial;
+	color: #333;
+	font-size: 10px;
 }
 
-#container-top .links .last {
-border-right: 0px;
+#container-top .links .last
+{
+	border-right: 0px;
 }
 
-#container-top .links>li>a {
+#container-top .links>li>a
+{
 	padding: 0px;
 	text-indent: -9999em;
-	}
-
-#container-top .links a:link {
-text-decoration: none;
-color: #333;
 }
 
-#container-top .links a:visited {
-text-decoration: none;
-color: #333;
+#container-top .links a:link
+{
+	text-decoration: none;
+	color: #333;
 }
 
-#container-top .links a:hover {
-text-decoration: none;
-color: #8dc63f;
+#container-top .links a:visited
+{
+	text-decoration: none;
+	color: #333;
+}
+
+#container-top .links a:hover
+{
+	text-decoration: none;
+	color: #8dc63f;
 }
 
 
@@ -254,66 +293,72 @@ color: #8dc63f;
  *				INDHOLD
  **********************************************************/
 
-#block-menu_block-1 .content {
-
-border-bottom: 1px solid; 
-color: #CCC;
-padding-bottom: 10px;
-margin-bottom: 15px;
+#block-menu_block-1 .content
+{
+	border-bottom: 1px solid; 
+	color: #CCC;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
 }
 
-#block-menu_block-1>h2 {
-
-  font-family: arial;
-  font-weight: bold;
-  color: #333;
-  font-size: 13px;
-  padding: 0px 0px 15px 0px;
+#block-menu_block-1>h2
+{
+	font-family: arial;
+	font-weight: bold;
+	color: #333;
+	font-size: 13px;
+	padding: 0px 0px 15px 0px;
 }
 
-#block-menu_block-1 .menu .leaf {
-
-margin-left: 15px;
-padding-bottom: 3px;
-list-style-image: url("images/ball.png");
-
+#block-menu_block-1 .menu .leaf
+{
+	margin-left: 15px;
+	padding-bottom: 3px;
+	list-style-image: url("images/ball.png");
 }
 
-#block-menu_block-1 .menu a:link {
-text-decoration: none;
-color: #333;
+#block-menu_block-1 .menu a:link
+{
+	text-decoration: none;
+	color: #333;
 }
 
-#block-menu_block-1 .menu a:visited {
-text-decoration: none;
-color: #333;
+#block-menu_block-1 .menu a:visited
+{
+	text-decoration: none;
+	color: #333;
 }
 
-#block-menu_block-1 .menu a:hover {
-text-decoration: none;
-color: #8dc63f;
+#block-menu_block-1 .menu a:hover
+{
+	text-decoration: none;
+	color: #8dc63f;
 }
 
-#container-content {
+#container-content
+{
 	padding: 0px; 
 	background: transparent url(images/back-content.png) center top no-repeat;
 	min-height: 300px;
 	overflow: hidden;
-	}
-
-#container-content #content-inner h2 {
-  font-size: 120%;
-  font-weight: bold;
-  margin-bottom: 4px;
 }
 
-#content {
+#container-content #content-inner h2
+{
+	font-size: 120%;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+#content
+{
 	float: left;
 	width: 555px;
 	margin: 30px 10px 20px 25px;
 }
 
-#sidebar {
+#sidebar
+{
 	float: right;
 	width: 180px;
 	border-left: 1px solid;
@@ -321,32 +366,36 @@ color: #8dc63f;
 	padding: 0px 15px 30px;
 	margin-top: 30px;
 	margin-bottom: 10px;
-	}
+}
 
 /**********************************************************
  *				BANNERS
  **********************************************************/
 
 
-#container-banners {
+#container-banners
+{
 	padding: 10px 10px 0px 10px; 
 	min-height: 130px;
 	overflow: hidden;
 }
 
-#banners {
+#banners
+{
 	clear: both;
 	margin: 0;
 	padding: 0;
 }
 
-#banners #banner_0{
+#banners #banner_0
+{
        width: 385px;
        height: 103px;
        float: left;
 }
 
-#banners #banner_1 {
+#banners #banner_1
+{
        width: 385px;
        height: 102px;
        margin-left: 10px;
@@ -357,46 +406,54 @@ color: #8dc63f;
  *				BUNDEN
  **********************************************************/
 
-#footer {
+#footer
+{
 	height: 132px;
 	width: 100%;
 	padding-top: 10px;
 	text-align: center;
 	background: #fff url(images/back-footer.png) left top repeat-x;
-	}
+}
 
-.messages {
-  margin: .75em 0 .75em;
-  padding: .5em 1em;
-  border-style:dotted;  
+.messages
+{
+	margin: .75em 0 .75em;
+	padding: .5em 1em;
+	border-style:dotted;  
 }
 
 
 /*********************************************************
  * Faste brugere 
  *********************************************************/
+
 .js .node-type-faste-brugere .field-field-pictures, 
 .js .node-type-faste-brugere .field-field-email,
-.js .node-type-faste-brugere .imagecache-faste_brugere_images {
-  display: none;
+.js .node-type-faste-brugere .imagecache-faste_brugere_images
+{
+	display: none;
 }
 
-.node-type-faste-brugere .imagecache-faste_brugere_images_thumb {
-  display: none;
+.node-type-faste-brugere .imagecache-faste_brugere_images_thumb
+{
+	display: none;
 }
 
 /*********************************************************
  * Lej lokaler
  *********************************************************/
+
 .js .node-type-lej-lokaler .field-field-lokale-pictures,
 .js .node-type-lej-lokaler .field-field-lokale-overigt,
 .js .node-type-lej-lokaler .field-field-lokal-plantegning,
 .js .node-type-lej-lokaler .field-field-lokale-email,
-.js .node-type-lej-lokaler .imagecache-lej-lokaler {
-  display: none;
+.js .node-type-lej-lokaler .imagecache-lej-lokaler 
+{
+	display: none;
 }
 
 .node-type-lej-lokaler .content-pictures,
-.node-type-lej-lokaler .pane-node-title .pane-content {
-  display: none;
+.node-type-lej-lokaler .pane-node-title .pane-content
+{
+	display: none;
 }

@@ -1,74 +1,145 @@
 #block-views-News_list-block_1
 {
-  padding: 0px 0px 10px 0px;
+	padding: 0px 0px 10px 0px;
 }
 
 #block-views-News_list-block_1>h2
 {
-  font-family: arial;
-  font-weight: bold;
-  color: #333;
-  font-size: 13px;
-  padding: 0px 0px 15px 0px;
+	font-family: arial;
+	font-weight: bold;
+	color: #333;
+	font-size: 13px;
+	padding: 0px 0px 15px 0px;
 }
 
 #block-views-News_list-block_1 .content .view .view-content .views-row
 {
-  padding: 0px 0px 35px 0px;
+	padding: 0px 0px 35px 0px;
 }
 
 #block-views-News_list-block_1 .content .view .view-content .views-row .views-field-created
 {
-  font-family: arial;
-  font-style: italic;
-  color: #333;
-  font-size: 10px;
-  padding: 0px 0px 2px 0px;
+	font-family: arial;
+	font-style: italic;
+	color: #333;
+	font-size: 10px;
+	padding: 0px 0px 2px 0px;
 }
 
 #block-views-News_list-block_1 .content .view .view-content .views-row .views-field-title
 {
-  font-family: arial;
-  font-weight: bold;
-  color: #333;
-  font-size: 11px;
-  padding: 0px 0px 2px 0px;
+	font-family: arial;
+	font-weight: bold;
+	color: #333;
+	font-size: 11px;
+	padding: 0px 0px 2px 0px;
 }
 
 #block-views-News_list-block_1 .content .view .view-content .views-row .views-field-field-teaser-value
 {
-  font-family: arial;
-  color: #333;
-  font-size: 11px;
-  padding: 0px 0px 2px 0px;
+	font-family: arial;
+	color: #333;
+	font-size: 11px;
+	padding: 0px 0px 2px 0px;
 }
 
 #block-views-News_list-block_1 .content .view .view-content .views-row .views-field-nothing
 {
-  float: right;
-  font-family: arial;
-  color: #333;
-  font-size: 11px;
-  padding: 0px 0px 2px 0px;
+	float: right;
+	font-family: arial;
+	color: #333;
+	font-size: 11px;
+	padding: 0px 0px 2px 0px;
 }
 
 #block-views-News_list-block_1 .content .view .view-content .views-row .views-field-nothing a:link
 {
-font-style:italic;
-text-decoration: none;
-color: #8dc63f;
+	font-style:italic;
+	text-decoration: none;
+	color: #8dc63f;
 }
 
 #block-views-News_list-block_1 .content .view .view-content .views-row .views-field-nothing a:visited
 {
-font-style:italic;
-text-decoration: none;
-color: #8dc63f;
+	font-style:italic;
+	text-decoration: none;
+	color: #8dc63f;
 }
 
 #block-views-News_list-block_1 .content .view .view-content .views-row .views-field-nothing a:hover
 {
-font-style:italic;
-text-decoration:underline;
-color: #8dc63f;
+	font-style:italic;
+	text-decoration:underline;
+	color: #8dc63f;
+}
+
+#block-views-News_list-block_2 .view .view-content .views-summary li
+{
+	border-color: #8DC63F;
+	border-right: 1px solid #8DC63F;
+	color: #333;
+	font-size: 10px;
+	padding-right: 7px;
+	margin-right: 7px;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.current-month
+{
+	background:transparent url(images/back-news-top.jpg) no-repeat scroll left center;
+	height: 49px;
+	padding-left: 15px;
+	margin-left: -15px;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #FFF;
+	padding-top: 3px;
+	margin-top: -3px;
+}
+
+.view-display-id-page_2 .view-content .item-list li,
+.view-display-id-panel_pane_1 .view-content .item-list li
+{
+	background:transparent url(images/back-news.jpg) no-repeat scroll left top;
+	padding: 5px 15px 30px 15px;
+	margin-left: -15px;
+}
+
+.view-display-id-page_2 .view-content .item-list .views-field-field-news-picture-fid,
+.view-display-id-panel_pane_1 .view-content .item-list .views-field-field-news-picture-fid
+{
+	float: left;
+	padding-right: 30px;
+	padding-bottom: 10px;
+}
+
+.view-display-id-page_2 .view-content .item-list .views-field-title,
+.view-display-id-panel_pane_1 .view-content .item-list .views-field-title
+{
+	font-weight: bold;
+}
+
+.view-display-id-page_2 .view-content .item-list a:link,
+.view-display-id-panel_pane_1 .view-content .item-list a:link
+{
+	font-style:italic;
+	text-decoration: none;
+	color: #8dc63f;
+}
+
+.view-display-id-page_2 .view-content .item-list .views-row a:visited,
+.view-display-id-panel_pane_1 .view-content .item-list .views-row a:visited
+{
+	font-style:italic;
+	text-decoration: none;
+	color: #8dc63f;
+}
+
+.view-display-id-page_2 .view-content .item-list a:hover,
+.view-display-id-panel_pane_1 .view-content .item-list a:hover
+{
+	font-style:italic;
+	text-decoration:underline;
+	color: #8dc63f;
 }
