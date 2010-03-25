@@ -32,11 +32,10 @@ features[] = search
 features[] = secondary_links
 
 
-stylesheets[all][] = styles.css
-stylesheets[all][] = design.css
-stylesheets[all][] = reset.css
-stylesheets[all][] = news.css
-stylesheets[print][] = print.css
+stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/design.css
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/news.css
 
 scripts[] = js/lej_lokaler.js
 scripts[] = js/faste_brugere.js

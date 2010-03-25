@@ -30,13 +30,13 @@
 }
 #block-views-Statement-block_1 .content .view .view-content .views-row
 {
-	background: #fff url(images/back-statement-top.png) left top no-repeat;
+	background: #fff url(../images/back-statement-top.png) left top no-repeat;
 	padding-top: 10px;
 }
 
 #block-views-Statement-block_1 .content .view .view-content .views-row .views-field-body
 {
-	background: #fff url(images/back-statement-middle.png) left top repeat-y;
+	background: #fff url(../images/back-statement-middle.png) left top repeat-y;
 	text-align: center;
 	padding: 0px 20px 0px 10px;
 	font-family: "Arial Narrow", Arial, sans-serif;
@@ -48,7 +48,7 @@
 {
 	height: 50px;
 	padding: 5px 20px 0px 10px;
-	background: #fff url(images/back-statement-bottom.png) left top no-repeat;
+	background: #fff url(../images/back-statement-bottom.png) left top no-repeat;
 	text-align: right;
 	font-family: arial, sans-serif;
 	font-size: 11px;
@@ -80,14 +80,14 @@
 {
 	margin-left: 15px;
 	margin-bottom: 8px;
-	list-style-image: url("images/ball.png");
+	list-style-image: url("../images/ball.png");
 }
 
 #container-content #content-inner #lej-lokaler-item-list li
 {
 	margin-left: 15px;
 	margin-bottom: 8px;
-	list-style-image: url("images/ball.png");
+	list-style-image: url("../images/ball.png");
 }
 
 #container-content #content-inner #faste-brugere-item-list a
@@ -111,7 +111,7 @@
 	margin-left: -20px;
 	padding: 20px;
 	min-height: 185px;
-	background: transparent url(images/back-boks.png) left top no-repeat;
+	background: transparent url(../images/back-boks.png) left top no-repeat;
 	width: 540px;
 	position: relative;
 }
@@ -125,7 +125,7 @@
 
 #container-content #content-inner #tabs .item-list li
 {
-	background: transparent url(images/back-boks-felt.png) no-repeat scroll top left;
+	background: transparent url(../images/back-boks-felt.png) no-repeat scroll top left;
 	margin-top: 17px;
 	margin-left: -15px;
 	float: left;
@@ -143,7 +143,7 @@
 
 #container-content #content-inner #tabs .item-list .email
 {
-	background: transparent url(images/email.png) no-repeat scroll top left;
+	background: transparent url(../images/email.png) no-repeat scroll top left;
 	margin-top: 22px;
 	margin-left: -15px;
 	float: left;
@@ -203,12 +203,12 @@
 	-moz-background-clip:border;
 	-moz-background-inline-policy:continuous;
 	-moz-background-origin:padding;
-	background:transparent url(images/kugler.png) no-repeat scroll left center;
+	background:transparent url(../images/kugler.png) no-repeat scroll left center;
 	padding: 2px 0 0 7px;
 	margin: 2px 0 0 5px;
 }
 
 #container-content #content-inner #tabs .item-list .active span
 {
-	background:transparent url(images/gron-kugler.png) no-repeat scroll left center;
+	background:transparent url(../images/gron-kugler.png) no-repeat scroll left center;
 }

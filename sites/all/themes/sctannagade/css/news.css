@@ -87,7 +87,7 @@
 
 .current-month
 {
-	background:transparent url(images/back-news-top.jpg) no-repeat scroll left center;
+	background:transparent url(../images/back-news-top.jpg) no-repeat scroll left center;
 	height: 49px;
 	padding-left: 15px;
 	margin-left: -15px;
@@ -101,7 +101,7 @@
 .view-display-id-page_2 .view-content .item-list li,
 .view-display-id-panel_pane_1 .view-content .item-list li
 {
-	background:transparent url(images/back-news.jpg) no-repeat scroll left top;
+	background:transparent url(../images/back-news.jpg) no-repeat scroll left top;
 	padding: 5px 15px 30px 15px;
 	margin-left: -15px;
 }

@@ -57,7 +57,7 @@ a:hover
 {
 	height: 75px;
 	width: 100%;
-	background: #fff url(images/aakb-aakbar-back.png) left top repeat-x;
+	background: #fff url(../images/aakb-aakbar-back.png) left top repeat-x;
 }
 	
 #aak-topbar-inner 
@@ -65,7 +65,7 @@ a:hover
 	width: 960px;
 	margin: 0 auto;
 	text-align: right;
-	background: transparent url(images/aakb-aakbar-logo.jpg) 0 12px no-repeat;
+	background: transparent url(../images/aakb-aakbar-logo.jpg) 0 12px no-repeat;
 }
 		
 #aak-topbar-inner a
@@ -88,7 +88,7 @@ a:hover
 #container-inner
 {
 	margin: 0 0 5px 0; 
-	background: transparent url(images/back-top.png) center bottom no-repeat;
+	background: transparent url(../images/back-top.png) center bottom no-repeat;
 	min-height: 300px;
 	overflow: hidden;
 }
@@ -112,7 +112,7 @@ a:hover
 	-moz-background-clip:border;
 	-moz-background-inline-policy:continuous;
 	-moz-background-origin:padding;
-	background:transparent url(images/back-title.png) no-repeat scroll left top;
+	background:transparent url(../images/back-title.png) no-repeat scroll left top;
 	height:70px;
 	left:0;
 	position:absolute;
@@ -125,7 +125,7 @@ a:hover
 {
 	height: 200px;
 	width: 780px;
-	background: #fff url(images/banner.png) no-repeat;
+	background: #fff url(../images/banner.png) no-repeat;
 	margin: 70px 10px 0px 10px; 
 	padding: 0px;
 }
@@ -158,7 +158,7 @@ a:hover
 
 #regions .links>li>a
 {
-	background: #fff url(images/menu.png) 0 0 no-repeat;
+	background: #fff url(../images/menu.png) 0 0 no-repeat;
 	display: block;
 	height: 41px;
 	line-height: 40px;
@@ -314,7 +314,7 @@ a:hover
 {
 	margin-left: 15px;
 	padding-bottom: 3px;
-	list-style-image: url("images/ball.png");
+	list-style-image: url("../images/ball.png");
 }
 
 #block-menu_block-1 .menu a:link
@@ -338,7 +338,7 @@ a:hover
 #container-content
 {
 	padding: 0px; 
-	background: transparent url(images/back-content.png) center top no-repeat;
+	background: transparent url(../images/back-content.png) center top no-repeat;
 	min-height: 300px;
 	overflow: hidden;
 }
@@ -412,7 +412,7 @@ a:hover
 	width: 100%;
 	padding-top: 10px;
 	text-align: center;
-	background: #fff url(images/back-footer.png) left top repeat-x;
+	background: #fff url(../images/back-footer.png) left top repeat-x;
 }
 
 .messages
