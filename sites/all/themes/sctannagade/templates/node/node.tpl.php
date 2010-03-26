@@ -5,6 +5,7 @@
       </h2>
     <?php endif; ?>
 
+    <h2><?php print $title; ?></h2>
     <?php print $content; ?>
 
     <?php if ($terms): ?>

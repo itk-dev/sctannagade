@@ -337,7 +337,7 @@ a:hover
 
 #container-content
 {
-	padding: 0px; 
+	padding: 0 0 10px; 
 	background: transparent url(../images/back-content.png) center top no-repeat;
 	min-height: 300px;
 	overflow: hidden;
@@ -375,7 +375,7 @@ a:hover
 
 #container-banners
 {
-	padding: 10px 10px 0px 10px; 
+	padding: 10px; 
 	min-height: 130px;
 	overflow: hidden;
 }

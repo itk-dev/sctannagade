@@ -85,9 +85,9 @@
 
 #container-content #content-inner #lej-lokaler-item-list li
 {
-	margin-left: 15px;
-	margin-bottom: 8px;
+	margin: 0 0 8px 15px;
 	list-style-image: url("../images/ball.png");
+	font-weight: bold;
 }
 
 #container-content #content-inner #faste-brugere-item-list a
@@ -211,4 +211,39 @@
 #container-content #content-inner #tabs .item-list .active span
 {
 	background:transparent url(../images/gron-kugler.png) no-repeat scroll left center;
+}
+
+/**********************************************************
+ *				SITEMAP
+ **********************************************************/
+
+#site-map .content .menu .expanded
+{
+	list-style-image: none;
+	list-style-type: none;
+	padding: 10px 0px 5px 0px;
+	font-weight: bold;
+}
+
+#site-map .content .menu .expanded .menu .leaf
+{
+	font-weight: normal;
+	padding: 0px;
+}
+
+#site-map .content .menu .leaf
+{
+	padding: 10px 0px 5px 0px;
+	font-weight: bold;
+}
+
+#site-map ul.menu
+{
+	padding-left: 0px;
+}
+
+#site-map ul.menu ul.menu .leaf
+{
+	margin-left: 15px;
+	list-style-image: url("../images/ball.png");
 }

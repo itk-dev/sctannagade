@@ -49,7 +49,7 @@
 	font-family: arial;
 	color: #333;
 	font-size: 11px;
-	padding: 0px 0px 2px 0px;
+	padding: 5px 0px 2px 0px;
 }
 
 #block-views-News_list-block_1 .content .view .view-content .views-row .views-field-nothing a:link
@@ -102,7 +102,7 @@
 .view-display-id-panel_pane_1 .view-content .item-list li
 {
 	background:transparent url(../images/back-news.jpg) no-repeat scroll left top;
-	padding: 5px 15px 30px 15px;
+	padding: 5px 15px 20px 15px;
 	margin-left: -15px;
 }
 
@@ -119,6 +119,14 @@
 {
 	font-weight: bold;
 }
+
+.view-display-id-page_2 .view-content .item-list .views-field-created,
+.view-display-id-panel_pane_1 .view-content .item-list .views-field-created
+{
+	font-style:italic;
+	font-size: 10px;
+}
+
 
 .view-display-id-page_2 .view-content .item-list a:link,
 .view-display-id-panel_pane_1 .view-content .item-list a:link
