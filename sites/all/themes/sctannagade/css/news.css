@@ -85,6 +85,12 @@
 	margin-bottom: 30px;
 }
 
+#block-views-News_list-block_1 .content .more-link {
+	text-align: left;
+	font-weight: bold;
+}
+
+
 .current-month
 {
 	background:transparent url(../images/back-news-top.jpg) no-repeat scroll left center;
