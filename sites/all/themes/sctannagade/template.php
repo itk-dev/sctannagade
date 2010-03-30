@@ -44,9 +44,41 @@ function sctannagade_preprocess_page(&$vars) {
     $path_alias = drupal_get_path_alias($_GET['q']);
     $alias_parts = explode('/', $path_alias);
     // If url contains 'nyheder' add $current_month to $vars
-    if (in_array('nyheder', $alias_parts)) {       
+    if (in_array('nyheder', $alias_parts)) {
       $raw = (count($alias_parts) > 1 ? $alias_parts[1] : date('Ym'));
       $vars['current_month'] = date('F Y', mktime(0, 0, 0, substr($raw, -2)+1, 0, substr($raw, 0, 4)));
+    }
+
+    // Create calendar navigation links
+    if (in_array('kalender', $alias_parts)) {
+      $current = $alias_parts[count($alias_parts)-1];
+      if (preg_match('/^\d{4}-W\d{1,2}$/', $current)) {	
+	$year = substr($current, 0, 4);
+	$week = substr($current, 6);
+      }
+      else {
+	$year = date('Y');
+	$week = date('W') + 1;
+      }
+      // Find next week
+      if ($week == 52) {
+	$next = ($year + 1) .'-W1';
+      }
+      else {
+	$next = $year .'-W'. ($week + 1);
+      }
+
+      // Find prev week
+      if ($week == 1) {
+	$prev = ($year - 1) .'-W52';
+      }
+      else {
+	$prev = $year .'-W'. ($week - 1);
+      }
+      $vars['calendar_navigation'] = TRUE;
+      $vars['calendar_navigation_prev'] = l(t('Previous week'), $alias_parts[0] .'/'. $prev);
+      $vars['calendar_navigation_this'] = l(t('This week'), $alias_parts[0] .'/'. $year .'-W'. $week);
+      $vars['calendar_navigation_next'] = l(t('Next week'), $alias_parts[0] .'/'. $next);
     }
   }
 }
@@ -66,10 +98,10 @@ function sctannagade_preprocess_node(&$vars, $hook) {
   if ($node->type == 'faste_brugere') { // May be this should have been done in a theme function
     $tabs = '<div class="item-list"><ul>';
     if (!empty($node->field_description[0]['value'])) {
-      $tabs .= '<li class="description active"><a class="active" href="#description">'. t('Description') .'</a><span></span></li>';
+      $tabs .= '<li class="description active">' .l(t('Description'), '#description', array('attributes' => array('class' => 'active'))). '<span></span></li>';
     }
     if (!empty($node->field_pictures[0]['view'])) {
-      $tabs .= '<li class="pictures"><a href="#pictures">'. t('Pictures') .'</a><span></span></li>';
+      $tabs .= '<li class="pictures">' .l(t('Pictures'), '#pictures'). '<span></span></li>';
     }
     if (!empty($node->field_email[0]['email'])) {
       $tabs .= '<li class="email"><a href="mailto:'. $node->field_email[0]['email'] .'"><span></span></a></li>';
@@ -81,16 +113,16 @@ function sctannagade_preprocess_node(&$vars, $hook) {
   if ($node->type == 'lej_lokaler') { // May be this should have been done in a theme function
     $tabs = '<div class="item-list"><ul>';
     if (!empty($node->field_lokale_description[0]['value'])) {
-      $tabs .= '<li class="description active"><a class="active" href="#description">'. t('Description') .'</a><span></span></li>';
+      $tabs .= '<li class="description active">' .l(t('Description'), '#description', array('attributes' => array('class' => 'active'))). '<span></span></li>';
     }
     if (!empty($node->field_lokale_pictures[0]['view'])) {
-      $tabs .= '<li class="pictures"><a href="#pictures">'. t('Pictures') .'</a><span></span></li>';
+      $tabs .= '<li class="pictures">' .l(t('Pictures'), '#pictures'). '<span></span></li>';
     }
     if (!empty($node->field_lokal_plantegning[0]['view'])) {
-      $tabs .= '<li class="floorplan"><a href="#floorplan">'. t('Floor plan') .'</a><span></span></li>';
+      $tabs .= '<li class="floorplan">' .l(t('Floor plan'), '#floorplan'). '<span></span></li>';
     }
     if (!empty($node->field_lokale_overigt[0])) {
-      $tabs .= '<li class="other"><a href="#other">'. t('Other') .'</a><span></span></li>';
+      $tabs .= '<li class="other">' .l(t('Other'), '#other'). '<span></span></li>';
     }
     if (!empty($node->field_lokale_email[0]['email'])) {
       $tabs .= '<li class="email"><a href="mailto:'. $node->field_lokale_email[0]['email'] .'"><span></span></a></li>';
