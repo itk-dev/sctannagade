@@ -457,3 +457,17 @@ a:hover
 {
 	display: none;
 }
+
+
+/*************************************************************
+ * Kalender
+ *************************************************************/
+.calendar-navigation {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+h3 .date-display-single {
+	font-size: 140%;
+	font-weight: bold;
+}

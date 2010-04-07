@@ -36,6 +36,7 @@ stylesheets[all][] = css/styles.css
 stylesheets[all][] = css/design.css
 stylesheets[all][] = css/reset.css
 stylesheets[all][] = css/news.css
+stylesheets[all][] = css/kalender.css
 
 scripts[] = js/lej_lokaler.js
 scripts[] = js/faste_brugere.js

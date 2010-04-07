@@ -77,7 +77,7 @@ function sctannagade_preprocess_page(&$vars) {
       }
       $vars['calendar_navigation'] = TRUE;
       $vars['calendar_navigation_prev'] = l(t('Previous week'), $alias_parts[0] .'/'. $prev);
-      $vars['calendar_navigation_this'] = l(t('This week'), $alias_parts[0] .'/'. $year .'-W'. $week);
+      $vars['calendar_navigation_this'] = l(t('This week'), $alias_parts[0] .'/'. date('Y') .'-W'. (date('W')+1), array('attributes' => array('class' => 'current')));
       $vars['calendar_navigation_next'] = l(t('Next week'), $alias_parts[0] .'/'. $next);
     }
   }

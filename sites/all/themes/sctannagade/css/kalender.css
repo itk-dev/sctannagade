@@ -1,0 +1,34 @@
+.calendar-navigation a:link
+{
+	color: #ccc;
+	text-decoration: none;
+}
+
+.calendar-navigation a:visited
+{
+	color: #ccc;
+	text-decoration: none;
+}
+
+.calendar-navigation a:hover
+{
+	color: #8DC63F;
+	text-decoration: none;
+}
+
+h3 .date-display-single {
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #FFF;
+}
+
+.panel-display .panel-pane .view-Kalender .item-list h3
+{
+	background:transparent url(../images/back-news-top.jpg) no-repeat scroll left center;
+	height: 49px;
+	padding-left: 15px;
+	margin-left: -15px;
+	padding-top: 3px;
+	margin-top: -3px;
+
+}
