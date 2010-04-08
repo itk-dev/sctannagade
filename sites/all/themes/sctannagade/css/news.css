@@ -1,9 +1,11 @@
-#block-views-News_list-block_1
+#block-views-News_list-block_1,
+#block-views-Kalender-block_1
 {
 	padding: 0px 0px 10px 0px;
 }
 
-#block-views-News_list-block_1>h2
+#block-views-News_list-block_1>h2,
+#block-views-Kalender-block_1>h2
 {
 	font-family: arial;
 	font-weight: bold;
@@ -12,12 +14,14 @@
 	padding: 0px 0px 15px 0px;
 }
 
-#block-views-News_list-block_1 .content .view .view-content .views-row
+#block-views-News_list-block_1 .content .view .view-content .views-row,
+#block-views-Kalender-block_1 .content .view .view-content .views-row
 {
 	padding: 0px 0px 35px 0px;
 }
 
-#block-views-News_list-block_1 .content .view .view-content .views-row .views-field-created
+#block-views-News_list-block_1 .content .view .view-content .views-row .views-field-created,
+#block-views-Kalender-block_1 .content .view .view-content .views-row .views-field-created
 {
 	font-family: arial;
 	font-style: italic;
@@ -26,7 +30,8 @@
 	padding: 0px 0px 2px 0px;
 }
 
-#block-views-News_list-block_1 .content .view .view-content .views-row .views-field-title
+#block-views-News_list-block_1 .content .view .view-content .views-row .views-field-title,
+#block-views-Kalender-block_1 .content .view .view-content .views-row .views-field-title
 {
 	font-family: arial;
 	font-weight: bold;
@@ -85,7 +90,9 @@
 	margin-bottom: 30px;
 }
 
-#block-views-News_list-block_1 .content .more-link {
+#block-views-News_list-block_1 .content .more-link,
+#block-views-Kalender-block_1 .content .more-link
+{
 	text-align: left;
 	font-weight: bold;
 }
