@@ -53,7 +53,58 @@ h3 .date-display-separator
 	margin-left: -15px;
 	padding-top: 3px;
 	margin-top: -3px;
+}
 
+.view-Kalender .view-content .item-list .views-field-title
+{
+	padding-left: 102px;
+	padding-right: 150px;
+	font-weight: bold;
+}
 
+.view-Kalender .view-content .item-list .views-field-field-cal-date-start-value
+{
+	position: absolute;
+}
 
+.view-Kalender .view-content .item-list .views-field-tid
+{
+	padding-left: 102px;
+	padding-right: 150px;
+}
+
+.view-Kalender .view-content .item-list .views-field-tid-1
+{
+	padding-left: 102px;
+	padding-right: 150px;
+}
+
+.view-Kalender .current-date
+{
+	background:transparent url(../images/today_small.png) no-repeat scroll right center;
+	padding-left: 15px;
+	margin-left: -15px;
+	padding-top: 50px;
+	margin-top: -50px;
+	display: block;
+	position: absolute;
+	z-index: 1;
+	height: 125px;
+	width: 550px;
+}
+
+.view-Kalender .description .container-inline-date
+{
+	padding-top: 5px;
+	display: inline-block;
+}
+
+.view-Kalender .views-widget #edit-type-wrapper
+{
+	padding-top: 15px;
+}
+
+.view-Kalender .view-filters
+{
+	height: 100px;
 }

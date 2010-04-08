@@ -46,7 +46,8 @@ function sctannagade_preprocess_page(&$vars) {
     // If url contains 'nyheder' add $current_month to $vars
     if (in_array('nyheder', $alias_parts)) {
       $raw = (count($alias_parts) > 1 ? $alias_parts[1] : date('Ym'));
-      $vars['current_month'] = date('F Y', mktime(0, 0, 0, substr($raw, -2)+1, 0, substr($raw, 0, 4)));
+      $time = mktime(0, 0, 0, substr($raw, -2)+1, 0, substr($raw, 0, 4));
+      $vars['current_month'] = date_format_date(new DateTime(date('Y-m-d', $time)), 'custom', 'F Y');
     }
 
     // Create calendar navigation links
