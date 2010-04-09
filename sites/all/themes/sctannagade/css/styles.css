@@ -177,14 +177,14 @@ a:hover
 	background-position: 0 -41px;
 }
 	
-#regions .links .menu-314>a 
+#regions .links .menu-794>a 
 {
 	width: 160px;
 	background-position: -181px 0;
 }
 
-#regions .links .menu-314>a.active,
-#regions .links .menu-314>a:hover
+#regions .links .menu-794>a.active,
+#regions .links .menu-794>a:hover
 {
 	background-position: -181px -41px;
 }
@@ -458,6 +458,58 @@ a:hover
 	display: none;
 }
 
+/*********************************************************
+ * Li navigation
+ *********************************************************/
+.li-nav
+{
+	border-top: 2px solid #EEE;
+	padding-top: 8px;
+}
+
+.li-nav ul
+{
+	width: 550px;
+	min-height: 40px;
+}
+
+.li-nav ul li
+{
+	float: left;
+	padding: 0 8px;
+	border-right: 2px solid #666;
+}
+
+.li-nav ul li a
+{
+	color:#666;
+}
+
+.li-nav ul li a.active, 
+.li-nav ul li a:hover
+{
+	color:#8DC63F;
+}
+
+.li-nav ul li a:hover
+{
+	text-decoration:underline;
+}
+
+.li-nav ul li.views-row-first
+{
+	padding-left: 0px;
+}
+
+.li-nav ul li.views-row-last
+{
+	border:none;
+}
+
+.li-nav ul li a:hover.active
+{
+	text-decoration:none;
+} 
 
 /*************************************************************
  * Kalender

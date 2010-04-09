@@ -4,10 +4,13 @@
         <?php print $unpublished; ?>
       </h2>
     <?php endif; ?>
-<div id="tabs">
-    <?php print $lej_lokaler_tabs; ?>
-    <div class="boks">
-    <?php print $content; ?>
+    <div id="tabs">
+      <?php print $lej_lokaler_tabs; ?>
+      <div class="boks">
+        <?php print $content; ?>
+      </div>
     </div>
-</div>
+   <div id="lej-lokaler-nav" class="li-nav">
+     <?php print views_embed_view('lej_lokaler', 'default'); ?>
+   </div>
 <!-- /node -->
