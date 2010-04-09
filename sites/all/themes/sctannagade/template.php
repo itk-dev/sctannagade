@@ -109,7 +109,7 @@ function sctannagade_preprocess_views_view(&$vars) {
     $alias_parts = explode('/', $path_alias);
 
     // Create calendar navigation links
-    if (in_array('kalender', $alias_parts)) {
+    if (in_array('kalender', $alias_parts) && $vars['exposed']) {
       $current = $alias_parts[count($alias_parts)-1];
       if (preg_match('/^\d{4}-W\d{1,2}$/', $current)) {	
 	$year = substr($current, 0, 4);
