@@ -35,8 +35,8 @@ features[] = secondary_links
 stylesheets[all][] = css/styles.css
 stylesheets[all][] = css/design.css
 stylesheets[all][] = css/reset.css
-stylesheets[all][] = css/news.css
 stylesheets[all][] = css/kalender.css
+stylesheets[all][] = css/news.css
 
 scripts[] = js/jquery.url.packed.js
 scripts[] = js/lej_lokaler.js

@@ -39,11 +39,6 @@
          <?php print $messages; ?>
 
 	 <h2><?php print t('Kalender for sct. anna gade'); ?></h2>
-         <?php if ($calendar_navigation): ?>
-           <div class="calendar-navigation">
-	      <?php print $calendar_navigation_prev; ?> < <?php print $calendar_navigation_this; ?> > <?php print $calendar_navigation_next; ?>
-           </div>
-         <?php endif; ?>
                             	<?php print $content; ?>
                          	</div><!-- /content-inner -->
 				

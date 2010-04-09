@@ -49,38 +49,6 @@ function sctannagade_preprocess_page(&$vars) {
       $time = mktime(0, 0, 0, substr($raw, -2)+1, 0, substr($raw, 0, 4));
       $vars['current_month'] = date_format_date(new DateTime(date('Y-m-d', $time)), 'custom', 'F Y');
     }
-
-    // Create calendar navigation links
-    if (in_array('kalender', $alias_parts)) {
-      $current = $alias_parts[count($alias_parts)-1];
-      if (preg_match('/^\d{4}-W\d{1,2}$/', $current)) {	
-	$year = substr($current, 0, 4);
-	$week = substr($current, 6);
-      }
-      else {
-	$year = date('Y');
-	$week = date('W') + 1;
-      }
-      // Find next week
-      if ($week == 52) {
-	$next = ($year + 1) .'-W1';
-      }
-      else {
-	$next = $year .'-W'. ($week + 1);
-      }
-
-      // Find prev week
-      if ($week == 1) {
-	$prev = ($year - 1) .'-W52';
-      }
-      else {
-	$prev = $year .'-W'. ($week - 1);
-      }
-      $vars['calendar_navigation'] = TRUE;
-      $vars['calendar_navigation_prev'] = l(t('Previous week'), $alias_parts[0] .'/'. $prev);
-      $vars['calendar_navigation_this'] = l(t('This week'), $alias_parts[0] .'/'. date('Y') .'-W'. (date('W')+1), array('attributes' => array('class' => 'current')));
-      $vars['calendar_navigation_next'] = l(t('Next week'), $alias_parts[0] .'/'. $next);
-    }
   }
 }
 
@@ -130,5 +98,47 @@ function sctannagade_preprocess_node(&$vars, $hook) {
     }
     $tabs .= '</ul></div>';
     $vars['lej_lokaler_tabs'] = $tabs;
+  }
+}
+
+
+function sctannagade_preprocess_views_view(&$vars) {
+
+  if (module_exists('path')) {
+    $path_alias = drupal_get_path_alias($_GET['q']);
+    $alias_parts = explode('/', $path_alias);
+
+    // Create calendar navigation links
+    if (in_array('kalender', $alias_parts)) {
+      $current = $alias_parts[count($alias_parts)-1];
+      if (preg_match('/^\d{4}-W\d{1,2}$/', $current)) {	
+	$year = substr($current, 0, 4);
+	$week = substr($current, 6);
+      }
+      else {
+	$year = date('Y');
+	$week = date('W') + 1;
+      }
+      // Find next week
+      if ($week == 52) {
+	$next = ($year + 1) .'-W1';
+      }
+      else {
+	$next = $year .'-W'. ($week + 1);
+      }
+
+      // Find prev week
+      if ($week == 1) {
+	$prev = ($year - 1) .'-W52';
+      }
+      else {
+	$prev = $year .'-W'. ($week - 1);
+      }
+      $calendar_navigation_prev = l(t('Previous week'), $alias_parts[0] .'/'. $prev);
+      $calendar_navigation_this = l(t('This week'), $alias_parts[0] .'/'. date('Y') .'-W'. (date('W')+1), array('attributes' => array('class' => 'current')));
+      $calendar_navigation_next = l(t('Next week'), $alias_parts[0] .'/'. $next);
+
+      $vars['attachment_before'] = '<div class="calendar-navigation">'.$calendar_navigation_prev.' < '.$calendar_navigation_this.' > '.$calendar_navigation_next.'</div>';
+    }
   }
 }
