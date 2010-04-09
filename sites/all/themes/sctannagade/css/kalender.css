@@ -69,25 +69,30 @@ h3 .date-display-separator
 }
 
 
-.view-Kalender .view-content .item-list .views-field-title
+.view-display-id-panel_pane_1 .view-content .item-list .views-field-title,
+.view-display-id-panel_pane_2 .view-content .item-list .views-field-title
 {
 	padding-left: 102px;
 	padding-right: 150px;
 	font-weight: bold;
 }
 
-.view-Kalender .view-content .item-list .views-field-field-cal-date-start-value
+.view-display-id-panel_pane_1 .view-content .item-list .views-field-field-cal-date-start-value,
+.view-display-id-panel_pane_2 .view-content .item-list .views-field-field-cal-date-start-value
 {
 	position: absolute;
 }
 
-.view-Kalender .view-content .item-list .views-field-tid
+.view-display-id-panel_pane_1 .view-content .item-list .views-field-tid,
+.view-display-id-panel_pane_2 .view-content .item-list .views-field-tid
+
 {
 	padding-left: 102px;
 	padding-right: 150px;
 }
 
-.view-Kalender .view-content .item-list .views-field-tid-1
+.view-display-id-panel_pane_1 .view-content .item-list .views-field-tid-1,
+.view-display-id-panel_pane_2 .view-content .item-list .views-field-tid-1
 {
 	padding-left: 102px;
 	padding-right: 150px;
@@ -141,4 +146,9 @@ h3 .date-display-separator
 .view-Kalender .view-filters .form-item .form-select
 {
 	width: 150px;
+}
+
+.pane-kalender-panel-pane-2
+{
+	padding-top: 50px;
 }

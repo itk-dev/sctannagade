@@ -20,6 +20,15 @@
 	padding: 0px 0px 35px 0px;
 }
 
+#block-views-News_list-block_1 .content .view .view-content .views-row .views-field-created-1,
+#block-views-Kalender-block_1 .content .view .view-content .views-row .views-field-field-cal-date-start-value-2
+{
+	font-style: italic;
+	font-size: 10px;
+	color: #333;
+	font-size: 10px;
+}
+
 #block-views-News_list-block_1 .content .view .view-content .views-row .views-field-created,
 #block-views-Kalender-block_1 .content .view .view-content .views-row .views-field-created
 {
@@ -27,7 +36,6 @@
 	font-style: italic;
 	color: #333;
 	font-size: 10px;
-	padding: 0px 0px 2px 0px;
 }
 
 #block-views-News_list-block_1 .content .view .view-content .views-row .views-field-title,
@@ -167,7 +175,7 @@
 	font-style:italic;
 	text-decoration: none;
 	color: #8dc63f;
-	padding-left: 110px;
+	margin-left: 110px;
 }
 
 .view-display-id-page_2 .view-content .item-list .views-row a:visited,
@@ -176,7 +184,7 @@
 	font-style:italic;
 	text-decoration: none;
 	color: #8dc63f;
-	padding-left: 110px;
+	margin-left: 110px;
 }
 
 .view-display-id-page_2 .view-content .item-list a:hover,
@@ -185,7 +193,7 @@
 	font-style:italic;
 	text-decoration:underline;
 	color: #8dc63f;
-	padding-left: 110px;
+	
 }
 
 .content .view .view-content .views-row .views-field-nid

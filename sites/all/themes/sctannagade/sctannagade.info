@@ -38,6 +38,7 @@ stylesheets[all][] = css/reset.css
 stylesheets[all][] = css/news.css
 stylesheets[all][] = css/kalender.css
 
+scripts[] = js/jquery.url.packed.js
 scripts[] = js/lej_lokaler.js
 scripts[] = js/faste_brugere.js
 scripts[] = js/news.js
