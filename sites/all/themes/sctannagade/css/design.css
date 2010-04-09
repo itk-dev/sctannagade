@@ -64,10 +64,15 @@
 	padding: 0px 0px 2px 0px;
 }
 
-#container-content #content #content-inner>p,
-#container-content #content #content-inner p
+#container-content #content #content-inner #faste-brugere-item-list>p,
+#container-content #content #content-inner #faste-brugere-item-listp
 {
 	padding: 0px 0px 15px 0px;
+}
+
+#container-content #content #content-inner #lej-lokaler-item-list 
+{
+	padding-top: 15px;
 }
 
 #container-content #content-inner #faste-brugere-item-list ul, 

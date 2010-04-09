@@ -1,3 +1,16 @@
+.view-Kalender .view-content .item list
+{
+	padding-top: 30px;
+}
+
+.view-display-id-panel_pane_2 .view-content .item-list li,
+.view-display-id-panel_pane_2 .view-content .item-list li
+{
+	background:transparent url(../images/back-news.jpg) no-repeat scroll left top;
+	padding: 5px 15px 20px 15px;
+	margin-left: -15px;
+}
+
 .calendar-navigation a.current:link
 {
 	color: #333;
@@ -55,6 +68,7 @@ h3 .date-display-separator
 	margin-top: -3px;
 }
 
+
 .view-Kalender .view-content .item-list .views-field-title
 {
 	padding-left: 102px;
@@ -107,4 +121,24 @@ h3 .date-display-separator
 .view-Kalender .view-filters
 {
 	height: 100px;
+}
+
+.view-Kalender .view-filters .views-exposed-widget label
+{
+	font-weight: normal;
+}
+
+.view-Kalender .view-filters .views-exposed-widget .form-submit
+{
+	margin-top: 26px;
+}
+
+.view-Kalender .view-filters .date-views-filter-wrapper
+{
+	min-width: 0px;
+}
+
+.view-Kalender .view-filters .form-item .form-select
+{
+	width: 150px;
 }
