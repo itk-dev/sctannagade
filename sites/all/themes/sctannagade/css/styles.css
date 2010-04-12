@@ -476,6 +476,21 @@ a:hover
 	display: none;
 }
 
+
+/***********************
+ * Thumb navigation
+ ***********************/
+.thumb-navigation img
+{
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
+.thumb-navigation row-last img
+{
+	margin-right: 0px;
+}
+
 /*********************************************************
  * Li navigation
  *********************************************************/

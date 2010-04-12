@@ -14,8 +14,10 @@ function sctannagade_theme() {
 
 function sctannagade_preprocess_contact_mail_page(&$vars) {
   $vars['form']['contact_information']['#value'] = t('We will get back to you with a quote within 48 hours');
-  $vars['form']['message']['#title'] = t('Question or comment.');
+  $vars['form']['message']['#title'] = t('Question or comment');
   $vars['form']['subject']['#title'] = t('Subject');
+  $vars['form']['name']['#title'] = t('Name');
+  $vars['form']['mail']['#title'] = t('E-mail address');
   $vars['form_markup'] = drupal_render($vars['form']);
 }
 
