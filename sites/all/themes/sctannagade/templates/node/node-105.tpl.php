@@ -4,10 +4,11 @@
         <?php print $unpublished; ?>
       </h2>
     <?php endif; ?>
-    <div id="tabs">
-      <?php print $lej_lokaler_tabs; ?>
-      <div class="boks">
-        <?php print $content; ?>
-      </div>
-    </div>
+
+    <h2><?php print $title; ?></h2>
+    <?php print $content; ?>
+
+   <div id="udendors-faciliteter-nav" class="li-nav">
+     <?php print views_embed_view('udendors_faciliteter', 'default'); ?>
+   </div>
 <!-- /node -->

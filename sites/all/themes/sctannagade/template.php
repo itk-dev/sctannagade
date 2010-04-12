@@ -13,6 +13,9 @@ function sctannagade_theme() {
 }
 
 function sctannagade_preprocess_contact_mail_page(&$vars) {
+  $vars['form']['contact_information']['#value'] = t('We will get back to you with a quote within 48 hours');
+  $vars['form']['message']['#title'] = t('Question or comment.');
+  $vars['form']['subject']['#title'] = t('Subject');
   $vars['form_markup'] = drupal_render($vars['form']);
 }
 
@@ -98,6 +101,24 @@ function sctannagade_preprocess_node(&$vars, $hook) {
     }
     $tabs .= '</ul></div>';
     $vars['lej_lokaler_tabs'] = $tabs;
+  }
+
+  if ($node->type == 'outdor_facilities') { // May be this should have been done in a theme function
+    $tabs = '<div class="item-list"><ul>';
+    if (!empty($node->field_outdor_description[0]['value'])) {
+      $tabs .= '<li class="description active">' .l(t('Description'), '#description', array('attributes' => array('class' => 'active'))). '<span></span></li>';
+    }
+    if (!empty($node->field_outdor_pictures[0]['view'])) {
+      $tabs .= '<li class="pictures">' .l(t('Pictures'), '#pictures'). '<span></span></li>';
+    }
+    if (!empty($node->field_outdor_ovrigt[0])) {
+      $tabs .= '<li class="other">' .l(t('Other'), '#other'). '<span></span></li>';
+    }
+    if (!empty($node->field_outdor_email[0]['email'])) {
+      $tabs .= '<li class="email"><a href="mailto:'. $node->field_outdor_email[0]['email'] .'"><span></span></a></li>';
+    }
+    $tabs .= '</ul></div>';
+    $vars['outdor_facilities_tabs'] = $tabs;
   }
 }
 

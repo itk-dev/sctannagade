@@ -5,9 +5,10 @@
       </h2>
     <?php endif; ?>
     <div id="tabs">
-      <?php print $lej_lokaler_tabs; ?>
-      <div class="boks">
-        <?php print $content; ?>
-      </div>
-    </div>
+      <?php print $outdor_facilities_tabs; ?>
+
+       <div class="boks">
+         <?php print $content; ?>
+       </div>
+   </div>
 <!-- /node -->

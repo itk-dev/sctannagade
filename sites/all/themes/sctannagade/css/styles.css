@@ -459,6 +459,24 @@ a:hover
 }
 
 /*********************************************************
+ * Udendors faciliteter
+ *********************************************************/
+
+.js .node-type-outdor-facilities .field-field-outdor-pictures,
+.js .node-type-outdor-facilities .field-field-outdor-ovrigt,
+.js .node-type-outdor-facilities .field-field-outdor-email,
+.js .node-type-outdor-facilities .imagecache-udendors_faciliteter
+{
+	display: none;
+}
+
+.node-type-outdor-facilities .content-pictures,
+.node-type-outdor-facilities .pane-node-title .pane-content
+{
+	display: none;
+}
+
+/*********************************************************
  * Li navigation
  *********************************************************/
 
