@@ -152,3 +152,12 @@ h3 .date-display-separator
 {
 	padding-top: 50px;
 }
+
+.panel-display .panel-pane .view-Kalender .view-empty>p
+{
+	background:transparent url(../images/back-news-top.jpg) no-repeat scroll left center;
+	height: 24px;
+	padding: 25px 15px 0px 15px;
+	margin: -10px -15px 0px -15px;
+	text-align: center;
+}

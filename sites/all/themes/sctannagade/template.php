@@ -112,31 +112,21 @@ function sctannagade_preprocess_views_view(&$vars) {
     if (in_array('kalender', $alias_parts) && $vars['exposed']) {
       $current = $alias_parts[count($alias_parts)-1];
       if (preg_match('/^\d{4}-W\d{1,2}$/', $current)) {	
-	$year = substr($current, 0, 4);
-	$week = substr($current, 6);
+	$current_date = strtotime($current);
       }
       else {
-	$year = date('Y');
-	$week = date('W');
-      }
-      // Find next week
-      if ($week == 52) {
-	$next = ($year + 1) .'-W1';
-      }
-      else {
-	$next = $year .'-W'. ($week + 1);
+	$current_date = time();
       }
 
+      // Find next week
+      $next = strtotime('+1 week', $current_date);
+
       // Find prev week
-      if ($week == 1) {
-	$prev = ($year - 1) .'-W52';
-      }
-      else {
-	$prev = $year .'-W'. ($week - 1);
-      }
-      $calendar_navigation_prev = l(t('Previous week'), $alias_parts[0] .'/'. $prev);
-      $calendar_navigation_this = l(t('This week'), $alias_parts[0] .'/'. date('Y') .'-W'. date('W'), array('attributes' => array('class' => 'current')));
-      $calendar_navigation_next = l(t('Next week'), $alias_parts[0] .'/'. $next);
+      $prev = strtotime('-1 week', $current_date);
+
+      $calendar_navigation_prev = l(t('Previous week'), $alias_parts[0] .'/'. date('Y-\WW', $prev));
+      $calendar_navigation_this = l(t('This week'), $alias_parts[0] .'/'. date('Y-\WW'), array('attributes' => array('class' => 'current')));
+      $calendar_navigation_next = l(t('Next week'), $alias_parts[0] .'/'. date('Y-\WW', $next));
 
       $vars['attachment_before'] = '<div class="calendar-navigation">'.$calendar_navigation_prev.' < '.$calendar_navigation_this.' > '.$calendar_navigation_next.'</div>';
     }

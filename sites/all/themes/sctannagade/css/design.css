@@ -283,3 +283,8 @@
 	list-style-image: url("../images/ball.png");
 	margin-left: 15px;
 }
+
+.views-view-grid .views-field-field-pictures-fid
+{
+	padding: 0px 5px 5px 0px;
+}

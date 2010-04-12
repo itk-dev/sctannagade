@@ -5,6 +5,7 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
 </head>
       
 <body class="<?php print $section_class; print $body_classes; if (!empty($admin)) print ' admin' ?>">
@@ -22,8 +23,21 @@
 			<div id="container-top">
 				<?php print $search; ?><?php print theme('links', $secondary_links); ?>
 			</div>
+			
+			<div id="banner">
 
-			<div id="banner"></div>
+				<script type="text/javascript">
+					AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','780','height','200','src','/sites/all/themes/sctannagade/swf/annagade_top','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','/sites/all/themes/sctannagade/swf/annagade_top' ); //end AC code
+    				</script>
+			
+				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="780" height="200">
+					<param name="movie" value="/sites/all/themes/sctannagade/swf/annagade_top.swf">
+       				<param name="quality" value="high">
+					<embed src="/sites/all/themes/sctannagade/swf/annagade_top.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="780" height="200">
+					</embed>
+				</object>
+			</div>
+
 			<div id="regions"><?php print theme('links', $primary_links); ?></div>
 		</div>
 		<div id="container-content">

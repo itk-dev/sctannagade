@@ -461,10 +461,12 @@ a:hover
 /*********************************************************
  * Li navigation
  *********************************************************/
+
 .li-nav
 {
-	border-top: 2px solid #EEE;
-	padding-top: 8px;
+	border-top: 1px solid #DBDBDB;
+	padding: 8px 15px 0 0;
+	margin-right: 15px;
 }
 
 .li-nav ul
@@ -477,12 +479,12 @@ a:hover
 {
 	float: left;
 	padding: 0 8px;
-	border-right: 2px solid #666;
+	border-right: 1px solid #DBDBDB;
 }
 
 .li-nav ul li a
 {
-	color:#666;
+	color: #DBDBDB;
 }
 
 .li-nav ul li a.active, 
@@ -514,12 +516,15 @@ a:hover
 /*************************************************************
  * Kalender
  *************************************************************/
-.calendar-navigation {
+
+.calendar-navigation
+{
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
 
-h3 .date-display-single {
+h3 .date-display-single
+{
 	font-size: 140%;
 	font-weight: bold;
 }
