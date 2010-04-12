@@ -518,7 +518,7 @@ a:hover
 
 .li-nav ul li a
 {
-	color: #DBDBDB;
+	color: #666;
 }
 
 .li-nav ul li a.active, 
@@ -561,4 +561,18 @@ h3 .date-display-single
 {
 	font-size: 140%;
 	font-weight: bold;
+}
+
+/*************************************************************
+ * Breadcrumb
+ ************************************************************/
+.breadcrumb 
+{
+	margin-top: 8px;
+	padding-bottom: 0px;
+}
+
+.breadcrumb .last a
+{
+	color:#8DC63F;
 }

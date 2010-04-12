@@ -155,3 +155,14 @@ function sctannagade_preprocess_views_view(&$vars) {
     }
   }
 }
+
+/**
+ * Override breadcrumb
+ */
+function sctannagade_breadcrumb($breadcrumb) {
+  if (count($breadcrumb) > 1) {
+    $breadcrumb =  array_slice($breadcrumb, 1);
+    $breadcrumb[count($breadcrumb)-1] = '<span class="last">' .$breadcrumb[count($breadcrumb)-1]. '</span>';
+    return implode(' > ', $breadcrumb);
+  }
+}
