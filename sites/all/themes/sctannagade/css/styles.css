@@ -434,14 +434,15 @@ a:hover
 	display: none;
 }
 
-.node-type-faste-brugere .imagecache-faste_brugere_images_thumb
+.node-type-faste-brugere .content-pictures,
+.node-type-faste-brugere .pane-node-title .pane-content
 {
 	display: none;
 }
 
 /*********************************************************
  * Lej lokaler
- *********************************************************/
+ *********************************************************
 
 .js .node-type-lej-lokaler .field-field-lokale-pictures,
 .js .node-type-lej-lokaler .field-field-lokale-overigt,
