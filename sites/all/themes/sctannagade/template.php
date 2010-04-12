@@ -4,40 +4,32 @@
 * these forms...
 */
 
-/*
 function sctannagade_theme() {
   return array(
-          'contact_mail_page' => array(
-                  'arguments' => array('form' => NULL),
-                  'template' => 'contact-mail-page',
-          ),
+    'contact_mail_page' => array(
+      'arguments' => array('form' => NULL),
+    ),
   );
 }
 
-function sctannagade_preprocess_contact_mail_page(&$vars) {
-  $vars['form']['contact_information']['#value'] = t('We will get back to you with a quote within 48 hours');
-  $vars['form']['message']['#title'] = t('Question or comment');
-  $vars['form']['subject']['#title'] = t('Subject');
-  $vars['form']['name']['#title'] = t('Name');
-  $vars['form']['mail']['#title'] = t('E-mail address');
-  $vars['form_markup'] = drupal_render($vars['form']);
+
+function sctannagade_contact_mail_page($form) {
+  
+  $form['subject']['#type'] = 'hidden';
+  $form['subject']['#title'] = t('Besked til sct. anna gade');
+  
+  $form['name']['#title'] = t('Name');
+  $form['mail']['#title'] = t('E-mail address');
+
+  $form['message']['#title'] = t('Question or comment');
+
+  // Change submit button
+  $form['submit']['#type'] = "image_button" ;
+  $form['submit']['#src'] = drupal_get_path('theme','sctannagade')."/images/button-contact-form-submit.png";
+  $form['submit']['#attributes']['class'] = "";
+  
+  return drupal_render($form);
 }
-
-function sctannagade_user_profile_form($form) {
-  $output = '';
-
-  $vars['form']['contact_information']['#value'] = t('We will get back to you with a quote within 48 hours.');
-  $vars['form']['message']['#title'] = t('What you need');
-  $vars['form']['subject']['#title'] = t('Name of your company');
-  $vars['form']['cid']['#value'] = 1;
-  $vars['form']['cid']['#prefix'] = '<div style="display:none;">';
-  $vars['form']['cid']['#suffix'] = '</div>';
-  $vars['template_file'] = 'contact-mail-page-quote';
-
-  $output .= drupal_render($form);
-  return $output;
-}
-*/
 
 /**
  * Override or insert variables into the page templates.
