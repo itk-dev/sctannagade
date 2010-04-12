@@ -576,3 +576,33 @@ h3 .date-display-single
 {
 	color:#8DC63F;
 }
+
+/*************************************************************
+ * Mail contact page
+ ************************************************************/
+#container-content #content-inner #contact-mail-page h2
+{
+	margin-bottom:20px;
+}
+
+#contact-mail-page h3
+{
+	font-weight:bold;
+}
+
+#contact-mail-page p
+{
+	margin-bottom: 20px;
+}
+
+#contact-mail-page tbody
+{
+	border:none;
+}
+
+#contact-mail-page .divider
+{
+	margin-top:24px;
+	padding-top:24px;
+	border-top:1px solid #DBDBDB;
+}

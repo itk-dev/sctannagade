@@ -3,6 +3,8 @@
 * that have not been registered by the module that created
 * these forms...
 */
+
+/*
 function sctannagade_theme() {
   return array(
           'contact_mail_page' => array(
@@ -35,7 +37,7 @@ function sctannagade_user_profile_form($form) {
   $output .= drupal_render($form);
   return $output;
 }
-
+*/
 
 /**
  * Override or insert variables into the page templates.
