@@ -9,14 +9,16 @@ function sctannagade_theme() {
     'contact_mail_page' => array(
       'arguments' => array('form' => NULL),
     ),
+    'search-block-form' => array(
+      'arguments' => array('form' => NULL),
+    ),
   );
 }
-
 
 function sctannagade_contact_mail_page($form) {
   
   $form['subject']['#type'] = 'hidden';
-  $form['subject']['#title'] = t('Besked til sct. anna gade');
+  $form['subject']['#value'] = t('Besked til sct. anna gade');
   
   $form['name']['#title'] = t('Name');
   $form['mail']['#title'] = t('E-mail address');
@@ -30,6 +32,20 @@ function sctannagade_contact_mail_page($form) {
   
   return drupal_render($form);
 }
+
+function sctannagade_search_block_form($form) {
+
+  // Remove search titel
+  $form['search_block_form']['#title'] = '';
+  
+  // Change submit button
+  $form['submit']['#type'] = "image_button" ;
+  $form['submit']['#src'] = drupal_get_path('theme','sctannagade')."/images/button-search-form-submit.png";
+  $form['submit']['#attributes']['class'] = "";
+  
+  return drupal_render($form);
+}
+
 
 /**
  * Override or insert variables into the page templates.
@@ -49,18 +65,20 @@ function sctannagade_preprocess_page(&$vars) {
       $vars['current_month'] = date_format_date(new DateTime(date('Y-m-d', $time)), 'custom', 'F Y');
     }
 
-    $node = $vars['node'];
-    if ($node->type == 'faste_brugere') {
-      drupal_add_js(path_to_theme().'/js/faste_brugere.js');
-      $vars['scripts'] = drupal_get_js();
-    }
-    if ($node->type == 'lej_lokaler') {
-      drupal_add_js(path_to_theme().'/js/lej_lokaler.js');
-      $vars['scripts'] = drupal_get_js();
-    }
-    if ($node->type == 'outdor_facilities') {
-      drupal_add_js(path_to_theme().'/js/outdor_facilities.js');
-      $vars['scripts'] = drupal_get_js();
+    if (isset($vars['node'])) {
+      $node = $vars['node'];
+      if ($node->type == 'faste_brugere') {
+	drupal_add_js(path_to_theme().'/js/faste_brugere.js');
+	$vars['scripts'] = drupal_get_js();
+      }
+      if ($node->type == 'lej_lokaler') {
+	drupal_add_js(path_to_theme().'/js/lej_lokaler.js');
+	$vars['scripts'] = drupal_get_js();
+      }
+      if ($node->type == 'outdor_facilities') {
+	drupal_add_js(path_to_theme().'/js/outdor_facilities.js');
+	$vars['scripts'] = drupal_get_js();
+      }
     }
   }
 }

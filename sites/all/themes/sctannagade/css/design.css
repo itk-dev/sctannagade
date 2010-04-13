@@ -293,6 +293,20 @@
  *				KONTAKT
  **********************************************************/
 
+#search #edit-search-block-form-1
+{
+    	font-size: 10px;
+	padding: 2px;
+    	border: solid 1px #CCC;
+    	width: 150px;
+    	background-color: #FFF;
+}
+
+#search #edit-submit
+{
+
+}
+
 #contact-mail-page #edit-name,
 #contact-mail-page #edit-mail,
 #contact-mail-page #edit-message
@@ -306,10 +320,19 @@
     	background-color: #FFF;
 }
 
-#contact-mail-page #edit-message
+#contact-mail-page .form-item label
 {
-	margin-top: 3px;
-    	width: 545px;
+	font-weight: normal;
+}
+
+#contact-mail-page .form-required
+{
+	display: none;
+}
+
+#contact-mail-page #edit-message-wrapper
+{
+	background:transparent url(../images/back-contact-top.jpg) no-repeat scroll left top;
 }
 
 #contact-mail-page #edit-message-wrapper label
@@ -317,11 +340,17 @@
 	text-transform: uppercase;
 	font-size: 13px;
 	color: #FFF;
-	padding: 2px 0px 0px 10px;
+	font-weight: bold;
+	padding: 3px 0px 0px 10px;
 }
 
-#contact-mail-page #edit-message-wrapper
+#contact-mail-page #edit-message
 {
-	background:transparent url(../images/back-contact-top.jpg) no-repeat scroll left top;
-	height: 400px;
+	margin-top: 2px;
+    	width: 545px;
+}
+
+#contact-mail-page #edit-submit
+{
+	margin-left: -5px;
 }
