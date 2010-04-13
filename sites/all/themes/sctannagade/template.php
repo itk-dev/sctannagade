@@ -11,7 +11,7 @@ function sctannagade_theme() {
     ),
     'search-block-form' => array(
       'arguments' => array('form' => NULL),
-    ),
+    )
   );
 }
 
@@ -45,7 +45,6 @@ function sctannagade_search_block_form($form) {
   
   return drupal_render($form);
 }
-
 
 /**
  * Override or insert variables into the page templates.

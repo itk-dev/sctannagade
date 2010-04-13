@@ -10,7 +10,7 @@
 <div class="item-list">
   <ul class="views-summary">
   <?php foreach ($rows as $row): ?>
-    <li><a href="<?php print $row->url; ?>"><?php print date_format_date(new DateTime($row->link), 'custom', 'F Y'); ?></a>
+    <li><a href="<?php print $row->url; ?>"><?php print date_format_date(new DateTime($row->link), 'custom', 'M Y'); ?></a>
       <?php if (!empty($options['count'])): ?>
         (<?php print $row->count?>)
       <?php endif; ?>

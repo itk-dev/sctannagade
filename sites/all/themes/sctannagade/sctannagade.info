@@ -21,7 +21,7 @@ regions[footer] = Footer
 regions[search] =  Search
 regions[menu] = Menu
 regions[banners] = Banners
-
+regions[flashbanner] = Flash Banner
 
 
 features[] = favicon

@@ -23,7 +23,9 @@
 				<?php print $search; ?><?php print theme('links', $secondary_links); ?>
 			</div>
 
-			<div id="banner"></div>
+			<div id="banner">
+ 			  <?php print $flashbanner; ?>
+                        </div>
 			<div id="regions"><?php print theme('links', $primary_links); ?></div>
 		</div>
 		<div id="container-content">
