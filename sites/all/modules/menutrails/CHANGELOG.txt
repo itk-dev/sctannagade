@@ -1,4 +1,4 @@
-// $Id: CHANGELOG.txt,v 1.1.2.20 2010/01/08 17:42:54 sun Exp $
+// $Id: CHANGELOG.txt,v 1.1.2.23 2010/03/16 21:33:48 sun Exp $
 
 Menu Trails x.x-x.x, xxxx-xx-xx
 -------------------------------
@@ -6,8 +6,14 @@ Menu Trails x.x-x.x, xxxx-xx-xx
 
 Menu Trails 6.x-1.x, xxxx-xx-xx
 -------------------------------
+
+
+Menu Trails 6.x-1.1, 2010-03-16
+-------------------------------
+#630290 by grendzy: Fixed views integration ignores global breadcrumb setting.
+#632070 by sun, nemchenk: Fixed first group removed from $node->og_groups.
 #547634 by eojthebrave, sun: Fixed wrong node parent assigned via taxonomy term.
-#430290 eojthebrave, sun: Added parent item selection from any menu.
+#430290 by eojthebrave, sun: Added parent item selection from any menu.
 #368074 by sun: Fixed token values not generated for nodes without menu item.
 #368071 by sun: Fixed all slashes stripped from Pathauto tokens.
 #364717 by sun: Fixed some more PHP notices and proper usage of t().

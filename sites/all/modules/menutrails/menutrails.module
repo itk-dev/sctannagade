@@ -1,5 +1,5 @@
 <?php
-// $Id: menutrails.module,v 1.4.2.22 2010/01/08 17:42:54 sun Exp $
+// $Id: menutrails.module,v 1.4.2.24 2010/03/16 21:18:49 sun Exp $
 
 /**
  * @file
@@ -142,7 +142,7 @@ function menutrails_node_location($node) {
   // Organic groups support.
   if (module_exists('og') && !empty($node->og_groups)) {
     // We can only do one, so we take the first.
-    $group = array_shift($node->og_groups);
+    $group = reset($node->og_groups);
     if (variable_get('menutrails_og_group_menu', FALSE) != FALSE) {
       if (db_result(db_query("SELECT count(mlid) FROM {menu_links} WHERE link_path = '%s'", $item['href'])) == 0) {
         $href = 'node/'. $group;
@@ -493,7 +493,9 @@ function phptemplate_links($links, $attributes = array('class' => 'links')) {
  */
 function menutrails_views_pre_view(&$view) {
   if ($view->display_handler->display->display_plugin == 'page') {
-    drupal_set_breadcrumb(menutrails_get_breadcrumbs());
+    if (variable_get('menutrails_breadcrumbs', 1)) {
+      drupal_set_breadcrumb(menutrails_get_breadcrumbs());
+    }
   }
 }
 

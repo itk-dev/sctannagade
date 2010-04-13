@@ -290,7 +290,7 @@
 }
 
 /**********************************************************
- *				KONTAKT
+ *				SØG
  **********************************************************/
 
 #search-block-form #edit-search-block-form-1
@@ -308,11 +308,17 @@
 }
 
 #search-block-form #edit-submit,
-#search-block-form #edit-submit-1
+#search-block-form #edit-submit-1,
+#search-block-form #edit-submit-2
 {
 	margin-top: 14px;
 	margin-left: 5px;
 }
+
+
+/**********************************************************
+ *				KONTAKT
+ **********************************************************/
 
 #contact-mail-page #edit-name,
 #contact-mail-page #edit-mail,
