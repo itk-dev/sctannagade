@@ -39,7 +39,4 @@ stylesheets[all][] = css/kalender.css
 stylesheets[all][] = css/news.css
 
 scripts[] = js/jquery.url.packed.js
-scripts[] = js/lej_lokaler.js
-scripts[] = js/faste_brugere.js
-scripts[] = js/outdor_facilities.js
 scripts[] = js/news.js

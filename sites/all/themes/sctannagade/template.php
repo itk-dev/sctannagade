@@ -48,6 +48,20 @@ function sctannagade_preprocess_page(&$vars) {
       $time = mktime(0, 0, 0, substr($raw, -2)+1, 0, substr($raw, 0, 4));
       $vars['current_month'] = date_format_date(new DateTime(date('Y-m-d', $time)), 'custom', 'F Y');
     }
+
+    $node = $vars['node'];
+    if ($node->type == 'faste_brugere') {
+      drupal_add_js(path_to_theme().'/js/faste_brugere.js');
+      $vars['scripts'] = drupal_get_js();
+    }
+    if ($node->type == 'lej_lokaler') {
+      drupal_add_js(path_to_theme().'/js/lej_lokaler.js');
+      $vars['scripts'] = drupal_get_js();
+    }
+    if ($node->type == 'outdor_facilities') {
+      drupal_add_js(path_to_theme().'/js/outdor_facilities.js');
+      $vars['scripts'] = drupal_get_js();
+    }
   }
 }
 

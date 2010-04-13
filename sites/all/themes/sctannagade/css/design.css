@@ -288,3 +288,40 @@
 {
 	padding: 0px 5px 5px 0px;
 }
+
+/**********************************************************
+ *				KONTAKT
+ **********************************************************/
+
+#contact-mail-page #edit-name,
+#contact-mail-page #edit-mail,
+#contact-mail-page #edit-message
+{
+    	font-size: 13px;
+    	display: block;
+	margin-top: 4px;
+    	padding: 4px;
+    	border: solid 1px #C5E29F;
+    	width: 300px;
+    	background-color: #FFF;
+}
+
+#contact-mail-page #edit-message
+{
+	margin-top: 3px;
+    	width: 545px;
+}
+
+#contact-mail-page #edit-message-wrapper label
+{
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #FFF;
+	padding: 2px 0px 0px 10px;
+}
+
+#contact-mail-page #edit-message-wrapper
+{
+	background:transparent url(../images/back-contact-top.jpg) no-repeat scroll left top;
+	height: 400px;
+}
