@@ -9,6 +9,7 @@ $(document).ready(function() {
 
   // Fix search field
   sctannagade_toggle_field($('#search-block-form #edit-search-block-form-1'), 'Søgetekst...');
+  sctannagade_toggle_field($('#search-form #edit-keys'), 'Søgetekst...');
 });
 
 function sctannagade_toggle_field(field, value) {
