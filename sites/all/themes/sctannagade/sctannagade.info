@@ -39,4 +39,5 @@ stylesheets[all][] = css/kalender.css
 stylesheets[all][] = css/news.css
 
 scripts[] = js/jquery.url.packed.js
+scripts[] = js/utils.js
 scripts[] = js/news.js

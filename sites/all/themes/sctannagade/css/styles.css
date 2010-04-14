@@ -565,3 +565,11 @@ h3 .date-display-single
 	padding-top:24px;
 	border-top:1px solid #DBDBDB;
 }
+
+/***********************************************************
+ * Fading feilds style
+ ***********************************************************/
+.fadeText
+{
+  color:#888;
+}
