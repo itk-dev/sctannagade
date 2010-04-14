@@ -168,7 +168,7 @@
 .view-display-id-page_2 .view-content .item-list .views-field-field-news-teaser-value .field-content > p,
 .view-display-id-panel_pane_1 .view-content .item-list .views-field-field-news-teaser-value .field-content > p
 {
-	padding-bottom: 10px;
+	padding-bottom: 0px;
 }
 
 .view-display-id-page_2 .view-content .item-list a:link,

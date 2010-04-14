@@ -33,18 +33,33 @@ function sctannagade_contact_mail_page($form) {
   return drupal_render($form);
 }
 
-function sctannagade_search_block_form($form) {
+function sctannagade_preprocess_search_theme_form(&$vars, $hook) {
 
-  // Remove search titel
-  $form['search_block_form']['#title'] = '';
-  
-  // Change submit button
-  $form['submit']['#type'] = "image_button" ;
-  $form['submit']['#src'] = drupal_get_path('theme','sctannagade')."/images/button-search-form-submit.png";
-  $form['submit']['#attributes']['class'] = "";
-  
-  return drupal_render($form);
+  $vars['form']['search_theme_form']['#title'] = '';
+ 
+  $vars['form']['search_theme_form']['#value'] = t('Search this Site');
+ 
+  $vars['form']['search_theme_form']['#attributes'] = array('class' => 'NormalTextBox txtSearch',
+                                                              'onfocus' => "if (this.value == 'Search this Site') {this.value = '';}",
+                                                              'onblur' => "if (this.value == '') {this.value = 'Search this Site';}");
+ 
+
+  //$vars['form']['submit']['#value'] = t('Go');
+
+  // Rebuild the rendered version (search form only, rest remains unchanged)
+  unset($vars['form']['search_theme_form']['#printed']);
+  $vars['search']['search_theme_form'] = drupal_render($vars['form']['search_theme_form']);
+
+  $vars['form']['submit']['#type'] = 'image_button';
+  $vars['form']['submit']['#src'] = drupal_get_path('theme','sctannagade')."/images/button-search-form-submit.png";
+  $vars['form']['submit']['#attributes']['class'] = "";
+   
+  unset($vars['form']['submit']['#printed']);
+  $vars['search']['submit'] = drupal_render($vars['form']['submit']);
+
+  $vars['search_form'] = implode($vars['search']);
 }
+
 
 /**
  * Override or insert variables into the page templates.
