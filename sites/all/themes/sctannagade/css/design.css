@@ -315,6 +315,22 @@
 	margin-left: 5px;
 }
 
+#search-form .form-item #edit-keys
+{
+    	font-size: 13px;
+	margin-top: 4px;
+    	padding: 4px;
+    	border: solid 1px #C5E29F;
+    	width: 300px;
+    	background-color: #FFF;
+}
+
+#search-form .form-item #edit-submit
+{
+	width: 50px;
+	margin-left: 20px;
+}
+
 
 /**********************************************************
  *				KONTAKT

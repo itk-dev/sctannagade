@@ -140,32 +140,34 @@ a:hover
 {
 	clear: both;
 	height: 41px;
-	background: #fff url(../images/menu-bg.png) 0 0 no-repeat;
+	background: #fff url(../images/menu-bg.png) 100% 100% no-repeat;
+}
+
+#regions ul
+{
+  padding-left: 10px;
 }
 
 #regions ul.links li
 {
   float: left;
   list-style-type:none;
-	padding: 0;
   height: 27px;
   background: url(../images/menu-spe.png) 0 100% no-repeat;
   padding-top: 14px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 12px;
+  padding-right: 11px;
 }
 
 #regions ul.links li:first-child {
   background: none;
-  margin-left: 10px;
-  padding-left: 6px;
+  padding-left: 8px;
 }
 
 #regions ul.links li a {
   text-transform: uppercase;
-  font-family: arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 14px;
-  letter-spacing: -0.05em;
   background: url(../images/menu-bullet-green.png) 100% 50% no-repeat;
   padding-right: 14px;
 }
