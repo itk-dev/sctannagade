@@ -140,92 +140,47 @@ a:hover
 {
 	clear: both;
 	height: 41px;
-}
-
-#regions .links>li 
-{
-	float: left;
-	overflow: visible;
-	position: relative;
+	background: #fff url(../images/menu-bg.png) 0 0 no-repeat;
 }
 
 #regions ul.links li
 {
-	display:inline;
-	list-style-type:none;
+  float: left;
+  list-style-type:none;
 	padding: 0;
+  height: 27px;
+  background: url(../images/menu-spe.png) 0 100% no-repeat;
+  padding-top: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-#regions .links>li>a
-{
-	background: #fff url(../images/menu.png) 0 0 no-repeat;
-	display: block;
-	height: 41px;
-	line-height: 40px;
-	padding: 0px;
-	text-indent: -9999em;
+#regions ul.links li:first-child {
+  background: none;
 }
 
-#regions .links .menu-442>a
-{
-	width: 181px;
-}
-	
-#regions .links .menu-442>a.active, 
-#regions .links .menu-442>a:hover
-{
-	background-position: 0 -41px;
-}
-	
-#regions .links .menu-794>a 
-{
-	width: 160px;
-	background-position: -181px 0;
+#regions ul.links li a {
+  text-transform: uppercase;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.05em;
+  background: url(../images/menu-bullet-green.png) 100% 50% no-repeat;
+  padding-right: 14px;
 }
 
-#regions .links .menu-794>a.active,
-#regions .links .menu-794>a:hover
+#regions ul.links li:hover a,
+#regions ul.links li.active-trail a
 {
-	background-position: -181px -41px;
+  color:#FFF;
+  background: url(../images/kugler.png) 100% 50% no-repeat;
 }
 
-
-#regions .links .menu-315>a 
+#regions ul.links li:hover,
+#regions ul.links li.active-trail
 {
-	width: 134px;
-	background-position: -341px 0;
+  background: url(../images/menu-bg-hover.png) 100% 0 no-repeat;
+  color:#fff;
 }
-	
-#regions .links .menu-315>a.active,
-#regions .links .menu-315>a:hover
-{
-	background-position: -341px -41px;
-}
-	
-#regions .links .menu-316>a
-{
-	width: 205px;
-	background-position: -475px 0;
-}
-
-#regions .links .menu-316>a.active,
-#regions .links .menu-316>a:hover
-{
-	background-position: -475px -41px;
-}
-
-#regions .links .menu-317>a
-{
-	width: 121px;
-	background-position: -680px 0;
-}
-
-#regions .links .menu-317>a.active, 
-#regions .links .menu-317>a:hover
-{
-	background-position: -680px -41px;
-}
-
 
 /**********************************************************
  *               SECONDARY LINKS
