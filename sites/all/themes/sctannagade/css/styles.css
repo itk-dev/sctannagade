@@ -157,6 +157,8 @@ a:hover
 
 #regions ul.links li:first-child {
   background: none;
+  margin-left: 10px;
+  padding-left: 6px;
 }
 
 #regions ul.links li a {
