@@ -24,7 +24,7 @@
 			</div>
 			
 			<div id="banner">
-			  <?php print $flashbanner; ?>
+			  <?php //print $flashbanner; ?>
 			</div>
 
 			<div id="regions"><?php print theme('links', $primary_links); ?></div>
