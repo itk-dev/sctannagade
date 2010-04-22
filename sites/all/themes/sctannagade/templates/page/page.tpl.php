@@ -18,13 +18,13 @@
   <?php } ?>
 	<div id="container" class="<?php print $classes; ?>">
 		<div id="container-inner">
-			<?php if ($site_name): ?><h1 id="site-name"><?php print $site_name; ?><a href="http://sktannagade.etek.dk"><span></span></a></h1><?php endif; ?>
+			<h1 id="site-name"><a href="http://sktannagade.etek.dk"><span></span></a></h1>
 			<div id="container-top">
 				<?php print $search; ?><?php print theme('links', $secondary_links); ?>
 			</div>
 			
 			<div id="banner">
-			  <?php //print $flashbanner; ?>
+			  <?php print $flashbanner; ?>
 			</div>
 
 			<div id="regions"><?php print theme('links', $primary_links); ?></div>

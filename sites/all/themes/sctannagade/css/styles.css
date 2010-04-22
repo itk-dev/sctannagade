@@ -114,9 +114,9 @@ a:hover
 	-moz-background-origin:padding;
 	background:transparent url(../images/back-title.png) no-repeat scroll left top;
 	height:70px;
-	left:0;
+	left:8px;
 	position:absolute;
-	top:0;
+	top:20px;
 	width:250px;
 	padding: 0px;
 }
