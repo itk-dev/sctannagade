@@ -3,12 +3,18 @@
 	padding-top: 30px;
 }
 
-.view-display-id-panel_pane_2 .view-content .item-list li,
-.view-display-id-panel_pane_2 .view-content .item-list li
+.view-display-id-panel_pane_2 .view-content .item-list ul
 {
 	background:transparent url(../images/back-news.jpg) no-repeat scroll left top;
-	padding: 5px 15px 20px 15px;
 	margin-left: -15px;
+	padding-left: 15px;
+	position: absolute;
+	width: 555px;
+}
+
+.view-display-id-panel_pane_2 .view-content .item-list li
+{
+	padding: 5px 15px 20px 15px;
 }
 
 .calendar-navigation a.current:link
@@ -125,7 +131,7 @@ h3 .date-display-separator
 
 .view-Kalender .view-filters
 {
-	height: 80px;
+	padding-bottom: 30px;
 }
 
 .view-Kalender .view-filters .views-exposed-widget label
@@ -146,6 +152,11 @@ h3 .date-display-separator
 .view-Kalender .view-filters .form-item .form-select
 {
 	width: 150px;
+}
+
+.view-Kalender .view-empty
+{
+	padding-bottom: 10px;
 }
 
 .pane-kalender-panel-pane-2

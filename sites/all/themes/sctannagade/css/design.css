@@ -331,6 +331,56 @@
 	margin-left: 20px;
 }
 
+.search-advanced .fieldset-wrapper
+{
+	border-top: solid 1px #CCC;
+	margin-top: 20px;
+}
+
+.search-advanced #edit-or,
+.search-advanced #edit-phrase,
+.search-advanced #edit-negative,
+.search-advanced #edit-category
+{
+    	font-size: 11px;
+	padding: 2px;
+    	border: solid 1px #CCC;
+    	width: 180px;
+    	background-color: #FFF;
+	margin-top: 5px;
+}
+
+.search-advanced .form-checkbox
+{
+    	font-size: 11px;
+	padding: 2px;
+}
+
+.search-results .search-info
+{
+	display: none;
+}
+
+.box .content
+{
+	border-top: solid 1px #CCC;
+	padding-top: 9px;
+	margin-top: 9px;
+	padding-right: 15px;
+	margin-right: 5px;
+}
+
+.search-results .title
+{
+    	font-size: 11px;
+	font-weight: bold;
+}
+
+.search-results .search-snippet
+{
+	font-style: italic;
+}
+
 
 /**********************************************************
  *				KONTAKT

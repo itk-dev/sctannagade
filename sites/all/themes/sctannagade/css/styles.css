@@ -195,6 +195,7 @@ a:hover
 	float: right;
 	padding-top: 5px;
 	padding-right: 10px;
+	height: 40px;
 }
 
 			
@@ -203,13 +204,13 @@ a:hover
 	clear: both;
 	height: 20px;
 	padding-right: 7px;
+	float: right;
 }
 
 #container-top .links>li
 {
-	overflow: visible;
-	position: relative;
-	padding-right: 7px;
+	padding: 0 7px 0 0;
+	margin: 0 0px 0 7px;
 	border-right: 1px solid;
 	border-color: #8dc63f;
 	font-family: arial;
@@ -225,7 +226,7 @@ a:hover
 #container-top .links>li>a
 {
 	padding: 0px;
-	text-indent: -9999em;
+	text-align: right;
 }
 
 #container-top .links a:link
