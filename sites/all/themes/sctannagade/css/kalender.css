@@ -73,6 +73,32 @@ h3 .date-display-separator
 	margin-top: -3px;
 }
 
+.panel-display .panel-pane .view-Kalender .view-header h3
+{
+	background:transparent url(../images/back-news-top.jpg) no-repeat scroll left center;
+	height: 49px;
+	padding-left: 15px;
+	margin-left: -15px;
+	padding-top: 3px;
+	margin-top: -3px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.panel-display .panel-pane .view-Kalender .view-header .current-date
+{
+	background:transparent url(../images/today_small.png) no-repeat scroll right top;
+	padding-left: 15px;
+	margin-left: -15px;
+	display: block;
+	position: absolute;
+	z-index: 1;
+	height: 125px;
+	width: 550px;
+}
 
 .view-display-id-panel_pane_1 .view-content .item-list .views-field-title,
 .view-display-id-panel_pane_2 .view-content .item-list .views-field-title

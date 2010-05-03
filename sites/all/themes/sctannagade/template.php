@@ -107,7 +107,7 @@ function sctannagade_preprocess_node(&$vars, $hook) {
     if (!empty($node->field_pictures[0]['view'])) {
       $tabs .= '<li class="pictures">' .l(t('Pictures'), '#pictures'). '<span></span></li>';
     }
-    if (!empty($node->field_contact[0])) {
+    if (!empty($node->field_contact[0]['value'])) {
       $tabs .= '<li class="contact">' .l(t('Contact'), '#contact'). '<span></span></li>';
     }
     $tabs .= '</ul></div>';
@@ -128,7 +128,7 @@ function sctannagade_preprocess_node(&$vars, $hook) {
     if (!empty($node->field_lokale_overigt[0]['value'])) {
       $tabs .= '<li class="other">' .l(t('Other'), '#other'). '<span></span></li>';
     }
-    if (!empty($node->field_lokale_contact[0])) {
+    if (!empty($node->field_lokale_contact[0]['value'])) {
       $tabs .= '<li class="contact">' .l(t('Contact'), '#contact'). '<span></span></li>';
     }
     $tabs .= '</ul></div>';
@@ -143,10 +143,10 @@ function sctannagade_preprocess_node(&$vars, $hook) {
     if (!empty($node->field_outdor_pictures[0]['view'])) {
       $tabs .= '<li class="pictures">' .l(t('Pictures'), '#pictures'). '<span></span></li>';
     }
-    if (!empty($node->field_outdor_ovrigt[0])) {
+    if (!empty($node->field_outdor_ovrigt[0]['value'])) {
       $tabs .= '<li class="other">' .l(t('Other'), '#other'). '<span></span></li>';
     }
-    if (!empty($node->field_outdor_contact[0])) {
+    if (!empty($node->field_outdor_contact[0]['value'])) {
       $tabs .= '<li class="contact">' .l(t('Contact'), '#contact'). '<span></span></li>';
     }
     $tabs .= '</ul></div>';
@@ -195,4 +195,14 @@ function sctannagade_breadcrumb($breadcrumb) {
     $breadcrumb[count($breadcrumb)-1] = '<span class="last">' .$breadcrumb[count($breadcrumb)-1]. '</span>';
     return implode(' > ', $breadcrumb);
   }
+}
+
+function sctannagade_views_display_filters($view) {  
+  $amount = count($view->exposed_filter);
+  $count = 0;
+  while ($count < $amount) {
+    $view->exposed_filter[$count]['label'] = t($view->exposed_filter[$count]['label']);//here a t function is wrapped around the labels
+    $count++;
+  }
+  return drupal_get_form("views_filters", $view);
 }

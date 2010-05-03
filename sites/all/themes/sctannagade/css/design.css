@@ -93,6 +93,10 @@
 {
 	margin: 0 0 8px 15px;
 	list-style-image: url("../images/ball.png");
+}
+
+#container-content #content-inner #lej-lokaler-item-list li a
+{
 	font-weight: bold;
 }
 
