@@ -82,6 +82,13 @@ h3 .date-display-separator
 	font-weight: bold;
 }
 
+.view-display-id-panel_pane_1 .view-content .item-list .views-field-field-cal-description-value,
+.view-display-id-panel_pane_2 .view-content .item-list .views-field-field-cal-description-value
+{
+	padding-left: 102px;
+	padding-right: 150px;
+}
+
 .view-display-id-panel_pane_1 .view-content .item-list .views-field-field-cal-date-start-value,
 .view-display-id-panel_pane_2 .view-content .item-list .views-field-field-cal-date-start-value
 {
@@ -168,4 +175,9 @@ h3 .date-display-separator
 	padding: 27px 15px 0px 15px;
 	margin: -3px -15px 0px -15px;
 	text-align: center;
+}
+
+.container-inline-date .description
+{
+	display: none;
 }
