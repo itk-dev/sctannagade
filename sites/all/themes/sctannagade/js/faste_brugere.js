@@ -40,8 +40,12 @@ $(document).ready( function() {
 	  return false;
         });
     }
-    if (item.hasClass('email')) {
-       //item.click( function() { return false; });
+    if (item.hasClass('contact')) {
+        item.click( function() {
+	  target = $('.content-contact');
+	  sctannagade_faste_bruger_tab(target, $(this));
+	  return false;
+        });
     }
   });
   

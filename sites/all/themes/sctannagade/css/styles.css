@@ -466,14 +466,15 @@ a:hover
 .li-nav ul
 {
 	width: 550px;
-	min-height: 40px;
+	display: inline;
 }
 
 .li-nav ul li
 {
 	float: left;
-	padding: 0 8px;
+	padding: 0px;
 	border-right: 1px solid #DBDBDB;
+
 }
 
 .li-nav ul li a
@@ -565,6 +566,12 @@ h3 .date-display-single
 	margin-top:24px;
 	padding-top:24px;
 	border-top:1px solid #DBDBDB;
+}
+
+.field-items .field-item li
+{
+	list-style-type:inherit;
+	margin-left: 15px;
 }
 
 /***********************************************************

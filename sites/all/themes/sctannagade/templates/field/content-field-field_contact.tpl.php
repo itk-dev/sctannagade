@@ -1,5 +1,5 @@
 <?php if (!$field_empty) : ?>
-<div id="email" class="field field-type-<?php print $field_type_css ?> field-<?php print $field_name_css ?>">
+<div id="contact" class="field field-type-<?php print $field_type_css ?> field-<?php print $field_name_css ?>">
   <div class="field-items">
     <?php $count = 1;
     foreach ($items as $delta => $item) :

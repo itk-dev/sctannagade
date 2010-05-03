@@ -7,9 +7,8 @@
 {
 	background:transparent url(../images/back-news.jpg) no-repeat scroll left top;
 	margin-left: -15px;
-	padding-left: 15px;
 	position: absolute;
-	width: 555px;
+	width: 570px;
 }
 
 .view-display-id-panel_pane_2 .view-content .item-list li
@@ -106,11 +105,9 @@ h3 .date-display-separator
 
 .view-Kalender .current-date
 {
-	background:transparent url(../images/today_small.png) no-repeat scroll right center;
+	background:transparent url(../images/today_small.png) no-repeat scroll right top;
 	padding-left: 15px;
 	margin-left: -15px;
-	padding-top: 50px;
-	margin-top: -50px;
 	display: block;
 	position: absolute;
 	z-index: 1;

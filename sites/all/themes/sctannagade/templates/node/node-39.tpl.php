@@ -4,9 +4,8 @@
         <?php print $unpublished; ?>
       </h2>
     <?php endif; ?>
- 
-    <?php print $content; ?>
+
     <div id="lej-lokaler-item-list">
-      <?php print views_embed_view('lej_lokaler', 'default'); ?>    
+      <?php print $content; ?>
     </div>
 <!-- /node -->
