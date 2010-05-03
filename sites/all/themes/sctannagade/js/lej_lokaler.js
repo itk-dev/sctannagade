@@ -53,8 +53,12 @@ $(document).ready( function() {
 	  return false;
 	});
     }
-    if (item.hasClass('email')) {
-       //item.click( function() { return false; });
+    if (item.hasClass('contact')) {
+	item.click( function() {
+	  target = $('#contact');
+	  sctannagade_lej_lokaler_tab(target, $(this));
+	  return false;
+	});
     }
   });
   

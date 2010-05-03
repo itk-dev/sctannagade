@@ -387,7 +387,7 @@ a:hover
  *********************************************************/
 
 .js .node-type-faste-brugere .field-field-pictures, 
-.js .node-type-faste-brugere .field-field-email,
+.js .node-type-faste-brugere .field-field-contact,
 .js .node-type-faste-brugere .imagecache-faste_brugere_images
 {
 	display: none;
@@ -406,7 +406,7 @@ a:hover
 .js .node-type-lej-lokaler .field-field-lokale-pictures,
 .js .node-type-lej-lokaler .field-field-lokale-overigt,
 .js .node-type-lej-lokaler .field-field-lokal-plantegning,
-.js .node-type-lej-lokaler .field-field-lokale-email,
+.js .node-type-lej-lokaler .field-field-lokale-contact,
 .js .node-type-lej-lokaler .imagecache-lej-lokaler 
 {
 	display: none;
@@ -424,7 +424,7 @@ a:hover
 
 .js .node-type-outdor-facilities .field-field-outdor-pictures,
 .js .node-type-outdor-facilities .field-field-outdor-ovrigt,
-.js .node-type-outdor-facilities .field-field-outdor-email,
+.js .node-type-outdor-facilities .field-field-outdor-contact,
 .js .node-type-outdor-facilities .imagecache-udendors_faciliteter
 {
 	display: none;
@@ -472,7 +472,7 @@ a:hover
 .li-nav ul li
 {
 	float: left;
-	padding: 0px;
+	padding: 0px 8px;
 	border-right: 1px solid #DBDBDB;
 
 }
@@ -491,11 +491,6 @@ a:hover
 .li-nav ul li a:hover
 {
 	text-decoration:underline;
-}
-
-.li-nav ul li.views-row-first
-{
-	padding-left: 0px;
 }
 
 .li-nav ul li.views-row-last

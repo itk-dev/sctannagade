@@ -46,8 +46,12 @@ $(document).ready( function() {
 	  return false;
 	});
     }
-    if (item.hasClass('email')) {
-       //item.click( function() { return false; });
+    if (item.hasClass('contact')) {
+	item.click( function() {
+	  target = $('#contact');
+	  sctannagade_outdor_facilities_tab(target, $(this));
+	  return false;
+	});
     }
   });
   

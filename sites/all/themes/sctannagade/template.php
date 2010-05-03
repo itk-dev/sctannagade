@@ -128,8 +128,8 @@ function sctannagade_preprocess_node(&$vars, $hook) {
     if (!empty($node->field_lokale_overigt[0]['value'])) {
       $tabs .= '<li class="other">' .l(t('Other'), '#other'). '<span></span></li>';
     }
-    if (!empty($node->field_lokale_email[0]['email'])) {
-      $tabs .= '<li class="email"><a href="mailto:'. $node->field_lokale_email[0]['email'] .'"><span></span></a></li>';
+    if (!empty($node->field_lokale_contact[0])) {
+      $tabs .= '<li class="contact">' .l(t('Contact'), '#contact'). '<span></span></li>';
     }
     $tabs .= '</ul></div>';
     $vars['lej_lokaler_tabs'] = $tabs;
@@ -146,8 +146,8 @@ function sctannagade_preprocess_node(&$vars, $hook) {
     if (!empty($node->field_outdor_ovrigt[0])) {
       $tabs .= '<li class="other">' .l(t('Other'), '#other'). '<span></span></li>';
     }
-    if (!empty($node->field_outdor_email[0]['email'])) {
-      $tabs .= '<li class="email"><a href="mailto:'. $node->field_outdor_email[0]['email'] .'"><span></span></a></li>';
+    if (!empty($node->field_outdor_contact[0])) {
+      $tabs .= '<li class="contact">' .l(t('Contact'), '#contact'). '<span></span></li>';
     }
     $tabs .= '</ul></div>';
     $vars['outdor_facilities_tabs'] = $tabs;

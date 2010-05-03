@@ -42,7 +42,7 @@ $(document).ready( function() {
     }
     if (item.hasClass('contact')) {
         item.click( function() {
-	  target = $('.content-contact');
+	  target = $('#contact');
 	  sctannagade_faste_bruger_tab(target, $(this));
 	  return false;
         });
