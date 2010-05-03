@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
 <head>
@@ -18,7 +19,7 @@
   <?php } ?>
 	<div id="container" class="<?php print $classes; ?>">
 		<div id="container-inner">
-			<h1 id="site-name"><?php print $site_name; ?><a href="http://sktannagade.etek.dk"><span></span></a></h1>
+			<h1 id="site-name"><a href="http://sktannagade.etek.dk"><span></span></a></h1>
 			<div id="container-top">
 				<?php print $search; ?><?php print theme('links', $secondary_links); ?>
 			</div>
@@ -26,6 +27,7 @@
 			<div id="banner">
  			  <?php print $flashbanner; ?>
                         </div>
+
 			<div id="regions"><?php print theme('links', $primary_links); ?></div>
 		</div>
 		<div id="container-content">
@@ -40,7 +42,7 @@
           <?php endif; ?>
          <?php print $messages; ?>
 
-	 <h2><?php print t('Kalender for sct. anna gade'); ?></h2>
+	 <h2><?php print t('Calendar for Sct. Annagade'); ?></h2>
                             	<?php print $content; ?>
                          	</div><!-- /content-inner -->
 				
@@ -72,7 +74,7 @@
 
   	<div id="footer">
 		
-		Fritids- og kultuercentret Sct. Anna Gade | Skt. Anna Gade 38-40 | 8000 Aarhus C
+		Fritids- og kultuercentret Sct. Annagade | Skt. Anna Gade 38-40 | 8000 Aarhus C
 		<?php print $footer; ?><?php print $footer_message; ?><br /><br />
 		<?php print $feed_icons; ?>
   	</div>

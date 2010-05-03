@@ -122,6 +122,34 @@
 	position: relative;
 }
 
+#container-content #content-inner #tabs .item-list .email
+{
+	background: none;	
+	width: auto;
+}
+
+#container-content #content-inner #tabs .item-list .email a
+{
+	background: transparent url(../images/email.png) no-repeat scroll top left;
+	text-align: left;
+	height: 26px;
+	width: 45px;
+	margin-top: -7px;
+	position: absolute;
+}
+
+#container-content #content-inner #tabs .item-list .email span
+{
+	background: none;	
+}
+
+#container-content #content-inner #tabs .email a:hover
+{
+	text-decoration:none;
+	color: #FFF;
+}
+
+
 #container-content #content-inner #tabs .item-list
 {
 	margin-left: -16px;
@@ -132,13 +160,13 @@
 #container-content #content-inner #tabs .item-list li
 {
 	background: transparent url(../images/back-boks-felt.png) no-repeat scroll top left;
-	margin-top: 17px;
+	margin-top: 18px;
 	margin-left: -15px;
 	float: left;
 	display: block;
 	height: 19px;
-	padding: 12px 0 0 0;
-	width: 144px;
+	padding: 10px 0 0 0;
+	width: 140px;
 	text-align: center;
 	z-index: 5;
 }
@@ -148,29 +176,9 @@
 	margin-left: -5px;
 }
 
-#container-content #content-inner #tabs .item-list .email
-{
-	background: transparent url(../images/email.png) no-repeat scroll top left;
-	margin-top: 22px;
-	margin-left: -15px;
-	float: left;
-	height: 26px;
-	padding: 12px 0 0 0;
-	width: 50px;
-	text-align: center;
-}
-
-#container-content #content-inner #tabs .item-list .email span
-{
-	background: none;
-	width: 50px;
-	padding: 5px 20px 0px 20px;
-}
 
 #container-content #content-inner #tabs .item-list li > a
 {
-	width: 144px;
-	overflow: hidden;
 	font-family: arial;
 	font-size: 13px;
 	text-transform: uppercase;
@@ -180,6 +188,8 @@
 {
 	background-position: 0px -31px;
 	position: relative;
+	margin-top: 17px;
+	padding: 12px 0 0 0;
 }
 
 #container-content #content-inner #tabs .item-list a.active
@@ -432,4 +442,46 @@
 #contact-mail-page #edit-submit
 {
 	margin-left: -5px;
+}
+
+/**********************************************************
+ *				LOGIN
+ **********************************************************/
+
+#user-login #edit-name
+{
+    	font-size: 13px;
+    	display: block;
+	margin-top: 4px;
+    	padding: 4px;
+    	border: solid 1px #C5E29F;
+    	width: 300px;
+    	background-color: #FFF;
+}
+
+#user-login .description,
+#user-login .form-required
+{
+	display: none;
+}
+
+#user-login #edit-pass
+{
+    	font-size: 13px;
+    	display: block;
+	margin-top: 4px;
+    	padding: 4px;
+    	border: solid 1px #C5E29F;
+    	width: 300px;
+    	background-color: #FFF;
+}
+
+#user-login #edit-submit
+{
+    	font-size: 13px;
+	margin-top: 4px;
+    	padding: 4px;
+    	border: solid 1px #C5E29F;
+    	width: 100px;
+    	background-color: #EEE;
 }

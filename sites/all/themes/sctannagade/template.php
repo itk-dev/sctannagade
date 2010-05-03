@@ -125,7 +125,7 @@ function sctannagade_preprocess_node(&$vars, $hook) {
     if (!empty($node->field_lokal_plantegning[0]['view'])) {
       $tabs .= '<li class="floorplan">' .l(t('Floor plan'), '#floorplan'). '<span></span></li>';
     }
-    if (!empty($node->field_lokale_overigt[0])) {
+    if (!empty($node->field_lokale_overigt[0]['value'])) {
       $tabs .= '<li class="other">' .l(t('Other'), '#other'). '<span></span></li>';
     }
     if (!empty($node->field_lokale_email[0]['email'])) {

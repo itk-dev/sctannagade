@@ -78,7 +78,7 @@
 
   	<div id="footer">
 		
-		Fritids- og kultuercentret Sct. Anna Gade | Skt. Anna Gade 38-40 | 8000 Aarhus C
+		Fritids- og kultuercentret Sct. Annagade | Skt. Anna Gade 38-40 | 8000 Aarhus C
 		<?php print $footer; ?><?php print $footer_message; ?><br /><br />
 		<?php print $feed_icons; ?>
   	</div>

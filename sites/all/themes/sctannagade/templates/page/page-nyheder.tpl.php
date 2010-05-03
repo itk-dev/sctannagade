@@ -18,7 +18,7 @@
   <?php } ?>
 	<div id="container" class="<?php print $classes; ?>">
 		<div id="container-inner">
-			<h1 id="site-name"><?php print $site_name; ?><a href="http://sktannagade.etek.dk"><span></span></a></h1>
+			<h1 id="site-name"><a href="http://sktannagade.etek.dk"><span></span></a></h1>
 			<div id="container-top">
 				<?php print $search; ?><?php print theme('links', $secondary_links); ?>
 			</div>
@@ -40,7 +40,7 @@
           <?php endif; ?>
          <?php print $messages; ?>
 
-	 <h2><?php print t('Nyheder fra sct. anna gade'); ?></h2>
+	 <h2><?php print t('News from Sct. Annagade'); ?></h2>
 	 <?php print $content_top; ?>
          <?php if ($current_month): ?>
            <div class="current-month">
@@ -78,7 +78,7 @@
 
   	<div id="footer">
 		
-		Fritids- og kultuercentret Sct. Anna Gade | Skt. Anna Gade 38-40 | 8000 Aarhus C
+		Fritids- og kultuercentret Sct. Annagade | Skt. Anna Gade 38-40 | 8000 Aarhus C
 		<?php print $footer; ?><?php print $footer_message; ?><br /><br />
 		<?php print $feed_icons; ?>
   	</div>
