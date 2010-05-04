@@ -132,6 +132,17 @@
 	width: 570px;
 }
 
+.view-display-id-page_2 .view-empty>p
+{
+	background:transparent url(../images/back-news.jpg) no-repeat scroll left top;
+	margin-left: -15px;
+	position: inherit;
+	width: 560px;
+	height: 100px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
 .view-display-id-page_2 .view-content .item-list li,
 .view-display-id-panel_pane_1 .view-content .item-list li
 {
