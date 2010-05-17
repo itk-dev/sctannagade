@@ -148,11 +148,60 @@ h3 .date-display-separator
 	width: 550px;
 }
 
-.view-Kalender .description .container-inline-date
+.view-Kalender #edit-date-filter-min-wrapper
 {
-	padding-top: 5px;
-	display: inline-block;
+	position: absolute;
+	padding: 5px 0 0 0;
+	margin: 0px;
 }
+
+.view-Kalender #edit-date-filter-max-wrapper
+{
+	padding: 5px 0 0 95px;
+	margin: 0px;
+}
+
+.date-clear .description
+{
+	position: absolute;
+}
+
+.description .container-inline-date
+{
+	padding: 0px;
+	margin: 0x;
+}
+
+.date-views-filter-wrapper .date-clear
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.container-inline-date .form-item .description
+{
+	display: none;
+}
+
+#edit-type-wrapper #edit-type
+{
+    	font-size: 10px;
+	padding: 2px;
+    	border: solid 1px #CCC;
+    	width: 120px;
+    	background-color: #FFF;
+}
+
+#edit-date-filter-min-wrapper #edit-date-filter-min-datepicker-popup-0,
+#edit-date-filter-max-wrapper #edit-date-filter-max-datepicker-popup-0
+{
+    	font-size: 10px;
+	padding: 2px;
+    	border: solid 1px #CCC;
+    	width: 80px;
+    	background-color: #FFF;
+}
+
 
 .view-Kalender .views-widget #edit-type-wrapper
 {
@@ -176,7 +225,13 @@ h3 .date-display-separator
 
 .view-Kalender .view-filters .date-views-filter-wrapper
 {
-	min-width: 0px;
+	min-width: 190px;
+}
+
+.view-Kalender .view-filters .container-inline-date
+{
+	padding: 0px;
+	height: 0px;
 }
 
 .view-Kalender .view-filters .form-item .form-select
@@ -200,7 +255,6 @@ h3 .date-display-separator
 	height: 24px;
 	padding: 27px 15px 0px 15px;
 	margin: -3px -15px 0px -15px;
-	text-align: center;
 }
 
 
@@ -215,11 +269,3 @@ h3 .date-display-separator
 	padding-top: 15px;
 }
 
-view-empty
-
-
-
-.container-inline-date .description
-{
-	display: none;
-}

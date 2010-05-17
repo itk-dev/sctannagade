@@ -5,6 +5,7 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  <link href="sites/all/themes/sctannagade/favicon.png" rel="shortcut icon" />
 </head>
       
 <body class="<?php print $section_class; print $body_classes; if (!empty($admin)) print ' admin' ?>">
@@ -77,8 +78,7 @@
 	</div>
 
   	<div id="footer">
-		
-		Fritids- og kultuercentret Sct. Annagade | Skt. Anna Gade 38-40 | 8000 Aarhus C
+		Fritidscenter Sct. Annagade, Sct. Annagade 38-40, 8000 &Aring;rhus C.
 		<?php print $footer; ?><?php print $footer_message; ?><br /><br />
 		<?php print $feed_icons; ?>
   	</div>
