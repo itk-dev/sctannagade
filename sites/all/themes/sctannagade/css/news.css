@@ -184,6 +184,7 @@
 .view-display-id-page_2 .view-content .item-list .views-field-field-news-description-value,
 .view-display-id-panel_pane_1 .view-content .item-list .views-field-field-news-description-value
 {
+	padding-top: 10px;
 	padding-left: 110px;
 }
 

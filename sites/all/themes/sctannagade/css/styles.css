@@ -102,23 +102,18 @@ a:hover
 {
 	float:left;
 	height:70px;
-	overflow:hidden;
-	position:absolute;
+	position:relative;
 	width:250px;
 }
 
 #site-name span
 {
-	-moz-background-clip:border;
-	-moz-background-inline-policy:continuous;
-	-moz-background-origin:padding;
 	background:transparent url(../images/back-title.png) no-repeat scroll left top;
 	height:70px;
 	left:8px;
 	position:absolute;
 	top:20px;
 	width:250px;
-	padding: 0px;
 }
 
 #banner

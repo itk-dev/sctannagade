@@ -28,6 +28,7 @@
 	border-bottom: 1px solid;
 	margin-bottom: 15px;
 }
+
 #block-views-Statement-block_1 .content .view .view-content .views-row
 {
 	background: #fff url(../images/back-statement-top.png) left top no-repeat;
@@ -37,10 +38,10 @@
 #block-views-Statement-block_1 .content .view .view-content .views-row .views-field-body
 {
 	background: #fff url(../images/back-statement-middle.png) left top repeat-y;
-	text-align: center;
 	padding: 0px 20px 0px 10px;
+	text-align: center;
 	font-family: "Arial Narrow", Arial, sans-serif;
-	font-size: 18px;
+	font-size: 15px;
 	color: #fff;
 }
 
@@ -107,6 +108,14 @@
 	margin-bottom: 2px;  
 }
 
+
+#container-content #content-inner #lej-lokaler-item-list h3
+{
+	font-size: 13px;
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 10px;  
+}
 #container-content #content-inner #tabs h2
 {
 	font-family: arial;

@@ -5,7 +5,7 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
-  <link href="sites/all/themes/sctannagade/favicon.png" rel="shortcut icon" />
+  <link href="sites/all/themes/sctannagade/favicon.ico" rel="shortcut icon" />
 </head>
       
 <body class="<?php print $section_class; print $body_classes; if (!empty($admin)) print ' admin' ?>">
