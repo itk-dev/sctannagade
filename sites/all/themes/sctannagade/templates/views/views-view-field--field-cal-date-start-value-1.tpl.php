@@ -24,9 +24,11 @@
   list($date, $time) = split(' ', $row->node_data_field_cal_date_start_field_cal_date_start_value);
 
   if ($date == date('Y-m-d')) {
-    print '<span class="date-display-single current-date">' .date_format_date(new DateTime($date), 'custom', 'l \D. d/m'). '</span>';
+    print '<span class="date-display-single current-date">' .date_format_date(new DateTime($date), 'custom', 'l \D. d/m'). '</span>'; 
+    print '<div class="kugler"></div>';
   }
   else {
     print $output;
+    print '<div class="kugler"></div>';
   }
 ?>

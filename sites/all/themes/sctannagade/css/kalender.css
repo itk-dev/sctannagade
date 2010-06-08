@@ -61,6 +61,7 @@ h3 .date-display-separator
 	font-size: 13px;
 	color: #FFF;
 	font-weight: bold;
+	float: left;
 }
 
 .panel-display .panel-pane .view-Kalender .item-list h3
@@ -98,6 +99,22 @@ h3 .date-display-separator
 	z-index: 1;
 	height: 200px;
 	width: 550px;
+}
+
+.panel-display .panel-pane .view-Kalender .view-header .kugler
+{
+	background: url("../images/kugler.png") no-repeat scroll left center transparent;
+	margin: 2px 0 0 75px;
+	padding: 1px 0 0 7px;
+}
+
+.panel-display .panel-pane .view-Kalender .view-header #calender-current-date
+{
+	margin-top: -28px;
+	position: absolute;
+	z-index: 1;
+	font-style: italic;
+	font-size: 10px;
 }
 
 .view-display-id-panel_pane_1 .view-content .item-list .views-field-title,
@@ -146,6 +163,14 @@ h3 .date-display-separator
 	z-index: 1;
 	height: 125px;
 	width: 550px;
+}
+
+.view-Kalender .kugler
+{
+	background: url("../images/kugler.png") no-repeat scroll left center transparent;
+	margin: 2px 0 0 5px;
+	padding: 13px 0 0 7px;
+	float: left;
 }
 
 .view-Kalender #edit-date-filter-min-wrapper
