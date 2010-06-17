@@ -228,6 +228,24 @@
 	color: #FFF;
 }
 
+#container-content #content-inner #tabs .boks a:link
+{
+	text-decoration:none;
+	color: #8DC63F;
+}
+
+#container-content #content-inner #tabs .boks a:visited
+{
+	text-decoration:none;
+	color: ##8DC63F;
+}
+
+#container-content #content-inner #tabs .boks a:hover
+{
+	text-decoration:underline;
+	color: ##8DC63F;
+}
+
 #container-content #content-inner #tabs .item-list li span
 {
 	-moz-background-clip:border;
@@ -285,6 +303,7 @@
 #container-content #content #content-inner .Bygninger-img
 {
 	padding: 10px 0px 50px;
+	margin-bottom: 10px;
 	border-bottom:1px solid #ccc;
 }
 
@@ -294,11 +313,6 @@
 	font-family: arial;
 	font-size: 13px;
 	font-weight: bold;
-}
-
-#container-content #content #content-inner .Bygninger p
-{
-	padding: 2px 0px 2px 0px;
 }
 
 #container-content #content #content-inner .Bygninger li

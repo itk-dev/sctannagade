@@ -1,10 +1,10 @@
 $(document).ready(function() {
   if (jQuery.url.segment(0) == 'kontakt' || jQuery.url.segment(0) == 'contact') {
     // Contact form fading out contact mail
-    sctannagade_toggle_field($('#contact-mail-page #edit-name'), 'Skrive dit fulde navn');
+    sctannagade_toggle_field($('#contact-mail-page #edit-name'), 'Skriv dit fulde navn');
 
     // Contact form fading out e-mail
-    sctannagade_toggle_field($('#contact-mail-page #edit-mail'), 'Skrive din e-mail adresse');
+    sctannagade_toggle_field($('#contact-mail-page #edit-mail'), 'Skriv din e-mail adresse');
   }
 
   // Fix search field

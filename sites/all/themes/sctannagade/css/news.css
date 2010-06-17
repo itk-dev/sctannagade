@@ -109,18 +109,33 @@
 	font-weight: bold;
 }
 
-
-.current-month
+.content-news
 {
 	background:transparent url(../images/back-news-top.jpg) no-repeat scroll left center;
 	height: 49px;
 	padding-left: 15px;
 	margin-left: -15px;
+	padding-top: 3px;
+	margin-top: -3px;
+}
+
+.content-news .current-month
+{
+
 	text-transform: uppercase;
 	font-size: 13px;
 	color: #FFF;
-	padding-top: 3px;
-	margin-top: -3px;
+	float: left;
+}
+
+.content-news .kugler2
+{
+	background: url("../images/kugler.png") no-repeat scroll left center transparent;
+	margin: 1px 0 0 5px;
+	padding: 7px 0 0 7px;
+	width: 13px;
+	height: 7px;
+	float: left;
 }
 
 .view-display-id-page_2 .view-content .item-list ul,

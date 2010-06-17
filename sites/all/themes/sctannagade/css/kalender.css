@@ -1,3 +1,8 @@
+.pane-kalender-panel-pane-2 .view-display-id-panel_pane_2
+{
+	min-height: 200px;
+}
+
 .view-Kalender .view-content .item list
 {
 	padding-top: 30px;
@@ -7,7 +12,6 @@
 {
 	background:transparent url(../images/back-news.jpg) no-repeat scroll left top;
 	margin-left: -15px;
-	position: absolute;
 	width: 570px;
 }
 
@@ -74,6 +78,11 @@ h3 .date-display-separator
 	margin-top: -3px;
 }
 
+.panel-display .panel-pane .view-Kalender .item-list .felt
+{
+	float: left;
+}
+
 .panel-display .panel-pane .view-Kalender .view-header h3
 {
 	background:transparent url(../images/back-news-top.jpg) no-repeat scroll left center;
@@ -97,15 +106,20 @@ h3 .date-display-separator
 	display: block;
 	position: absolute;
 	z-index: 1;
-	height: 200px;
+	height: 100%;
 	width: 550px;
 }
 
 .panel-display .panel-pane .view-Kalender .view-header .kugler
 {
 	background: url("../images/kugler.png") no-repeat scroll left center transparent;
-	margin: 2px 0 0 75px;
-	padding: 1px 0 0 7px;
+	margin-top: 2px;
+	margin-left: 75px;
+	padding-top: 6px;
+	padding-left: 7px;
+	position: absolute;
+	width: 13px;
+	height: 7px;
 }
 
 .panel-display .panel-pane .view-Kalender .view-header #calender-current-date
@@ -153,23 +167,23 @@ h3 .date-display-separator
 	padding-right: 150px;
 }
 
-.view-Kalender .current-date
+.view-Kalender .felt .current-date
 {
 	background:transparent url(../images/today_small.png) no-repeat scroll right top;
-	padding-left: 15px;
+	padding-left: 450px;
 	margin-left: -15px;
-	display: block;
-	position: absolute;
 	z-index: 1;
 	height: 125px;
-	width: 550px;
+	position: absolute;
 }
 
-.view-Kalender .kugler
+.view-Kalender .felt .kugler
 {
 	background: url("../images/kugler.png") no-repeat scroll left center transparent;
-	margin: 2px 0 0 5px;
-	padding: 13px 0 0 7px;
+	margin: 1px 0 0 5px;
+	padding: 7px 0 0 7px;
+	width: 13px;
+	height: 7px;
 	float: left;
 }
 

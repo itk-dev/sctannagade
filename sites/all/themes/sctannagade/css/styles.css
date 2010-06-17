@@ -381,6 +381,11 @@ a:hover
  * Faste brugere 
  *********************************************************/
 
+#contact
+{
+	display: block;
+}
+
 .js .node-type-faste-brugere .field-field-pictures, 
 .js .node-type-faste-brugere .field-field-contact,
 .js .node-type-faste-brugere .imagecache-faste_brugere_images
@@ -398,6 +403,7 @@ a:hover
  * Lej lokaler
  *********************************************************/
 
+
 .js .node-type-lej-lokaler .field-field-lokale-pictures,
 .js .node-type-lej-lokaler .field-field-lokale-overigt,
 .js .node-type-lej-lokaler .field-field-lokal-plantegning,
@@ -412,6 +418,7 @@ a:hover
 {
 	display: none;
 }
+
 
 /*********************************************************
  * Udendors faciliteter
@@ -430,6 +437,7 @@ a:hover
 {
 	display: none;
 }
+
 
 
 /***********************
@@ -456,11 +464,13 @@ a:hover
 	border-top: 1px solid #DBDBDB;
 	padding: 8px 15px 0 0;
 	margin-right: 15px;
+	width: 540px;
+	display: inline;
+	position:absolute;
 }
 
 .li-nav ul
 {
-	width: 550px;
 	display: inline;
 }
 
@@ -468,7 +478,9 @@ a:hover
 {
 	float: left;
 	padding: 0px 8px;
+	margin-bottom: 5px;
 	border-right: 1px solid #DBDBDB;
+	display: inline;
 
 }
 
@@ -497,6 +509,41 @@ a:hover
 {
 	text-decoration:none;
 } 
+
+/*************************************************************
+ * about SCT ANNA GADE
+ *************************************************************/
+
+#container-content .lillemenu a:link
+{
+	text-decoration: none;
+	color: #8dc63f;
+}
+
+#container-content .lillemenu a:visited
+{
+	text-decoration: none;
+	color: #8dc63f;
+}
+
+#container-content .lillemenu a:hover
+{
+	text-decoration: underline;
+	color: #8dc63f;
+}
+
+#container-content .lillemenu ul
+{	
+	list-style: none outside none;
+	text-align: left;
+}
+
+#container-content .lillemenu li
+{
+	list-style-image: url("../images/ball.png");
+	margin: 0 0 0 15px;
+	padding: 3px 0 0 0;
+}
 
 /*************************************************************
  * Kalender

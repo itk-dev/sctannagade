@@ -42,10 +42,11 @@
 
 	 <h2><?php print t('News from Sct. Annagade'); ?></h2>
 	 <?php print $content_top; ?>
-         <?php if ($current_month): ?>
+          <div class="content-news">
+	   <?php if ($current_month): ?>
            <div class="current-month">
 	     <?php print $current_month; ?>
-           </div>
+           </div><div class="kugler2"></div></div>
          <?php endif; ?>
                             	<?php print $content; ?>
                          	</div><!-- /content-inner -->
