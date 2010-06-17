@@ -561,6 +561,11 @@ h3 .date-display-single
 	font-weight: bold;
 }
 
+ul li div.views-field-field-cal-description-value a 
+{
+	margin: 0 !important;
+}
+
 /*************************************************************
  * Breadcrumb
  ************************************************************/
@@ -607,7 +612,7 @@ h3 .date-display-single
 
 .field-items .field-item li
 {
-	list-style-type:inherit;
+	list-style-type:disc;
 	margin-left: 15px;
 }
 
