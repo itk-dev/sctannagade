@@ -545,6 +545,24 @@ a:hover
 	padding: 3px 0 0 0;
 }
 
+#contact-mail-page a:link
+{
+	text-decoration: none;
+	color: #8dc63f;
+}
+
+#contact-mail-page a:visited
+{
+	text-decoration: none;
+	color: #8dc63f;
+}
+
+#contact-mail-page a:hover
+{
+	text-decoration: underline;
+	color: #8dc63f;
+}
+
 /*************************************************************
  * Kalender
  *************************************************************/
