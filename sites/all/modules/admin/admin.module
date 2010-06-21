@@ -210,7 +210,7 @@ function admin_flush_caches() {
  * Implementation of hook_system_info_alter().
  * Throw a flag that tells us we need to reinstantiate the admin theme.
  */
-function admin_system_info_alter(&$info, &$theme) {
+function admin_system_info_alter(&$info, $theme) {
   static $once;
   if (!isset($once)) {
     $once = TRUE;

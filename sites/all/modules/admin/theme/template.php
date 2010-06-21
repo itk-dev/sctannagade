@@ -91,7 +91,7 @@ function slate_node_form($form) {
 /**
  * Override of theme_fieldset().
  */
-function slate_fieldset(&$element) {
+function slate_fieldset($element) {
   $attr = isset($element['#attributes']) ? $element['#attributes'] : array();
   $attr['class'] = !empty($attr['class']) ? $attr['class'] : '';
   $attr['class'] .= ' fieldset';
