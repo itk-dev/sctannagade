@@ -19,7 +19,7 @@
   <?php } ?>
 	<div id="container" class="<?php print $classes; ?>">
 		<div id="container-inner">
-			<h1 id="site-name"><a href="http://sktannagade.etek.dk"></a></h1>
+			<h1 id="site-name"><a href="<?php print $front_page; ?>"></a></h1>
 			<div id="container-top">
 				<?php print $search; ?><?php print theme('links', $secondary_links); ?>
 			</div>

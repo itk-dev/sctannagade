@@ -247,3 +247,8 @@
 	padding-left:110px;
 	padding-right:0px;
 }
+
+.views-field-field-news-description-value a
+{
+	margin-left: 0px !important;
+}
