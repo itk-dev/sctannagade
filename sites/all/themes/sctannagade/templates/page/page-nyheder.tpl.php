@@ -77,12 +77,11 @@
 		</div>
 	</div>
 
-  	<div id="footer">
-		
-		Fritids- og kultuercentret Sct. Annagade | Skt. Anna Gade 38-40 | 8000 Aarhus C
-		<?php print $footer; ?><?php print $footer_message; ?><br /><br />
-		<?php print $feed_icons; ?>
-  	</div>
+        <div id="footer">
+                Fritidscenter Sct. Annagade, Sct. Annagade 38-40, 8000 &Aring;rhus C.
+                <?php print $footer; ?><?php print $footer_message; ?><br /><br />
+                <?php print $feed_icons; ?>
+        </div>
 
 <?php print $closure ?>
 
