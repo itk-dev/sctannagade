@@ -25,7 +25,7 @@
 
   if ($date == date('Y-m-d')) {
     print '<div class="felt"><span class="date-display-single">' .date_format_date(new DateTime($date), 'custom', 'l \D. d/m'). '</span>'; 
-    print '<div class="date-display-single"><div class="current-date"></div></div>';    
+    print '<div class="date-display-single"><div class="current-date" id="today"></div></div>';    
     print '<div class="kugler"></div></div>';
   }
   else {

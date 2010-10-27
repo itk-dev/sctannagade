@@ -47,8 +47,8 @@
 
 #block-views-Statement-block_1 .content .view .view-content .views-row .views-field-title
 {
-	height: 50px;
-	padding: 5px 20px 0px 10px;
+	height: 75px;
+	padding: 10px 20px 0px 10px;
 	background: #fff url(../images/back-statement-bottom.png) left top no-repeat;
 	text-align: right;
 	font-family: arial, sans-serif;
