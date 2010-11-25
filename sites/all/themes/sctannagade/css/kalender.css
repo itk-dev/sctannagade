@@ -213,8 +213,8 @@ h3 .date-display-separator
 
 .description .container-inline-date
 {
-	padding: 0px;
-	margin: 0x;
+	padding: 0;
+	margin: 0;
 }
 
 .date-views-filter-wrapper .date-clear

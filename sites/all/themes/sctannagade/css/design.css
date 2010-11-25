@@ -80,7 +80,7 @@
 #container-content #content-inner  #lej-lokaler-item-list ul 
 {
 	margin-top: 15px;
-	padding-left 4px;
+	padding-left: 4px;
 }
 
 #container-content #content-inner #faste-brugere-item-list li 
@@ -237,13 +237,13 @@
 #container-content #content-inner #tabs .boks a:visited
 {
 	text-decoration:none;
-	color: ##8DC63F;
+	color: #8DC63F;
 }
 
 #container-content #content-inner #tabs .boks a:hover
 {
 	text-decoration:underline;
-	color: ##8DC63F;
+	color: #8DC63F;
 }
 
 #container-content #content-inner #tabs .item-list li span
@@ -327,16 +327,14 @@
 }
 
 /**********************************************************
- *				SØG
  **********************************************************/
 
-#search-block-form #edit-search-block-form-1
-{
-    	font-size: 10px;
+#search-block-form #edit-search-block-form-1 {
+  font-size: 10px;
 	padding: 2px;
-    	border: solid 1px #CCC;
-    	width: 150px;
-    	background-color: #FFF;
+  border: solid 1px #CCC;
+  width: 150px;
+  background-color: #FFF;
 }
 
 #search-block-form #edit-search-block-form-1-wrapper
