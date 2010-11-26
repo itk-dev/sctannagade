@@ -1,4 +1,12 @@
-// $Id: README.txt,v 1.4.2.10.2.5 2009/01/29 18:01:47 jeremy Exp $
+// $Id: README.txt,v 1.4.2.10.2.11 2010/09/29 15:04:05 robertDouglass Exp $
+
+## Requirements ##
+
+- PHP 5.1 or greater
+- Availability of a memcached daemon: http://memcached.org/
+- One of the two PECL memcache packages:
+  - http://pecl.php.net/package/memcache
+  - http://pecl.php.net/package/memcached (recommended
 
 ## INSTALLATION ##
 
@@ -114,7 +122,7 @@ clusters. 'cache_filter' and 'cache_menu' bins goe to 'cluster2'. All other
 bins go to 'default'.
 
 $conf = array(
-  'cache_inc' => './includes/memcache.inc',
+  'cache_inc' => './sites/all/modules/memcache/memcache.inc',
   'memcache_servers' => array('localhost:11211' => 'default',
                               'localhost:11212' => 'default',
                               '123.45.67.890:11211' => 'default',
@@ -180,3 +188,37 @@ See http://drupal.org/node/273824
 
 A module offering a UI for memcache is included. It provides stats, a
 way to clear the cache, and an interface to organize servers/bins/clusters.
+
+
+## Memcached PECL Extension Support
+
+We also now support the Memcached PECL extension. If you install this extension,
+it will be used by default. This new extension backends to libmemcached and 
+allows you to use some of the newer advanced features in memcached 1.4. 
+
+NOTE: It is important to realize that the memcache php.ini options do not impact
+the memcached extension, this new extension doesn't read in options that way.
+Instead, it takes options directly from Drupal. Because of this, you must
+configure memcached in settings.php. Please look here for possible options:
+
+http://us2.php.net/manual/en/memcached.constants.php
+
+An example configuration block is below, this block also illustrates our
+default options. These will be set unless overridden in settings.php.
+
+$conf['memcache_options'] = array(
+  Memcached::OPT_COMPRESSION => FALSE,
+  Memcached::OPT_DISTRIBUTION => Memcached::DISTRIBUTION_CONSISTENT,
+);
+
+These are as follows:
+
+ * Turn off compression, as this takes more CPU cycles than its worth for most users
+ * Turn on consistent distribution, which allows you to add/remove servers easily
+
+If you are using memcached 1.4 or above, you should enable the binary protocol,
+which is more advanced and faster, by adding the following to settings.php:
+
+$conf['memcache_options'] = array(
+  Memcached::OPT_BINARY_PROTOCOL => TRUE,
+);
