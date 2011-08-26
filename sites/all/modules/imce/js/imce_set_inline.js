@@ -1,11 +1,10 @@
-// $Id: imce_set_inline.js,v 1.4 2010/03/17 20:55:38 ufku Exp $
-
 (function($) {
 
 var ii = window.imceInline = {};
 
-ii.initiate = function() {
-  $('div.imce-inline-wrapper').show().find('a').click(function() {
+// Drupal behavior
+Drupal.behaviors.imceInline = function(context) {
+  $('div.imce-inline-wrapper', context).not('.processed').addClass('processed').show().find('a').click(function() {
     var i = this.name.indexOf('-IMCE-');
     ii.activeTextarea = $('#'+ this.name.substr(0, i)).get(0);
     ii.activeType = this.name.substr(i+6);
@@ -21,7 +20,7 @@ ii.initiate = function() {
 
 //function to be executed when imce loads.
 ii.load = function(win) {
-  win.imce.setSendTo(Drupal.t('Send to @app', {'@app': Drupal.t('textarea')}), ii.insert);
+  win.imce.setSendTo(Drupal.t('Insert file'), ii.insert);
   $(window).unload(function() {
     if (ii.pop && !ii.pop.closed) ii.pop.close();
   });
@@ -55,7 +54,5 @@ ii.insert = function (file, win) {
   win.blur();
   ii.insertAtCursor(ii.activeTextarea, html, type);
 };
-
-$(document).ready(ii.initiate);
 
 })(jQuery);
