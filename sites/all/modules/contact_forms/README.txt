@@ -1,29 +1,19 @@
-$Id: README.txt,v 1.7 2009/10/23 11:40:59 gpdinoz Exp $
 
 CONTACT_FORMS.MODULE
 
 Overview
 --------
 This module expands the features of the site wide
-contact form. It eliminates the need for the drop
-down category menu by generating a form, and a
-unique path, for each of the contact form categories.
+contact form. It eliminates the drop down category menu
+by generating a form with a unique path, for each of the
+contact form categories.
 
 The path 'contact/{category}' generates a contact form
-for that category with a title = 'Contact {category}'.
-e.g. path 'contact/Jill Jones' generates a contact form
-for the category 'Jill Jones' with a title = 'Contact Jill Jones'. You can use underscore "_" or a dash "-" instead of spaces. 
+for that category with a title = 'contact {category}'.
 
 If a path is entered that does not have a category you
 can specify a page to redirect to. The default fall back
 path is contact.
-
-To define the subject of the generated form the path is as follows
-'contact/{category}/Subject goes here'
-e.g. path 'contact/Jill Jones/Enquiry about Sales' generates a contact form
-for the category 'Jill Jones' with a title = 'Contact jill Jones' and the subject
-'Enquiry about Sales'.
-
 
 
 Requirements
@@ -40,7 +30,7 @@ Installation
 
 Upgrading
 ---------
-If you are upgrading from an older version of Contact Lists
+If you are upgrading from an older version of Contact Forms
 Disable and uninstall the old version then delete the contact_list folder
 before you upload and enable the new version.
 
@@ -55,7 +45,17 @@ contact forms.
 Create a "Contact Directory" page with a path like 'directory'
 and lay it out how you would like it. Links to the forms can
 be made with the following code [using the drupal link function]
+
+The following links will work
 <?php
+print l('Email Jill Jones', 'contact/Jill_Jones');
+
+// OR
+
+print l('Email Jill Jones', 'contact/Jill-Jones');
+
+// OR
+
 print l('Email Jill Jones', 'contact/Jill Jones');
 ?>
 This page can be set as the fall back page if a contact/category
@@ -92,4 +92,6 @@ incrn8
 joachim
 mfredrickson
 jandd
-arcaneadam
+zyxware
+Ben Coleman
+verta
