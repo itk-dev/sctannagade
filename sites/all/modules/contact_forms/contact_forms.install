@@ -10,7 +10,7 @@ function contact_forms_install() {
   db_add_field($ret, 'contact', 'page_info', array('type' => 'text', 'size' => 'big', 'not null' => FALSE));
 
   watchdog ('Contact Forms', 'contact_forms module installed');
-  drupal_set_message(t("Contact Forms module has been enabled. You can edit its settings at !link",
+  drupal_set_message(t("Contact Forms module has been enabled. Please go to the settings page at !link and choose the space replacement token",
     array( '!link' => l('Administer > Site building > Contact form ',  'admin/build/contact/settings' ) )
   ));
 }
@@ -24,6 +24,7 @@ function contact_forms_uninstall() {
   variable_del('contactforms_information');
   variable_del('contactform_title');
   variable_del('contactform_redirect');
+  variable_del('contact_forms_space_substitute');
 
   //remove category information field
   $ret = array();
@@ -67,4 +68,41 @@ function contact_forms_update_6101() {
   variable_set('contactform_title', $contactform_title);
 
   return $ret;
+}
+
+/**
+* Implementation of hook_update_N()
+*/
+function contact_forms_update_6102() {
+  $ret = array();
+
+  drupal_set_message(t("Contact Forms module has been updated. Please go to the settings page at !link and choose the space replacement token",  array( '!link' => l('Administer > Site building > Contact form ',  'admin/build/contact/settings' ))));
+
+  return $ret;
+}
+
+/**
+* Implementation of hook_enable(). If the contact_fields module is installed
+* then need to make it heavier in the system table to encourage Drupal
+* to run its hooks after the Contact Forms module's hooks.
+*
+* @return None.
+*/
+function contact_forms_enable() {
+
+  if (module_exists('contact_field')) {
+
+    $contact_field_weight = db_result(db_query("SELECT weight FROM system WHERE `name` = 'contact_field'"));
+
+    $contact_forms_weight = db_result(db_query("SELECT weight FROM system WHERE `name` = 'contact_forms'"));
+
+    if ($contact_forms_weight >= $contact_field_weight){
+
+      $contact_field_weight = $contact_forms_weight + 1;
+      $query = "UPDATE {system} SET `weight` = $contact_field_weight WHERE `name` = 'contact_field'";
+      db_query($query);
+
+      drupal_set_message("Contact Forms has made the necessary changes to ensure compatability with Contact Fields.");
+    }
+  }
 }

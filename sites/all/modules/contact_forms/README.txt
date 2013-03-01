@@ -13,7 +13,9 @@ for that category with a title = 'contact {category}'.
 
 If a path is entered that does not have a category you
 can specify a page to redirect to. The default fall back
-path is contact.
+path is /contact.
+
+You can choose to replace spaces in the generated URLs with a dash an underscore or not at all on the settings page here /admin/build/contact/settings
 
 
 Requirements
@@ -33,6 +35,11 @@ Upgrading
 If you are upgrading from an older version of Contact Forms
 Disable and uninstall the old version then delete the contact_list folder
 before you upload and enable the new version.
+
+
+Use with Contact Field
+-----------------------
+If you are having problems with this module and contact_field where the added fields are not displaying in the correct order then disable this module and enable it again. That will fix the problem.
 
 
 Usage

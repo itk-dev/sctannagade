@@ -17,10 +17,32 @@ function contact_forms_form_alter(&$form, $form_state, $form_id) {
     drupal_goto(variable_get('contactform_redirect', 'contact'));
   }
 
+
+
   // Alter all contact forms except for /contact
   if ($form_id == 'contact_mail_page' && drupal_match_path($path, 'contact/*')) {
+    // work out spaces substitution
+    $sub_array = sub_array();
+    $sub_key = variable_get('contact_forms_space_substitute', 3);
 
-    $category = str_replace(array('-', '_') , ' ' , arg(1));
+    // if 3 then not set and return error message
+    if ($sub_key == 3){
+      _contact_forms_error_message();
+
+    // if < 2 then replace spaces with $sub_array[$sub_key]
+    } elseif ($sub_key < 2){
+      $replacement = $sub_array[$sub_key];
+      $category = str_replace( $replacement , ' ' , arg(1));
+      $subject = str_replace( $replacement , ' ' , arg(2));
+    // else
+    } else {
+      $category =  arg(1);
+      $subject =  arg(2);
+    }
+
+
+
+    //$category = str_replace(array('-', '_') , ' ' , arg(1));
     $query =  db_query("SELECT * FROM {contact} WHERE LOWER(category) = LOWER('%s')", $category);
     $num = db_result(db_query("SELECT COUNT(*) FROM {contact} WHERE LOWER(category) = LOWER('%s')", $category));
     //if category doesn't exist redirect to 'contact' or User Defined Page
@@ -41,8 +63,6 @@ function contact_forms_form_alter(&$form, $form_state, $form_id) {
       '#type' => 'markup',
       '#value' => filter_xss_admin($contact_information),
      );
-
-    $subject = str_replace(array('-', '_') , ' ' , arg(2));
 
     $form['subject'] = array('#type' => 'textfield',
       '#title' => t('Subject'),
@@ -81,6 +101,23 @@ function contact_forms_form_alter(&$form, $form_state, $form_id) {
 
   // Alter contact settings form
   if ($form_id == 'contact_admin_settings') {
+
+    /* ********************************************** */
+    // New form item for radios for space token
+    $sub = array(
+      0 => t('Replace spaces with a Dash. (recommended. URLs will be like www.mysite.com/contact/Steve-Jones)'),
+      1 => t('Replace spaces with an Underscore. (Useful if you want to have dashes in your categories e.g. Bill Smith-Jones. URLs will be like www.mysite.com/contact/Bill_Smith-Jones)'),
+      2 => t('Don\'t replace the spaces. (URLs will be like www.mysite.com/contact/Steve Jones)'),
+      );
+
+   $form['contact_forms_space_substitute'] = array(
+    '#type' => 'radios',
+    '#title' => t('Spaces in Categories replacement'),
+    '#default_value' => variable_get('contact_forms_space_substitute', 3),
+    '#weight' => -2,
+    '#options' => $sub,
+    '#description' => t('Spaces in the category URL can be replaced with a dash or an underscore or not at all.'),
+      );
 
     // get example contact form path
     $query =  db_fetch_object(db_query_range("SELECT * FROM {contact}", 0, 1));
@@ -142,4 +179,18 @@ function contact_forms_schema_alter(&$schema) {
     'size' => 'big',
     'description' => 'Category Page Information Displayed on the individual category pages',
   );
+}
+
+/**
+ * Define error message
+ */
+function _contact_forms_error_message() {
+  drupal_set_message(t('Please set the "Spaces in Categories replacement" !link', array( '!link' => l('here',  'admin/structure/contact/settings' ))));
+}
+
+/**
+ * Define Space Substitution array
+ */
+function sub_array() {
+    return array(0 => '-', 1 => '_');
 }
